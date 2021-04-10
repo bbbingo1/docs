@@ -198,7 +198,7 @@ module.exports = !__webpack_require__(3)(function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 var anObject = __webpack_require__(1);
-var IE8_DOM_DEFINE = __webpack_require__(140);
+var IE8_DOM_DEFINE = __webpack_require__(139);
 var toPrimitive = __webpack_require__(30);
 var dP = Object.defineProperty;
 
@@ -362,7 +362,7 @@ var createDesc = __webpack_require__(43);
 var toIObject = __webpack_require__(20);
 var toPrimitive = __webpack_require__(30);
 var has = __webpack_require__(17);
-var IE8_DOM_DEFINE = __webpack_require__(140);
+var IE8_DOM_DEFINE = __webpack_require__(139);
 var gOPD = Object.getOwnPropertyDescriptor;
 
 exports.f = __webpack_require__(7) ? gOPD : function getOwnPropertyDescriptor(O, P) {
@@ -660,10 +660,10 @@ SafeBuffer.allocUnsafeSlow = function (size) {
 /* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Map = __webpack_require__(161);
+var Map = __webpack_require__(160);
 var $export = __webpack_require__(0);
 var shared = __webpack_require__(80)('metadata');
-var store = shared.store || (shared.store = new (__webpack_require__(164))());
+var store = shared.store || (shared.store = new (__webpack_require__(163))());
 
 var getOrCreateMetadataMap = function (target, targetKey, create) {
   var targetMetadata = store.get(target);
@@ -733,7 +733,7 @@ if (__webpack_require__(7)) {
   var redefineAll = __webpack_require__(44);
   var toInteger = __webpack_require__(29);
   var toLength = __webpack_require__(9);
-  var toIndex = __webpack_require__(159);
+  var toIndex = __webpack_require__(158);
   var toAbsoluteIndex = __webpack_require__(46);
   var toPrimitive = __webpack_require__(30);
   var has = __webpack_require__(17);
@@ -755,7 +755,7 @@ if (__webpack_require__(7)) {
   var $iterDetect = __webpack_require__(75);
   var setSpecies = __webpack_require__(45);
   var arrayFill = __webpack_require__(95);
-  var arrayCopyWithin = __webpack_require__(132);
+  var arrayCopyWithin = __webpack_require__(131);
   var $DP = __webpack_require__(8);
   var $GOPD = __webpack_require__(18);
   var dP = $DP.f;
@@ -1301,7 +1301,7 @@ module.exports = function (it, Constructor, name, forbiddenField) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var ctx = __webpack_require__(23);
-var call = __webpack_require__(143);
+var call = __webpack_require__(142);
 var isArrayIter = __webpack_require__(103);
 var anObject = __webpack_require__(1);
 var toLength = __webpack_require__(9);
@@ -1333,7 +1333,7 @@ exports.RETURN = RETURN;
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 var anObject = __webpack_require__(1);
-var dPs = __webpack_require__(149);
+var dPs = __webpack_require__(148);
 var enumBugKeys = __webpack_require__(99);
 var IE_PROTO = __webpack_require__(111)('IE_PROTO');
 var Empty = function () { /* empty */ };
@@ -1379,7 +1379,7 @@ module.exports = Object.create || function create(O, Properties) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
-var $keys = __webpack_require__(151);
+var $keys = __webpack_require__(150);
 var hiddenKeys = __webpack_require__(99).concat('length', 'prototype');
 
 exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
@@ -1392,7 +1392,7 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys = __webpack_require__(151);
+var $keys = __webpack_require__(150);
 var enumBugKeys = __webpack_require__(99);
 
 module.exports = Object.keys || function keys(O) {
@@ -3722,7 +3722,7 @@ module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u20
 /***/ (function(module, exports, __webpack_require__) {
 
 var ctx = __webpack_require__(23);
-var invoke = __webpack_require__(141);
+var invoke = __webpack_require__(140);
 var html = __webpack_require__(101);
 var cel = __webpack_require__(98);
 var global = __webpack_require__(2);
@@ -3823,7 +3823,7 @@ var fails = __webpack_require__(3);
 var anInstance = __webpack_require__(38);
 var toInteger = __webpack_require__(29);
 var toLength = __webpack_require__(9);
-var toIndex = __webpack_require__(159);
+var toIndex = __webpack_require__(158);
 var gOPN = __webpack_require__(41).f;
 var dP = __webpack_require__(8).f;
 var arrayFill = __webpack_require__(95);
@@ -4097,7 +4097,7 @@ exports[DATA_VIEW] = $DataView;
 var global = __webpack_require__(2);
 var core = __webpack_require__(26);
 var LIBRARY = __webpack_require__(35);
-var wksExt = __webpack_require__(160);
+var wksExt = __webpack_require__(159);
 var defineProperty = __webpack_require__(8).f;
 module.exports = function (name) {
   var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
@@ -4126,7 +4126,7 @@ module.exports = __webpack_require__(26).getIteratorMethod = function (it) {
 "use strict";
 
 var addToUnscopables = __webpack_require__(34);
-var step = __webpack_require__(144);
+var step = __webpack_require__(143);
 var Iterators = __webpack_require__(51);
 var toIObject = __webpack_require__(20);
 
@@ -4162,6 +4162,3310 @@ addToUnscopables('entries');
 
 /***/ }),
 /* 121 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(__webpack_require__(21));
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var Highlight =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Highlight, _Component);
+
+  function Highlight() {
+    _classCallCheck(this, Highlight);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Highlight).apply(this, arguments));
+  }
+
+  _createClass(Highlight, [{
+    key: "render",
+    value: function render() {
+      var text = this.props.text;
+      var start = text.substr(0, this.props.start);
+      var highlight = text.substring(this.props.start, this.props.end);
+      var end = text.substr(this.props.end);
+      var style = {
+        background: this.props.color
+      };
+      start = _react.default.createElement("span", {
+        className: "highlight-text"
+      }, start);
+      end = _react.default.createElement("span", {
+        className: "highlight-text"
+      }, end);
+      highlight = _react.default.createElement("span", {
+        className: "highlight",
+        style: style
+      }, _react.default.createElement("span", {
+        className: "highlight-text"
+      }, highlight));
+      return _react.default.createElement("div", {
+        className: "highlighter"
+      }, start, highlight, end);
+    }
+  }]);
+
+  return Highlight;
+}(_react.Component);
+
+var _default = Highlight;
+exports.default = _default;
+
+/***/ }),
+/* 122 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var stream = __webpack_require__(66)
+var inherits = __webpack_require__(11)
+var varint = __webpack_require__(181)
+var sodium = __webpack_require__(199)
+var indexOf = __webpack_require__(525)
+var feed = __webpack_require__(464)
+var messages = __webpack_require__(180)
+var bufferAlloc = __webpack_require__(48)
+var bufferFrom = __webpack_require__(60)
+
+module.exports = Protocol
+
+function Protocol (opts) {
+  if (!(this instanceof Protocol)) return new Protocol(opts)
+  if (!opts) opts = {}
+
+  stream.Duplex.call(this)
+  var self = this
+
+  this.id = opts.id || randomBytes(32)
+  this.live = !!opts.live
+  this.ack = !!opts.ack
+  this.userData = opts.userData || null
+  this.remoteId = null
+  this.remoteLive = false
+  this.remoteUserData = null
+
+  this.destroyed = false
+  this.encrypted = opts.encrypt !== false
+  this.key = null
+  this.discoveryKey = null
+  this.remoteDiscoveryKey = null
+  this.feeds = []
+  this.expectedFeeds = opts.expectedFeeds || 0
+  this.extensions = opts.extensions || []
+  this.remoteExtensions = null
+
+  this._localFeeds = []
+  this._remoteFeeds = []
+  this._feeds = {}
+
+  this._nonce = null
+  this._remoteNonce = null
+  this._xor = null
+  this._remoteXor = null
+  this._needsKey = false
+  this._length = bufferAlloc(varint.encodingLength(8388608))
+  this._missing = 0
+  this._buf = null
+  this._pointer = 0
+  this._data = null
+  this._start = 0
+  this._cb = null
+  this._interval = null
+  this._keepAlive = 0
+  this._remoteKeepAlive = 0
+  this._maybeFinalize = maybeFinalize
+
+  if (opts.timeout !== 0 && opts.timeout !== false) this.setTimeout(opts.timeout || 5000, this._ontimeout)
+  this.on('finish', this.finalize)
+
+  function maybeFinalize (err) {
+    if (err) return self.destroy(err)
+    if (!self.expectedFeeds) self.finalize()
+  }
+}
+
+inherits(Protocol, stream.Duplex)
+
+Protocol.prototype._prefinalize = function () {
+  if (!this.emit('prefinalize', this._maybeFinalize)) this.finalize()
+}
+
+Protocol.prototype.setTimeout = function (ms, ontimeout) {
+  if (this.destroyed) return
+  if (ontimeout) this.once('timeout', ontimeout)
+
+  var self = this
+
+  this._keepAlive = 0
+  this._remoteKeepAlive = 0
+
+  clearInterval(this._interval)
+  if (!ms) return
+
+  this._interval = setInterval(kick, (ms / 4) | 0)
+  if (this._interval.unref) this._interval.unref()
+
+  function kick () {
+    self._kick()
+  }
+}
+
+Protocol.prototype.feed = function (key, opts) {
+  if (this.destroyed) return null
+  if (!opts) opts = {}
+
+  var dk = opts.discoveryKey || discoveryKey(key)
+  var ch = this._feed(dk)
+
+  if (ch.id > -1) {
+    if (opts.peer) ch.peer = opts.peer
+    return ch
+  }
+
+  if (this._localFeeds.length >= 128) {
+    this._tooManyFeeds()
+    return null
+  }
+
+  ch.id = this._localFeeds.push(ch) - 1
+  ch.header = ch.id << 4
+  ch.headerLength = varint.encodingLength(ch.header)
+  ch.key = key
+  ch.discoveryKey = dk
+  if (opts.peer) ch.peer = opts.peer
+
+  this.feeds.push(ch)
+
+  var first = !this.key
+  var feed = {
+    discoveryKey: dk,
+    nonce: null
+  }
+
+  if (first) {
+    this.key = key
+    this.discoveryKey = dk
+
+    if (!this._sameKey()) return null
+
+    if (this.encrypted) {
+      feed.nonce = this._nonce = randomBytes(24)
+      this._xor = sodium.crypto_stream_xor_instance(this._nonce, this.key)
+      if (this._remoteNonce) {
+        this._remoteXor = sodium.crypto_stream_xor_instance(this._remoteNonce, this.key)
+      }
+    }
+
+    if (this._needsKey) {
+      this._needsKey = false
+      this._resume()
+    }
+  }
+
+  var box = encodeFeed(feed, ch.id)
+  if (!feed.nonce && this.encrypted) this._xor.update(box, box)
+  this._keepAlive = 0
+  this.push(box)
+
+  if (this.destroyed) return null
+
+  if (first) {
+    ch.handshake({
+      id: this.id,
+      live: this.live,
+      userData: this.userData,
+      extensions: this.extensions,
+      ack: this.ack
+    })
+  }
+
+  if (ch._buffer.length) ch._resume()
+  else ch._buffer = null
+
+  return ch
+}
+
+Protocol.prototype._resume = function () {
+  var self = this
+  process.nextTick(resume)
+
+  function resume () {
+    if (!self._data) return
+
+    var data = self._data
+    var start = self._start
+    var cb = self._cb
+
+    self._data = null
+    self._start = 0
+    self._cb = null
+    self._parse(data, start, cb)
+  }
+}
+
+Protocol.prototype._kick = function () {
+  if (this._remoteKeepAlive > 4) {
+    clearInterval(this._interval)
+    this.emit('timeout')
+    return
+  }
+
+  for (var i = 0; i < this.feeds.length; i++) {
+    var ch = this.feeds[i]
+    if (ch.peer) ch.peer.ontick()
+    else ch.emit('tick')
+  }
+
+  this._remoteKeepAlive++
+
+  if (this._keepAlive > 2) {
+    this.ping()
+    this._keepAlive = 0
+  } else {
+    this._keepAlive++
+  }
+}
+
+Protocol.prototype.ping = function () {
+  if (!this.key) return true
+  var ping = bufferFrom([0])
+  if (this._xor) this._xor.update(ping, ping)
+  return this.push(ping)
+}
+
+Protocol.prototype.destroy = function (err) {
+  if (this.destroyed) return
+  this.destroyed = true
+  if (err) this.emit('error', err)
+  this._close()
+  this.emit('close')
+}
+
+Protocol.prototype.finalize = function () {
+  if (this.destroyed) return
+  this.destroyed = true
+  this._close()
+  this.push(null)
+}
+
+Protocol.prototype._close = function () {
+  clearInterval(this._interval)
+
+  var feeds = this.feeds
+  this.feeds = []
+  for (var i = 0; i < feeds.length; i++) feeds[i]._onclose()
+
+  if (this._xor) {
+    this._xor.final()
+    this._xor = null
+  }
+}
+
+Protocol.prototype._read = function () {
+  // do nothing, user back-pressures
+}
+
+Protocol.prototype._push = function (data) {
+  if (this.destroyed) return
+  this._keepAlive = 0
+  if (this._xor) this._xor.update(data, data)
+  return this.push(data)
+}
+
+Protocol.prototype._write = function (data, enc, cb) {
+  this._remoteKeepAlive = 0
+  this._parse(data, 0, cb)
+}
+
+Protocol.prototype._feed = function (dk) {
+  var hex = dk.toString('hex')
+  var ch = this._feeds[hex]
+  if (ch) return ch
+  ch = this._feeds[hex] = feed(this)
+  return ch
+}
+
+Protocol.prototype.remoteSupports = function (name) {
+  var i = this.extensions.indexOf(name)
+  return i > -1 && !!this.remoteExtensions && this.remoteExtensions.indexOf(i) > -1
+}
+
+Protocol.prototype._onhandshake = function (handshake) {
+  if (this.remoteId) return
+
+  this.remoteId = handshake.id || randomBytes(32)
+  this.remoteLive = handshake.live
+  this.remoteUserData = handshake.userData
+  this.remoteExtensions = indexOf(this.extensions, handshake.extensions)
+  this.remoteAck = handshake.ack
+
+  this.emit('handshake')
+}
+
+Protocol.prototype._onopen = function (id, data, start, end) {
+  var feed = decodeFeed(data, start, end)
+
+  if (!feed) return this._badFeed()
+
+  if (!this.remoteDiscoveryKey) {
+    this.remoteDiscoveryKey = feed.discoveryKey
+    if (!this._sameKey()) return
+
+    if (this.encrypted && !this._remoteNonce) {
+      if (!feed.nonce) {
+        this.destroy(new Error('Remote did not include a nonce'))
+        return
+      }
+      this._remoteNonce = feed.nonce
+    }
+
+    if (this.encrypted && this.key && !this._remoteXor) {
+      this._remoteXor = sodium.crypto_stream_xor_instance(this._remoteNonce, this.key)
+    }
+  }
+
+  this._remoteFeeds[id] = this._feed(feed.discoveryKey)
+  feed.remoteId = id
+
+  this.emit('feed', feed.discoveryKey)
+}
+
+Protocol.prototype._onmessage = function (data, start, end) {
+  if (end - start < 2) return
+
+  var header = decodeHeader(data, start)
+  if (header === -1) return this.destroy(new Error('Remote sent invalid header'))
+
+  start += varint.decode.bytes
+
+  var id = header >> 4
+  var type = header & 15
+
+  if (id >= 128) return this._tooManyFeeds()
+  while (this._remoteFeeds.length < id) this._remoteFeeds.push(null)
+
+  var ch = this._remoteFeeds[id]
+
+  if (type === 0) {
+    if (ch) ch._onclose()
+    return this._onopen(id, data, start, end)
+  }
+
+  if (!ch) return this._badFeed()
+  if (type === 15) return ch._onextension(data, start, end)
+  ch._onmessage(type, data, start, end)
+}
+
+Protocol.prototype._parse = function (data, start, cb) {
+  var decrypted = !!this._remoteXor
+
+  if (start) {
+    data = data.slice(start)
+    start = 0
+  }
+
+  if (this._remoteXor) this._remoteXor.update(data, data)
+
+  while (start < data.length && !this.destroyed) {
+    if (this._missing) start = this._parseMessage(data, start)
+    else start = this._parseLength(data, start)
+
+    if (this._needsKey) {
+      this._data = data
+      this._start = start
+      this._cb = cb
+      return
+    }
+
+    if (!decrypted && this._remoteXor) {
+      return this._parse(data, start, cb)
+    }
+  }
+
+  cb()
+}
+
+Protocol.prototype._parseMessage = function (data, start) {
+  var end = start + this._missing
+
+  if (end <= data.length) {
+    var ret = end
+
+    if (this._buf) {
+      data.copy(this._buf, this._pointer, start)
+      data = this._buf
+      start = 0
+      end = data.length
+      this._buf = null
+    }
+
+    this._missing = 0
+    this._pointer = 0
+    if (this.encrypted && !this.key) this._needsKey = true
+    this._onmessage(data, start, end)
+
+    return ret
+  }
+
+  if (!this._buf) {
+    this._buf = bufferAlloc(this._missing)
+    this._pointer = 0
+  }
+
+  var rem = data.length - start
+
+  data.copy(this._buf, this._pointer, start)
+  this._pointer += rem
+  this._missing -= rem
+
+  return data.length
+}
+
+Protocol.prototype._parseLength = function (data, start) {
+  while (!this._missing && start < data.length) {
+    var byte = this._length[this._pointer++] = data[start++]
+
+    if (!(byte & 0x80)) {
+      this._missing = varint.decode(this._length)
+      this._pointer = 0
+      if (this._missing > 8388608) return this._tooBig(data.length)
+      return start
+    }
+
+    if (this._pointer >= this._length.length) return this._tooBig(data.length)
+  }
+
+  return start
+}
+
+Protocol.prototype._sameKey = function () {
+  if (!this.discoveryKey || !this.remoteDiscoveryKey) return true
+  if (this.remoteDiscoveryKey.toString('hex') === this.discoveryKey.toString('hex')) return true
+  this.destroy(new Error('First shared hypercore must be the same'))
+  return false
+}
+
+Protocol.prototype._tooManyFeeds = function () {
+  this.destroy(new Error('Only 128 feeds currently supported. Open a Github issue if you need more'))
+}
+
+Protocol.prototype._tooBig = function (len) {
+  this.destroy(new Error('Remote message is larger than 8MB (max allowed)'))
+  return len
+}
+
+Protocol.prototype._badFeed = function () {
+  this.destroy(new Error('Remote sent invalid feed message'))
+}
+
+Protocol.prototype._ontimeout = function () {
+  this.destroy(new Error('Remote timed out'))
+}
+
+function decodeHeader (data, start) {
+  try {
+    return varint.decode(data, start)
+  } catch (err) {
+    return -1
+  }
+}
+
+function decodeFeed (data, start, end) {
+  var feed = null
+
+  try {
+    feed = messages.Feed.decode(data, start, end)
+  } catch (err) {
+    return null
+  }
+
+  if (feed.discoveryKey.length !== 32) return null
+  if (feed.nonce && feed.nonce.length !== 24) return null
+
+  return feed
+}
+
+function encodeFeed (feed, id) {
+  var header = id << 4
+  var len = varint.encodingLength(header) + messages.Feed.encodingLength(feed)
+  var box = bufferAlloc(varint.encodingLength(len) + len)
+  var offset = 0
+
+  varint.encode(len, box, offset)
+  offset += varint.encode.bytes
+
+  varint.encode(header, box, offset)
+  offset += varint.encode.bytes
+
+  messages.Feed.encode(feed, box, offset)
+  return box
+}
+
+function discoveryKey (key) {
+  var buf = bufferAlloc(32)
+  sodium.crypto_generichash(buf, bufferFrom('hypercore'), key)
+  return buf
+}
+
+function randomBytes (n) {
+  var buf = bufferAlloc(n)
+  sodium.randombytes_buf(buf)
+  return buf
+}
+
+
+/***/ }),
+/* 123 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var equals = __webpack_require__(49)
+var low = __webpack_require__(486)
+var remove = __webpack_require__(532)
+var set = __webpack_require__(203)
+var merkle = __webpack_require__(491)
+var flat = __webpack_require__(63)
+var bulk = __webpack_require__(429)
+var from = __webpack_require__(460)
+var codecs = __webpack_require__(431)
+var thunky = __webpack_require__(67)
+var batcher = __webpack_require__(409)
+var inherits = __webpack_require__(11)
+var events = __webpack_require__(6)
+var raf = __webpack_require__(500)
+var bitfield = __webpack_require__(468)
+var sparseBitfield = __webpack_require__(90)
+var treeIndex = __webpack_require__(471)
+var storage = __webpack_require__(470)
+var crypto = __webpack_require__(179)
+var nextTick = __webpack_require__(188)
+var bufferFrom = __webpack_require__(60)
+var bufferAlloc = __webpack_require__(48)
+var inspect = __webpack_require__(476)
+var pretty = __webpack_require__(187)
+var replicate = null
+
+module.exports = Feed
+
+function Feed (createStorage, key, opts) {
+  if (!(this instanceof Feed)) return new Feed(createStorage, key, opts)
+  events.EventEmitter.call(this)
+
+  if (typeof createStorage === 'string') createStorage = defaultStorage(createStorage)
+  if (typeof createStorage !== 'function') throw new Error('Storage should be a function or string')
+
+  if (typeof key === 'string') key = bufferFrom(key, 'hex')
+
+  if (!Buffer.isBuffer(key) && !opts) {
+    opts = key
+    key = null
+  }
+
+  if (!opts) opts = {}
+
+  var self = this
+
+  var secretKey = opts.secretKey || null
+  if (typeof secretKey === 'string') secretKey = bufferFrom(secretKey, 'hex')
+
+  this.id = opts.id || crypto.randomBytes(32)
+  this.live = opts.live !== false
+  this.sparse = !!opts.sparse
+  this.length = 0
+  this.byteLength = 0
+  this.maxRequests = opts.maxRequests || 16
+  this.key = key || null
+  this.discoveryKey = this.key && crypto.discoveryKey(this.key)
+  this.secretKey = secretKey
+  this.bitfield = null
+  this.tree = null
+  this.writable = !!opts.writable
+  this.readable = true
+  this.opened = false
+  this.closed = false
+  this.allowPush = !!opts.allowPush
+  this.peers = []
+
+  // hooks
+  this._onwrite = opts.onwrite || null
+
+  this._ready = thunky(open) // TODO: if open fails, do not reopen next time
+  this._indexing = !!opts.indexing
+  this._createIfMissing = opts.createIfMissing !== false
+  this._overwrite = !!opts.overwrite
+  this._storeSecretKey = opts.storeSecretKey !== false
+  this._merkle = null
+  this._storage = storage(createStorage, opts.storageCacheSize)
+  this._batch = batcher(this._onwrite ? workHook : work)
+
+  this._waiting = []
+  this._selections = []
+  this._reserved = sparseBitfield()
+  this._synced = null
+
+  this._codec = toCodec(opts.valueEncoding)
+  this._sync = low(sync)
+  if (!this.sparse) this.download({start: 0, end: -1})
+
+  // open it right away. TODO: do not reopen (i.e, set a flag not to retry)
+  this._ready(onerror)
+
+  function onerror (err) {
+    if (err) self.emit('error', err)
+  }
+
+  function workHook (values, cb) {
+    self._appendHook(values, cb)
+  }
+
+  function work (values, cb) {
+    self._append(values, cb)
+  }
+
+  function sync (_, cb) {
+    self._syncBitfield(cb)
+  }
+
+  function open (cb) {
+    self._open(cb)
+  }
+}
+
+inherits(Feed, events.EventEmitter)
+
+Feed.discoveryKey = crypto.discoveryKey
+
+Feed.prototype[inspect] = function () {
+  return 'Hypercore(\n' +
+    '  key: ' + (this.key && pretty(this.key)) + '\n' +
+    '  discoveryKey: ' + (this.discoveryKey && pretty(this.discoveryKey)) + '\n' +
+    '  opened: ' + this.opened + '\n' +
+    '  writable: ' + this.writable + '\n' +
+    '  length: ' + this.length + '\n' +
+    '  byteLength: ' + this.byteLength + '\n' +
+    '  peers: ' + this.peers.length + '\n' +
+    ')'
+}
+
+// TODO: instead of using a getter, update on remote-update/add/remove
+Object.defineProperty(Feed.prototype, 'remoteLength', {
+  enumerable: true,
+  get: function () {
+    var len = 0
+    for (var i = 0; i < this.peers.length; i++) {
+      var remoteLength = this.peers[i].remoteLength
+      if (remoteLength > len) len = remoteLength
+    }
+    return len
+  }
+})
+
+Feed.prototype.replicate = function (opts) {
+  // Lazy load replication deps
+  if (!replicate) replicate = __webpack_require__(469)
+
+  if ((!this._selections.length || this._selections[0].end !== -1) && !this.sparse && !(opts && opts.live)) {
+    // hack!! proper fix is to refactor ./replicate to *not* clear our non-sparse selection
+    this.download({start: 0, end: -1})
+  }
+
+  return replicate(this, opts || {})
+}
+
+Feed.prototype.ready = function (onready) {
+  this._ready(function (err) {
+    if (!err) onready()
+  })
+}
+
+Feed.prototype.update = function (len, cb) {
+  if (typeof len === 'function') return this.update(-1, len)
+  if (typeof len !== 'number') len = -1
+  if (!cb) cb = noop
+
+  var self = this
+
+  this.ready(function (err) {
+    if (err) return cb(err)
+    if (len === -1) len = self.length + 1
+    if (self.length >= len) return cb(null)
+
+    if (self.writable) cb = self._writeStateReloader(cb)
+
+    self._waiting.push({
+      hash: true,
+      bytes: 0,
+      index: len - 1,
+      update: true,
+      callback: cb
+    })
+
+    self._updatePeers()
+  })
+}
+
+// will reload the writable state. used by .update on a writable peer
+Feed.prototype._writeStateReloader = function (cb) {
+  var self = this
+  return function (err) {
+    if (err) return cb(err)
+
+    self._roots(self.length, function (err, roots) {
+      if (err) return cb(err)
+      self._merkle = merkle(crypto, roots)
+      cb(null)
+    })
+  }
+}
+
+Feed.prototype._open = function (cb) {
+  var self = this
+  var generatedKey = false
+
+  // TODO: clean up the duplicate code below ...
+
+  this._storage.openKey(function (_, key) {
+    if (key && !self._overwrite && !self.key) self.key = key
+
+    if (!self.key && self.live) {
+      var keyPair = crypto.keyPair()
+      self.secretKey = keyPair.secretKey
+      self.key = keyPair.publicKey
+      generatedKey = true
+    }
+
+    self.discoveryKey = self.key && crypto.discoveryKey(self.key)
+    self._storage.open({key: self.key, discoveryKey: self.discoveryKey}, onopen)
+  })
+
+  function onopen (err, state) {
+    if (err) return cb(err)
+
+    // if no key but we have data do a bitfield reset since we cannot verify the data.
+    if (!state.key && state.bitfield.length) {
+      self._overwrite = true
+    }
+
+    if (self._overwrite) {
+      state.bitfield.fill(0)
+      state.key = state.secretKey = null
+    }
+
+    self.bitfield = bitfield(state.bitfield)
+    self.tree = treeIndex(self.bitfield.tree)
+    self.length = self.tree.blocks()
+
+    if (state.key && self.key && !equals(state.key, self.key)) {
+      return cb(new Error('Another hypercore is stored here'))
+    }
+
+    if (state.key) self.key = state.key
+    if (state.secretKey) self.secretKey = state.secretKey
+
+    // verify key and secretKey go together
+    if (self.key && self.secretKey) {
+      var challenge = bufferAlloc(0)
+      if (!crypto.verify(challenge, crypto.sign(challenge, self.secretKey), self.key)) {
+        return cb(new Error('Key and secret do not match'))
+      }
+    }
+
+    if (!self.length) return onsignature(null, null)
+    self._storage.getSignature(self.length - 1, onsignature)
+
+    function onsignature (_, sig) {
+      if (self.length) self.live = !!sig
+
+      if ((generatedKey || !self.key) && !self._createIfMissing) {
+        return cb(new Error('No hypercore is stored here'))
+      }
+
+      if (!self.key && self.live) {
+        var keyPair = crypto.keyPair()
+        self.secretKey = keyPair.secretKey
+        self.key = keyPair.publicKey
+      }
+
+      var writable = !!self.secretKey || self.key === null
+
+      if (!writable && self.writable) return cb(new Error('Feed is not writable'))
+      self.writable = writable
+      self.discoveryKey = self.key && crypto.discoveryKey(self.key)
+
+      if (self._storeSecretKey && !self.secretKey) {
+        self._storeSecretKey = false
+      }
+
+      var shouldWriteKey = generatedKey || !safeBufferEquals(self.key, state.key)
+      var shouldWriteSecretKey = self._storeSecretKey && (generatedKey || !safeBufferEquals(self.secretKey, state.secretKey))
+
+      var missing = 1 +
+        (shouldWriteKey ? 1 : 0) +
+        (shouldWriteSecretKey ? 1 : 0) +
+        (self._overwrite ? 1 : 0)
+      var error = null
+
+      if (shouldWriteKey) self._storage.key.write(0, self.key, done)
+      if (shouldWriteSecretKey) self._storage.secretKey.write(0, self.secretKey, done)
+
+      if (self._overwrite) { // TODO: support storage.resize for this instead
+        self._storage.putBitfield(0, state.bitfield, done)
+      }
+
+      done(null)
+
+      function done (err) {
+        if (err) error = err
+        if (--missing) return
+        if (error) return cb(error)
+        self._roots(self.length, onroots)
+      }
+
+      function onroots (err, roots) {
+        if (err) return cb(err)
+
+        self._merkle = merkle(crypto, roots)
+        self.byteLength = roots.reduce(addSize, 0)
+        self.opened = true
+        self.emit('ready')
+
+        cb(null)
+      }
+    }
+  }
+}
+
+Feed.prototype.download = function (range, cb) {
+  if (typeof range === 'function') return this.download(null, range)
+  if (typeof range === 'number') range = {start: range, end: range + 1}
+  if (!range) range = {}
+
+  // TODO: if no peers, check if range is already satisfied and nextTick(cb) if so
+  // this._updatePeers does this for us when there is a peer though, so not critical
+
+  var sel = {
+    _index: this._selections.length,
+    hash: !!range.hash,
+    iterator: null,
+    start: range.start || 0,
+    end: range.end || -1,
+    linear: !!range.linear,
+    callback: cb || noop
+  }
+
+  this._selections.push(sel)
+  this._updatePeers()
+
+  return sel
+}
+
+Feed.prototype.undownload = function (range) {
+  if (typeof range === 'number') range = {start: range, end: range + 1}
+  if (!range) range = {}
+
+  if (range.callback && range._index > -1) {
+    set.remove(this._selections, range)
+    nextTick(range.callback, new Error('Download was cancelled'))
+    return
+  }
+
+  var start = range.start || 0
+  var end = range.end || -1
+  var hash = !!range.hash
+  var linear = !!range.linear
+
+  for (var i = 0; i < this._selections.length; i++) {
+    var s = this._selections[i]
+
+    if (s.start === start && s.end === end && s.hash === hash && s.linear === linear) {
+      set.remove(this._selections, s)
+      nextTick(s.callback, new Error('Download was cancelled'))
+      return
+    }
+  }
+}
+
+Feed.prototype.digest = function (index) {
+  return this.tree.digest(2 * index)
+}
+
+Feed.prototype.proof = function (index, opts, cb) {
+  if (typeof opts === 'function') return this.proof(index, null, opts)
+  if (!this.opened) return this._readyAndProof(index, opts, cb)
+  if (!opts) opts = {}
+
+  var proof = this.tree.proof(2 * index, opts)
+  if (!proof) return cb(new Error('No proof available for this index'))
+
+  var needsSig = this.live && !!proof.verifiedBy
+  var pending = proof.nodes.length + (needsSig ? 1 : 0)
+  var error = null
+  var signature = null
+  var nodes = new Array(proof.nodes.length)
+
+  if (!pending) return cb(null, {nodes: nodes, signature: null})
+
+  for (var i = 0; i < proof.nodes.length; i++) {
+    this._storage.getNode(proof.nodes[i], onnode)
+  }
+  if (needsSig) {
+    this._storage.getSignature(proof.verifiedBy / 2 - 1, onsignature)
+  }
+
+  function onsignature (err, sig) {
+    if (sig) signature = sig
+    onnode(err, null)
+  }
+
+  function onnode (err, node) {
+    if (err) error = err
+
+    if (node) {
+      nodes[proof.nodes.indexOf(node.index)] = node
+    }
+
+    if (--pending) return
+    if (error) return cb(error)
+    cb(null, {nodes: nodes, signature: signature})
+  }
+}
+
+Feed.prototype._readyAndProof = function (index, opts, cb) {
+  var self = this
+  this._ready(function (err) {
+    if (err) return cb(err)
+    self.proof(index, opts, cb)
+  })
+}
+
+Feed.prototype.put = function (index, data, proof, cb) {
+  if (!this.opened) return this._readyAndPut(index, data, proof, cb)
+  this._putBuffer(index, this._codec.encode(data), proof, null, cb)
+}
+
+Feed.prototype.cancel = function (start, end) {  // TODO: use same argument scheme as download
+  if (!end) end = start + 1
+
+  // cancel these right away as .download does not wait for ready
+  for (var i = this._selections.length - 1; i >= 0; i--) {
+    var sel = this._selections[i]
+    if (start <= sel.start && sel.end <= end) {
+      this.undownload(sel)
+    }
+  }
+
+  // defer the last part until after ready as .get does that as well
+  if (this.opened) this._cancel(start, end)
+  else this._readyAndCancel(start, end)
+}
+
+Feed.prototype._cancel = function (start, end) {
+  var i = 0
+
+  for (i = start; i < end; i++) {
+    this._reserved.set(i, false) // TODO: send cancel message if set returns true
+  }
+
+  for (i = this._waiting.length - 1; i >= 0; i--) {
+    var w = this._waiting[i]
+    if ((start <= w.start && w.end <= end) || (start <= w.index && w.index < end)) {
+      remove(this._waiting, i)
+      if (w.callback) nextTick(w.callback, new Error('Request cancelled'))
+    }
+  }
+}
+
+Feed.prototype.clear = function (start, end, opts, cb) { // TODO: use same argument scheme as download
+  if (typeof end === 'function') return this.clear(start, start + 1, null, end)
+  if (typeof opts === 'function') return this.clear(start, end, null, opts)
+  if (!opts) opts = {}
+  if (!end) end = start + 1
+  if (!cb) cb = noop
+
+  // TODO: this needs some work. fx we can only calc byte offset for blocks we know about
+  // so internally we should make sure to only do that. We should use the merkle tree for this
+
+  var self = this
+  var byteOffset = start === 0 ? 0 : (typeof opts.byteOffset === 'number' ? opts.byteOffset : -1)
+  var byteLength = typeof opts.byteLength === 'number' ? opts.byteLength : -1
+
+  this._ready(function (err) {
+    if (err) return cb(err)
+
+    var modified = false
+
+    // TODO: use a buffer.fill thing here to speed this up!
+
+    for (var i = start; i < end; i++) {
+      if (self.bitfield.set(i, false)) modified = true
+    }
+
+    if (!modified) return nextTick(cb)
+
+    // TODO: write to a tmp/update file that we want to del this incase it crashes will del'ing
+
+    self._unannounce({start: start, length: end - start})
+    if (opts.delete === false || self._indexing) return sync()
+    if (byteOffset > -1) return onstartbytes(null, byteOffset)
+    self._storage.dataOffset(start, [], onstartbytes)
+
+    function sync () {
+      self.emit('clear', start, end)
+      self._sync(null, cb)
+    }
+
+    function onstartbytes (err, offset) {
+      if (err) return cb(err)
+      byteOffset = offset
+      if (byteLength > -1) return onendbytes(null, byteLength + byteOffset)
+      if (end === self.length) return onendbytes(null, self.byteLength)
+      self._storage.dataOffset(end, [], onendbytes)
+    }
+
+    function onendbytes (err, end) {
+      if (err) return cb(err)
+      if (!self._storage.data.del) return sync() // Not all data storage impls del
+      self._storage.data.del(byteOffset, end - byteOffset, sync)
+    }
+  })
+}
+
+Feed.prototype.signature = function (index, cb) {
+  if (typeof index === 'function') return this.signature(this.length - 1, index)
+
+  if (index < 0 || index >= this.length) return cb(new Error('No signature available for this index'))
+
+  this._storage.nextSignature(index, cb)
+}
+
+Feed.prototype.verify = function (index, signature, cb) {
+  var self = this
+
+  this.rootHashes(index, function (err, roots) {
+    if (err) return cb(err)
+
+    var checksum = crypto.tree(roots)
+
+    if (!crypto.verify(checksum, signature, self.key)) {
+      cb(new Error('Signature verification failed'))
+    } else {
+      cb(null, true)
+    }
+  })
+}
+
+Feed.prototype.rootHashes = function (index, cb) {
+  this._getRootsToVerify(index * 2 + 2, {}, [], cb)
+}
+
+Feed.prototype.seek = function (bytes, opts, cb) {
+  if (typeof opts === 'function') return this.seek(bytes, null, opts)
+  if (!opts) opts = {}
+  if (!this.opened) return this._readyAndSeek(bytes, opts, cb)
+
+  var self = this
+
+  this._seek(bytes, function (err, index, offset) {
+    if (!err && isBlock(index)) return done(index / 2, offset)
+    if (opts.wait === false) return cb(err || new Error('Unable to seek to this offset'))
+
+    var start = opts.start || 0
+    var end = opts.end || -1
+
+    if (!err) {
+      var left = flat.leftSpan(index) / 2
+      var right = flat.rightSpan(index) / 2 + 1
+
+      if (left > start) start = left
+      if (right < end || end === -1) end = right
+    }
+
+    if (end > -1 && end <= start) return cb(new Error('Unable to seek to this offset'))
+
+    self._waiting.push({
+      hash: opts.hash !== false,
+      bytes: bytes,
+      index: -1,
+      start: start,
+      end: end,
+      callback: cb || noop
+    })
+
+    self._updatePeers()
+  })
+
+  function done (index, offset) {
+    for (var i = 0; i < self.peers.length; i++) {
+      self.peers[i].haveBytes(bytes)
+    }
+    cb(null, index, offset)
+  }
+}
+
+Feed.prototype._seek = function (offset, cb) {
+  if (offset === 0) return cb(null, 0, 0)
+
+  var self = this
+  var roots = flat.fullRoots(this.length * 2)
+  var nearestRoot = 0
+
+  loop(null, null)
+
+  function onroot (top) {
+    if (isBlock(top)) return cb(null, top, offset)
+
+    var left = flat.leftChild(top)
+    while (!self.tree.get(left)) {
+      if (isBlock(left)) return cb(null, nearestRoot, offset)
+      left = flat.leftChild(left)
+    }
+
+    self._storage.getNode(left, onleftchild)
+  }
+
+  function onleftchild (err, node) {
+    if (err) return cb(err)
+
+    if (node.size > offset) {
+      nearestRoot = node.index
+      onroot(node.index)
+    } else {
+      offset -= node.size
+      onroot(flat.sibling(node.index))
+    }
+  }
+
+  function loop (err, node) {
+    if (err) return cb(err)
+
+    if (node) {
+      if (node.size > offset) {
+        nearestRoot = node.index
+        return onroot(node.index)
+      }
+      offset -= node.size
+    }
+
+    if (!roots.length) return cb(new Error('Out of bounds'))
+    self._storage.getNode(roots.shift(), loop)
+  }
+}
+
+Feed.prototype._readyAndSeek = function (bytes, opts, cb) {
+  var self = this
+  this._ready(function (err) {
+    if (err) return cb(err)
+    self.seek(bytes, opts, cb)
+  })
+}
+
+Feed.prototype._getBuffer = function (index, cb) {
+  this._storage.getData(index, cb)
+}
+
+Feed.prototype._putBuffer = function (index, data, proof, from, cb) {
+  // TODO: this nodes in proof are not instances of our Node prototype
+  // but just similar. Check if this has any v8 perf implications.
+
+  // TODO: if the proof contains a valid signature BUT fails, emit a critical error
+  // --> feed should be considered dead
+
+  var self = this
+  var trusted = -1
+  var missing = []
+  var next = 2 * index
+  var i = data ? 0 : 1
+
+  while (true) {
+    if (this.tree.get(next)) {
+      trusted = next
+      break
+    }
+
+    var sib = flat.sibling(next)
+    next = flat.parent(next)
+
+    if (i < proof.nodes.length && proof.nodes[i].index === sib) {
+      i++
+      continue
+    }
+
+    if (!this.tree.get(sib)) break
+    missing.push(sib)
+  }
+
+  if (trusted === -1 && this.tree.get(next)) trusted = next
+
+  var error = null
+  var trustedNode = null
+  var missingNodes = new Array(missing.length)
+  var pending = missing.length + (trusted > -1 ? 1 : 0)
+
+  for (i = 0; i < missing.length; i++) this._storage.getNode(missing[i], onmissing)
+  if (trusted > -1) this._storage.getNode(trusted, ontrusted)
+  if (!missing.length && trusted === -1) onmissingloaded(null)
+
+  function ontrusted (err, node) {
+    if (err) error = err
+    if (node) trustedNode = node
+    if (!--pending) onmissingloaded(error)
+  }
+
+  function onmissing (err, node) {
+    if (err) error = err
+    if (node) missingNodes[missing.indexOf(node.index)] = node
+    if (!--pending) onmissingloaded(error)
+  }
+
+  function onmissingloaded (err) {
+    if (err) return cb(err)
+    self._verifyAndWrite(index, data, proof, missingNodes, trustedNode, from, cb)
+  }
+}
+
+Feed.prototype._readyAndPut = function (index, data, proof, cb) {
+  var self = this
+  this._ready(function (err) {
+    if (err) return cb(err)
+    self.put(index, data, proof, cb)
+  })
+}
+
+Feed.prototype._write = function (index, data, nodes, sig, from, cb) {
+  if (!this._onwrite) return this._writeAfterHook(index, data, nodes, sig, from, cb)
+  this._onwrite(index, data, from, writeHookDone(this, index, data, nodes, sig, from, cb))
+}
+
+function writeHookDone (self, index, data, nodes, sig, from, cb) {
+  return function (err) {
+    if (err) return cb(err)
+    self._writeAfterHook(index, data, nodes, sig, from, cb)
+  }
+}
+
+Feed.prototype._writeAfterHook = function (index, data, nodes, sig, from, cb) {
+  var self = this
+  var pending = nodes.length + 1 + (sig ? 1 : 0)
+  var error = null
+
+  for (var i = 0; i < nodes.length; i++) this._storage.putNode(nodes[i].index, nodes[i], ondone)
+  if (data) this._storage.putData(index, data, nodes, ondone)
+  else ondone()
+  if (sig) this._storage.putSignature(sig.index, sig.signature, ondone)
+
+  function ondone (err) {
+    if (err) error = err
+    if (--pending) return
+    if (error) return cb(error)
+    self._writeDone(index, data, nodes, from, cb)
+  }
+}
+
+Feed.prototype._writeDone = function (index, data, nodes, from, cb) {
+  for (var i = 0; i < nodes.length; i++) this.tree.set(nodes[i].index)
+  this.tree.set(2 * index)
+
+  if (data) {
+    if (this.bitfield.set(index, true)) this.emit('download', index, data, from)
+    if (this.peers.length) this._announce({start: index}, from)
+
+    if (!this.writable) {
+      if (!this._synced) this._synced = this.bitfield.iterator(0, this.length)
+      if (this._synced.next() === -1) {
+        this._synced.range(0, this.length)
+        this._synced.seek(0)
+        if (this._synced.next() === -1) {
+          this.emit('sync')
+        }
+      }
+    }
+  }
+
+  this._sync(null, cb)
+}
+
+Feed.prototype._verifyAndWrite = function (index, data, proof, localNodes, trustedNode, from, cb) {
+  var visited = []
+  var remoteNodes = proof.nodes
+  var top = data ? new storage.Node(2 * index, crypto.data(data), data.length) : remoteNodes.shift()
+
+  // check if we already have the hash for this node
+  if (verifyNode(trustedNode, top)) {
+    this._write(index, data, visited, null, from, cb)
+    return
+  }
+
+  // keep hashing with siblings until we reach or trusted node
+  while (true) {
+    var node = null
+    var next = flat.sibling(top.index)
+
+    if (remoteNodes.length && remoteNodes[0].index === next) {
+      node = remoteNodes.shift()
+      visited.push(node)
+    } else if (localNodes.length && localNodes[0].index === next) {
+      node = localNodes.shift()
+    } else {
+      // we cannot create another parent, i.e. these nodes must be roots in the tree
+      this._verifyRootsAndWrite(index, data, top, proof, visited, from, cb)
+      return
+    }
+
+    visited.push(top)
+    top = new storage.Node(flat.parent(top.index), crypto.parent(top, node), top.size + node.size)
+
+    // the tree checks out, write the data and the visited nodes
+    if (verifyNode(trustedNode, top)) {
+      this._write(index, data, visited, null, from, cb)
+      return
+    }
+  }
+}
+
+Feed.prototype._verifyRootsAndWrite = function (index, data, top, proof, nodes, from, cb) {
+  var remoteNodes = proof.nodes
+  var lastNode = remoteNodes.length ? remoteNodes[remoteNodes.length - 1].index : top.index
+  var verifiedBy = Math.max(flat.rightSpan(top.index), flat.rightSpan(lastNode)) + 2
+  var self = this
+
+  this._getRootsToVerify(verifiedBy, top, remoteNodes, function (err, roots, extraNodes) {
+    if (err) return cb(err)
+
+    var checksum = crypto.tree(roots)
+    var signature = null
+
+    if (self.length && self.live && !proof.signature) {
+      return cb(new Error('Remote did not include a signature'))
+    }
+
+    if (proof.signature) { // check signaturex
+      if (!crypto.verify(checksum, proof.signature, self.key)) {
+        return cb(new Error('Remote signature could not be verified'))
+      }
+
+      signature = {index: verifiedBy / 2 - 1, signature: proof.signature}
+    } else { // check tree root
+      if (!equals(checksum, self.key)) {
+        return cb(new Error('Remote checksum failed'))
+      }
+    }
+
+    self.live = !!signature
+
+    var length = verifiedBy / 2
+    if (length > self.length) {
+      // TODO: only emit this after the info has been flushed to storage
+      self.length = length
+      self.byteLength = roots.reduce(addSize, 0)
+      if (self._synced) self._synced.seek(0, self.length)
+      self.emit('append')
+    }
+
+    self._write(index, data, nodes.concat(extraNodes), signature, from, cb)
+  })
+}
+
+Feed.prototype._getRootsToVerify = function (verifiedBy, top, remoteNodes, cb) {
+  var indexes = flat.fullRoots(verifiedBy)
+  var roots = new Array(indexes.length)
+  var nodes = []
+  var error = null
+  var pending = roots.length
+
+  for (var i = 0; i < indexes.length; i++) {
+    if (indexes[i] === top.index) {
+      nodes.push(top)
+      onnode(null, top)
+    } else if (remoteNodes.length && indexes[i] === remoteNodes[0].index) {
+      nodes.push(remoteNodes[0])
+      onnode(null, remoteNodes.shift())
+    } else if (this.tree.get(indexes[i])) {
+      this._storage.getNode(indexes[i], onnode)
+    } else {
+      onnode(new Error('Missing tree roots needed for verify'))
+    }
+  }
+
+  function onnode (err, node) {
+    if (err) error = err
+    if (node) roots[indexes.indexOf(node.index)] = node
+    if (!--pending) done(error)
+  }
+
+  function done (err) {
+    if (err) return cb(err)
+
+    cb(null, roots, nodes)
+  }
+}
+
+Feed.prototype._announce = function (message, from) {
+  for (var i = 0; i < this.peers.length; i++) {
+    var peer = this.peers[i]
+    if (peer !== from) peer.have(message)
+  }
+}
+
+Feed.prototype._unannounce = function (message) {
+  for (var i = 0; i < this.peers.length; i++) this.peers[i].unhave(message)
+}
+
+Feed.prototype.downloaded = function (start, end) {
+  return this.bitfield.total(start, end)
+}
+
+Feed.prototype.has = function (start, end) {
+  if (end === undefined) return this.bitfield.get(start)
+  var total = end - start
+  return total === this.bitfield.total(start, end)
+}
+
+Feed.prototype.head = function (opts, cb) {
+  if (typeof opts === 'function') return this.head({}, opts)
+  var self = this
+  this._ready(function (err) {
+    if (err) return cb(err)
+    if (self.length === 0) cb(new Error('feed is empty'))
+    else self.get(self.length - 1, cb)
+  })
+}
+
+Feed.prototype.get = function (index, opts, cb) {
+  if (typeof opts === 'function') return this.get(index, null, opts)
+  if (!this.opened) return this._readyAndGet(index, opts, cb)
+
+  if (opts && opts.timeout) cb = timeoutCallback(cb, opts.timeout)
+
+  if (!this.bitfield.get(index)) {
+    if (opts && opts.wait === false) return cb(new Error('Block not downloaded'))
+
+    this._waiting.push({bytes: 0, hash: false, index: index, options: opts, callback: cb})
+    this._updatePeers()
+    return
+  }
+
+  if (opts && opts.valueEncoding) cb = wrapCodec(toCodec(opts.valueEncoding), cb)
+  else if (this._codec !== codecs.binary) cb = wrapCodec(this._codec, cb)
+
+  this._getBuffer(index, cb)
+}
+
+Feed.prototype._readyAndGet = function (index, opts, cb) {
+  var self = this
+  this._ready(function (err) {
+    if (err) return cb(err)
+    self.get(index, opts, cb)
+  })
+}
+
+Feed.prototype.getBatch = function (start, end, opts, cb) {
+  if (typeof opts === 'function') return this.getBatch(start, end, null, opts)
+  if (!this.opened) return this._readyAndGetBatch(start, end, opts, cb)
+
+  var self = this
+  var wait = !opts || opts.wait !== false
+
+  if (this.has(start, end)) return this._getBatch(start, end, opts, cb)
+  if (!wait) return cb(new Error('Block not downloaded'))
+
+  if (opts && opts.timeout) cb = timeoutCallback(cb, opts.timeout)
+
+  this.download({start: start, end: end}, function (err) {
+    if (err) return cb(err)
+    self._getBatch(start, end, opts, cb)
+  })
+}
+
+Feed.prototype._getBatch = function (start, end, opts, cb) {
+  var enc = opts && opts.valueEncoding
+  var codec = enc ? toCodec(enc) : this._codec
+
+  this._storage.getDataBatch(start, end - start, onbatch)
+
+  function onbatch (err, buffers) {
+    if (err) return cb(err)
+
+    var batch = new Array(buffers.length)
+
+    for (var i = 0; i < buffers.length; i++) {
+      try {
+        batch[i] = codec ? codec.decode(buffers[i]) : buffers[i]
+      } catch (err) {
+        return cb(err)
+      }
+    }
+
+    cb(null, batch)
+  }
+}
+
+Feed.prototype._readyAndGetBatch = function (start, end, opts, cb) {
+  var self = this
+  this._ready(function (err) {
+    if (err) return cb(err)
+    self.getBatch(start, end, opts, cb)
+  })
+}
+
+Feed.prototype._updatePeers = function () {
+  for (var i = 0; i < this.peers.length; i++) this.peers[i].update()
+}
+
+Feed.prototype.createWriteStream = function () {
+  var self = this
+  return bulk.obj(write)
+
+  function write (batch, cb) {
+    self._batch(batch, cb)
+  }
+}
+
+Feed.prototype.createReadStream = function (opts) {
+  if (!opts) opts = {}
+
+  var self = this
+  var start = opts.start || 0
+  var end = typeof opts.end === 'number' ? opts.end : -1
+  var live = !!opts.live
+  var snapshot = opts.snapshot !== false
+  var first = true
+  var range = this.download({start: start, end: end, linear: true})
+
+  return from.obj(read).on('end', cleanup).on('close', cleanup)
+
+  function read (size, cb) {
+    if (!self.opened) return open(size, cb)
+
+    if (first) {
+      if (end === -1) {
+        if (live) end = Infinity
+        else if (snapshot) end = self.length
+        if (start > end) return cb(null, null)
+      }
+      if (opts.tail) start = self.length
+      first = false
+    }
+
+    if (start === end || (end === -1 && start === self.length)) return cb(null, null)
+    self.get(start++, opts, cb)
+  }
+
+  function cleanup () {
+    if (!range) return
+    self.undownload(range)
+    range = null
+  }
+
+  function open (size, cb) {
+    self._ready(function (err) {
+      if (err) return cb(err)
+      read(size, cb)
+    })
+  }
+}
+
+// TODO: when calling finalize on a live feed write an END_OF_FEED block (length === 0?)
+Feed.prototype.finalize = function (cb) {
+  if (!this.key) {
+    this.key = crypto.tree(this._merkle.roots)
+    this.discoveryKey = crypto.discoveryKey(this.key)
+  }
+  this._storage.key.write(0, this.key, cb)
+}
+
+Feed.prototype.append = function (batch, cb) {
+  this._batch(Array.isArray(batch) ? batch : [batch], cb || noop)
+}
+
+Feed.prototype.flush = function (cb) {
+  this._batch([], cb)
+}
+
+Feed.prototype.close = function (cb) {
+  var self = this
+
+  this._ready(function () {
+    self.writable = false
+    self.readable = false
+    self._storage.close(function (err) {
+      if (!self.closed && !err) {
+        self.closed = true
+        self.emit('close')
+      }
+      if (cb) cb(err)
+    })
+  })
+}
+
+Feed.prototype._appendHook = function (batch, cb) {
+  var self = this
+  var missing = batch.length
+  var error = null
+
+  if (!missing) return this._append(batch, cb)
+  for (var i = 0; i < batch.length; i++) {
+    this._onwrite(i + this.length, batch[i], null, done)
+  }
+
+  function done (err) {
+    if (err) error = err
+    if (--missing) return
+    if (error) return cb(error)
+    self._append(batch, cb)
+  }
+}
+
+Feed.prototype._append = function (batch, cb) {
+  if (!this.opened) return this._readyAndAppend(batch, cb)
+  if (!this.writable) return cb(new Error('This feed is not writable. Did you create it?'))
+
+  var self = this
+  var pending = this.live && batch.length ? 1 + batch.length : batch.length
+  var offset = 0
+  var error = null
+
+  if (!pending) return cb()
+
+  for (var i = 0; i < batch.length; i++) {
+    var data = this._codec.encode(batch[i])
+    var nodes = this._merkle.next(data)
+
+    if (this._indexing) done(null)
+    else this._storage.data.write(this.byteLength + offset, data, done)
+
+    if (this.live && i === batch.length - 1) {
+      var sig = crypto.sign(crypto.tree(this._merkle.roots), this.secretKey)
+      this._storage.putSignature(this.length + i, sig, done)
+    }
+
+    pending += nodes.length
+    offset += data.length
+
+    for (var j = 0; j < nodes.length; j++) {
+      var node = nodes[j]
+      this._storage.putNode(node.index, node, done)
+    }
+  }
+
+  function done (err) {
+    if (err) error = err
+    if (--pending) return
+    if (error) return cb(error)
+
+    var start = self.length
+
+    // TODO: only emit append and update length / byteLength after the info has been flushed to storage
+    self.byteLength += offset
+    for (var i = 0; i < batch.length; i++) {
+      self.bitfield.set(self.length, true)
+      self.tree.set(2 * self.length++)
+    }
+    self.emit('append')
+
+    var message = self.length - start > 1 ? {start: start, length: self.length - start} : {start: start}
+    if (self.peers.length) self._announce(message)
+
+    self._sync(null, cb)
+  }
+}
+
+Feed.prototype._readyAndAppend = function (batch, cb) {
+  var self = this
+  this._ready(function (err) {
+    if (err) return cb(err)
+    self._append(batch, cb)
+  })
+}
+
+Feed.prototype._readyAndCancel = function (start, end) {
+  var self = this
+  this.ready(function () {
+    self._cancel(start, end)
+  })
+}
+
+Feed.prototype._pollWaiting = function () {
+  var len = this._waiting.length
+  for (var i = 0; i < len; i++) {
+    var next = this._waiting[i]
+    if (!next.bytes && !this.bitfield.get(next.index)) continue
+
+    remove(this._waiting, i--)
+    len--
+
+    if (next.bytes) this.seek(next.bytes, next, next.callback)
+    else if (next.update) this.update(next.index + 1, next.callback)
+    else this.get(next.index, next.options, next.callback)
+  }
+}
+
+Feed.prototype._syncBitfield = function (cb) {
+  var missing = this.bitfield.pages.updates.length
+  var next = null
+  var error = null
+
+  // All data / nodes have been written now. We still need to update the bitfields though
+
+  // TODO 1: if the program fails during this write the bitfield might not have been fully written
+  // HOWEVER, we can easily recover from this by traversing the tree and checking if the nodes exists
+  // on disk. So if a get fails, it should try and recover once.
+
+  // TODO 2: if .writable append bitfield updates into a single buffer for extra perf
+  // Added benefit is that if the program exits while flushing the bitfield the feed will only get
+  // truncated and not have missing chunks which is what you expect.
+
+  if (!missing) {
+    this._pollWaiting()
+    return cb(null)
+  }
+
+  while ((next = this.bitfield.pages.lastUpdate()) !== null) {
+    this._storage.putBitfield(next.offset, next.buffer, ondone)
+  }
+
+  this._pollWaiting()
+
+  function ondone (err) {
+    if (err) error = err
+    if (--missing) return
+    cb(error)
+  }
+}
+
+Feed.prototype._roots = function (index, cb) {
+  var roots = flat.fullRoots(2 * index)
+  var result = new Array(roots.length)
+  var pending = roots.length
+  var error = null
+
+  if (!pending) return cb(null, result)
+
+  for (var i = 0; i < roots.length; i++) {
+    this._storage.getNode(roots[i], onnode)
+  }
+
+  function onnode (err, node) {
+    if (err) error = err
+    if (node) result[roots.indexOf(node.index)] = node
+    if (--pending) return
+    if (error) return cb(error)
+    cb(null, result)
+  }
+}
+
+function noop () {}
+
+function verifyNode (trusted, node) {
+  return trusted && trusted.index === node.index && equals(trusted.hash, node.hash)
+}
+
+function addSize (size, node) {
+  return size + node.size
+}
+
+function isBlock (index) {
+  return (index & 1) === 0
+}
+
+function defaultStorage (dir) {
+  return function (name) {
+    return raf(name, {directory: dir})
+  }
+}
+
+function toCodec (enc) {
+  // Switch to ndjson encoding if JSON is used. That way data files parse like ndjson \o/
+  return codecs(enc === 'json' ? 'ndjson' : enc)
+}
+
+function wrapCodec (enc, cb) {
+  return function (err, buf) {
+    if (err) return cb(err)
+    try {
+      buf = enc.decode(buf)
+    } catch (err) {
+      return cb(err)
+    }
+    cb(null, buf)
+  }
+}
+
+function timeoutCallback (cb, timeout) {
+  var failed = false
+  var id = setTimeout(ontimeout, timeout)
+  return done
+
+  function ontimeout () {
+    failed = true
+    // TODO: make libs/errors for all this stuff
+    var err = new Error('ETIMEDOUT')
+    err.code = 'ETIMEDOUT'
+    cb(err)
+  }
+
+  function done (err, val) {
+    if (failed) return
+    clearTimeout(id)
+    cb(err, val)
+  }
+}
+
+// buffer-equals, but handle 'null' buffer parameters.
+function safeBufferEquals (a, b) {
+  if (!a) return !b
+  if (!b) return !a
+  return equals(a, b)
+}
+
+
+/***/ }),
+/* 124 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var printWarning = function() {};
+
+if (process.env.NODE_ENV !== 'production') {
+  var ReactPropTypesSecret = __webpack_require__(125);
+  var loggedTypeFailures = {};
+
+  printWarning = function(text) {
+    var message = 'Warning: ' + text;
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+}
+
+/**
+ * Assert that the values match with the type specs.
+ * Error messages are memorized and will only be shown once.
+ *
+ * @param {object} typeSpecs Map of name to a ReactPropType
+ * @param {object} values Runtime values that need to be type-checked
+ * @param {string} location e.g. "prop", "context", "child context"
+ * @param {string} componentName Name of the component for error messages.
+ * @param {?Function} getStack Returns the component stack.
+ * @private
+ */
+function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
+  if (process.env.NODE_ENV !== 'production') {
+    for (var typeSpecName in typeSpecs) {
+      if (typeSpecs.hasOwnProperty(typeSpecName)) {
+        var error;
+        // Prop type validation may throw. In case they do, we don't want to
+        // fail the render phase where it didn't fail before. So we log it.
+        // After these have been cleaned up, we'll let them throw.
+        try {
+          // This is intentionally an invariant that gets caught. It's the same
+          // behavior as without this statement except with a better message.
+          if (typeof typeSpecs[typeSpecName] !== 'function') {
+            var err = Error(
+              (componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' +
+              'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.'
+            );
+            err.name = 'Invariant Violation';
+            throw err;
+          }
+          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
+        } catch (ex) {
+          error = ex;
+        }
+        if (error && !(error instanceof Error)) {
+          printWarning(
+            (componentName || 'React class') + ': type specification of ' +
+            location + ' `' + typeSpecName + '` is invalid; the type checker ' +
+            'function must return `null` or an `Error` but returned a ' + typeof error + '. ' +
+            'You may have forgotten to pass an argument to the type checker ' +
+            'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' +
+            'shape all require an argument).'
+          )
+
+        }
+        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
+          // Only monitor this failure once because there tends to be a lot of the
+          // same error.
+          loggedTypeFailures[error.message] = true;
+
+          var stack = getStack ? getStack() : '';
+
+          printWarning(
+            'Failed ' + location + ' type: ' + error.message + (stack != null ? stack : '')
+          );
+        }
+      }
+    }
+  }
+}
+
+module.exports = checkPropTypes;
+
+
+/***/ }),
+/* 125 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+module.exports = ReactPropTypesSecret;
+
+
+/***/ }),
+/* 126 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var varint = __webpack_require__(498)
+var svarint = __webpack_require__(512)
+
+exports.make = encoder
+
+exports.name = function (enc) {
+  var keys = Object.keys(exports)
+  for (var i = 0; i < keys.length; i++) {
+    if (exports[keys[i]] === enc) return keys[i]
+  }
+  return null
+}
+
+exports.skip = function (type, buffer, offset) {
+  switch (type) {
+    case 0:
+      varint.decode(buffer, offset)
+      return offset + varint.decode.bytes
+
+    case 1:
+      return offset + 8
+
+    case 2:
+      var len = varint.decode(buffer, offset)
+      return offset + varint.decode.bytes + len
+
+    case 3:
+    case 4:
+      throw new Error('Groups are not supported')
+
+    case 5:
+      return offset + 4
+  }
+
+  throw new Error('Unknown wire type: ' + type)
+}
+
+exports.bytes = encoder(2,
+  function encode (val, buffer, offset) {
+    var oldOffset = offset
+    var len = bufferLength(val)
+
+    varint.encode(len, buffer, offset)
+    offset += varint.encode.bytes
+
+    if (Buffer.isBuffer(val)) val.copy(buffer, offset)
+    else buffer.write(val, offset, len)
+    offset += len
+
+    encode.bytes = offset - oldOffset
+    return buffer
+  },
+  function decode (buffer, offset) {
+    var oldOffset = offset
+
+    var len = varint.decode(buffer, offset)
+    offset += varint.decode.bytes
+
+    var val = buffer.slice(offset, offset + len)
+    offset += val.length
+
+    decode.bytes = offset - oldOffset
+    return val
+  },
+  function encodingLength (val) {
+    var len = bufferLength(val)
+    return varint.encodingLength(len) + len
+  }
+)
+
+exports.string = encoder(2,
+  function encode (val, buffer, offset) {
+    var oldOffset = offset
+    var len = Buffer.byteLength(val)
+
+    varint.encode(len, buffer, offset, 'utf-8')
+    offset += varint.encode.bytes
+
+    buffer.write(val, offset, len)
+    offset += len
+
+    encode.bytes = offset - oldOffset
+    return buffer
+  },
+  function decode (buffer, offset) {
+    var oldOffset = offset
+
+    var len = varint.decode(buffer, offset)
+    offset += varint.decode.bytes
+
+    var val = buffer.toString('utf-8', offset, offset + len)
+    offset += len
+
+    decode.bytes = offset - oldOffset
+    return val
+  },
+  function encodingLength (val) {
+    var len = Buffer.byteLength(val)
+    return varint.encodingLength(len) + len
+  }
+)
+
+exports.bool = encoder(0,
+  function encode (val, buffer, offset) {
+    buffer[offset] = val ? 1 : 0
+    encode.bytes = 1
+    return buffer
+  },
+  function decode (buffer, offset) {
+    var bool = buffer[offset] > 0
+    decode.bytes = 1
+    return bool
+  },
+  function encodingLength () {
+    return 1
+  }
+)
+
+exports.int32 = encoder(0,
+  function encode (val, buffer, offset) {
+    varint.encode(val < 0 ? val + 4294967296 : val, buffer, offset)
+    encode.bytes = varint.encode.bytes
+    return buffer
+  },
+  function decode (buffer, offset) {
+    var val = varint.decode(buffer, offset)
+    decode.bytes = varint.decode.bytes
+    return val > 2147483647 ? val - 4294967296 : val
+  },
+  function encodingLength (val) {
+    return varint.encodingLength(val < 0 ? val + 4294967296 : val)
+  }
+)
+
+exports.int64 = encoder(0,
+  function encode (val, buffer, offset) {
+    if (val < 0) {
+      var last = offset + 9
+      varint.encode(val * -1, buffer, offset)
+      offset += varint.encode.bytes - 1
+      buffer[offset] = buffer[offset] | 0x80
+      while (offset < last - 1) {
+        offset++
+        buffer[offset] = 0xff
+      }
+      buffer[last] = 0x01
+      encode.bytes = 10
+    } else {
+      varint.encode(val, buffer, offset)
+      encode.bytes = varint.encode.bytes
+    }
+    return buffer
+  },
+  function decode (buffer, offset) {
+    var val = varint.decode(buffer, offset)
+    if (val >= Math.pow(2, 63)) {
+      var limit = 9
+      while (buffer[offset + limit - 1] === 0xff) limit--
+      limit = limit || 9
+      var subset = Buffer.allocUnsafe(limit)
+      buffer.copy(subset, 0, offset, offset + limit)
+      subset[limit - 1] = subset[limit - 1] & 0x7f
+      val = -1 * varint.decode(subset, 0)
+      decode.bytes = 10
+    } else {
+      decode.bytes = varint.decode.bytes
+    }
+    return val
+  },
+  function encodingLength (val) {
+    return val < 0 ? 10 : varint.encodingLength(val)
+  }
+)
+
+exports.sint32 =
+exports.sint64 = encoder(0,
+  svarint.encode,
+  svarint.decode,
+  svarint.encodingLength
+)
+
+exports.uint32 =
+exports.uint64 =
+exports.enum =
+exports.varint = encoder(0,
+  varint.encode,
+  varint.decode,
+  varint.encodingLength
+)
+
+// we cannot represent these in javascript so we just use buffers
+exports.fixed64 =
+exports.sfixed64 = encoder(1,
+  function encode (val, buffer, offset) {
+    val.copy(buffer, offset)
+    encode.bytes = 8
+    return buffer
+  },
+  function decode (buffer, offset) {
+    var val = buffer.slice(offset, offset + 8)
+    decode.bytes = 8
+    return val
+  },
+  function encodingLength () {
+    return 8
+  }
+)
+
+exports.double = encoder(1,
+  function encode (val, buffer, offset) {
+    buffer.writeDoubleLE(val, offset)
+    encode.bytes = 8
+    return buffer
+  },
+  function decode (buffer, offset) {
+    var val = buffer.readDoubleLE(offset)
+    decode.bytes = 8
+    return val
+  },
+  function encodingLength () {
+    return 8
+  }
+)
+
+exports.fixed32 = encoder(5,
+  function encode (val, buffer, offset) {
+    buffer.writeUInt32LE(val, offset)
+    encode.bytes = 4
+    return buffer
+  },
+  function decode (buffer, offset) {
+    var val = buffer.readUInt32LE(offset)
+    decode.bytes = 4
+    return val
+  },
+  function encodingLength () {
+    return 4
+  }
+)
+
+exports.sfixed32 = encoder(5,
+  function encode (val, buffer, offset) {
+    buffer.writeInt32LE(val, offset)
+    encode.bytes = 4
+    return buffer
+  },
+  function decode (buffer, offset) {
+    var val = buffer.readInt32LE(offset)
+    decode.bytes = 4
+    return val
+  },
+  function encodingLength () {
+    return 4
+  }
+)
+
+exports.float = encoder(5,
+  function encode (val, buffer, offset) {
+    buffer.writeFloatLE(val, offset)
+    encode.bytes = 4
+    return buffer
+  },
+  function decode (buffer, offset) {
+    var val = buffer.readFloatLE(offset)
+    decode.bytes = 4
+    return val
+  },
+  function encodingLength () {
+    return 4
+  }
+)
+
+function encoder (type, encode, decode, encodingLength) {
+  encode.bytes = decode.bytes = 0
+
+  return {
+    type: type,
+    encode: encode,
+    decode: decode,
+    encodingLength: encodingLength
+  }
+}
+
+function bufferLength (val) {
+  return Buffer.isBuffer(val) ? val.length : Buffer.byteLength(val)
+}
+
+
+/***/ }),
+/* 127 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var assert = __webpack_require__(64)
+var randombytes = (function () {
+  var QUOTA = 65536 // limit for QuotaExceededException
+  var crypto = typeof global !== 'undefined' ? crypto = (global.crypto || global.msCrypto) : null
+
+  function browserBytes (out, n) {
+    for (var i = 0; i < n; i += QUOTA) {
+      crypto.getRandomValues(out.subarray(i, i + Math.min(n - i, QUOTA)))
+    }
+  }
+
+  function nodeBytes (out, n) {
+    out.set(crypto.randomBytes(n))
+  }
+
+  function noImpl () {
+    throw new Error('No secure random number generator available')
+  }
+
+  if (crypto && crypto.getRandomValues) {
+    return browserBytes
+  } else if (true) {
+    // Node.js.
+    crypto = __webpack_require__(37)
+    if (crypto && crypto.randomBytes) {
+      return nodeBytes
+    }
+  }
+
+  return noImpl
+})()
+
+Object.defineProperty(module.exports, 'randombytes', {
+  value: randombytes
+})
+
+module.exports.randombytes_buf = function (out) {
+  assert(out, 'out must be given')
+  randombytes(out, out.length)
+}
+
+
+/***/ }),
+/* 128 */
+/***/ (function(module, exports) {
+
+module.exports = extend
+
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+
+function extend() {
+    var target = {}
+
+    for (var i = 0; i < arguments.length; i++) {
+        var source = arguments[i]
+
+        for (var key in source) {
+            if (hasOwnProperty.call(source, key)) {
+                target[key] = source[key]
+            }
+        }
+    }
+
+    return target
+}
+
+
+/***/ }),
+/* 129 */
+/***/ (function(module, exports) {
+
+module.exports = require("dgram");
+
+/***/ }),
+/* 130 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var cof = __webpack_require__(22);
+module.exports = function (it, msg) {
+  if (typeof it != 'number' && cof(it) != 'Number') throw TypeError(msg);
+  return +it;
+};
+
+
+/***/ }),
+/* 131 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
+
+var toObject = __webpack_require__(10);
+var toAbsoluteIndex = __webpack_require__(46);
+var toLength = __webpack_require__(9);
+
+module.exports = [].copyWithin || function copyWithin(target /* = 0 */, start /* = 0, end = @length */) {
+  var O = toObject(this);
+  var len = toLength(O.length);
+  var to = toAbsoluteIndex(target, len);
+  var from = toAbsoluteIndex(start, len);
+  var end = arguments.length > 2 ? arguments[2] : undefined;
+  var count = Math.min((end === undefined ? len : toAbsoluteIndex(end, len)) - from, len - to);
+  var inc = 1;
+  if (from < to && to < from + count) {
+    inc = -1;
+    from += count - 1;
+    to += count - 1;
+  }
+  while (count-- > 0) {
+    if (from in O) O[to] = O[from];
+    else delete O[to];
+    to += inc;
+    from += inc;
+  } return O;
+};
+
+
+/***/ }),
+/* 132 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var forOf = __webpack_require__(39);
+
+module.exports = function (iter, ITERATOR) {
+  var result = [];
+  forOf(iter, false, result.push, result, ITERATOR);
+  return result;
+};
+
+
+/***/ }),
+/* 133 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var aFunction = __webpack_require__(13);
+var toObject = __webpack_require__(10);
+var IObject = __webpack_require__(58);
+var toLength = __webpack_require__(9);
+
+module.exports = function (that, callbackfn, aLen, memo, isRight) {
+  aFunction(callbackfn);
+  var O = toObject(that);
+  var self = IObject(O);
+  var length = toLength(O.length);
+  var index = isRight ? length - 1 : 0;
+  var i = isRight ? -1 : 1;
+  if (aLen < 2) for (;;) {
+    if (index in self) {
+      memo = self[index];
+      index += i;
+      break;
+    }
+    index += i;
+    if (isRight ? index < 0 : length <= index) {
+      throw TypeError('Reduce of empty array with no initial value');
+    }
+  }
+  for (;isRight ? index >= 0 : length > index; index += i) if (index in self) {
+    memo = callbackfn(memo, self[index], index, O);
+  }
+  return memo;
+};
+
+
+/***/ }),
+/* 134 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var aFunction = __webpack_require__(13);
+var isObject = __webpack_require__(4);
+var invoke = __webpack_require__(140);
+var arraySlice = [].slice;
+var factories = {};
+
+var construct = function (F, len, args) {
+  if (!(len in factories)) {
+    for (var n = [], i = 0; i < len; i++) n[i] = 'a[' + i + ']';
+    // eslint-disable-next-line no-new-func
+    factories[len] = Function('F,a', 'return new F(' + n.join(',') + ')');
+  } return factories[len](F, args);
+};
+
+module.exports = Function.bind || function bind(that /* , ...args */) {
+  var fn = aFunction(this);
+  var partArgs = arraySlice.call(arguments, 1);
+  var bound = function (/* args... */) {
+    var args = partArgs.concat(arraySlice.call(arguments));
+    return this instanceof bound ? construct(fn, args.length, args) : invoke(fn, args, that);
+  };
+  if (isObject(fn.prototype)) bound.prototype = fn.prototype;
+  return bound;
+};
+
+
+/***/ }),
+/* 135 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var dP = __webpack_require__(8).f;
+var create = __webpack_require__(40);
+var redefineAll = __webpack_require__(44);
+var ctx = __webpack_require__(23);
+var anInstance = __webpack_require__(38);
+var forOf = __webpack_require__(39);
+var $iterDefine = __webpack_require__(105);
+var step = __webpack_require__(143);
+var setSpecies = __webpack_require__(45);
+var DESCRIPTORS = __webpack_require__(7);
+var fastKey = __webpack_require__(36).fastKey;
+var validate = __webpack_require__(54);
+var SIZE = DESCRIPTORS ? '_s' : 'size';
+
+var getEntry = function (that, key) {
+  // fast case
+  var index = fastKey(key);
+  var entry;
+  if (index !== 'F') return that._i[index];
+  // frozen object case
+  for (entry = that._f; entry; entry = entry.n) {
+    if (entry.k == key) return entry;
+  }
+};
+
+module.exports = {
+  getConstructor: function (wrapper, NAME, IS_MAP, ADDER) {
+    var C = wrapper(function (that, iterable) {
+      anInstance(that, C, NAME, '_i');
+      that._t = NAME;         // collection type
+      that._i = create(null); // index
+      that._f = undefined;    // first entry
+      that._l = undefined;    // last entry
+      that[SIZE] = 0;         // size
+      if (iterable != undefined) forOf(iterable, IS_MAP, that[ADDER], that);
+    });
+    redefineAll(C.prototype, {
+      // 23.1.3.1 Map.prototype.clear()
+      // 23.2.3.2 Set.prototype.clear()
+      clear: function clear() {
+        for (var that = validate(this, NAME), data = that._i, entry = that._f; entry; entry = entry.n) {
+          entry.r = true;
+          if (entry.p) entry.p = entry.p.n = undefined;
+          delete data[entry.i];
+        }
+        that._f = that._l = undefined;
+        that[SIZE] = 0;
+      },
+      // 23.1.3.3 Map.prototype.delete(key)
+      // 23.2.3.4 Set.prototype.delete(value)
+      'delete': function (key) {
+        var that = validate(this, NAME);
+        var entry = getEntry(that, key);
+        if (entry) {
+          var next = entry.n;
+          var prev = entry.p;
+          delete that._i[entry.i];
+          entry.r = true;
+          if (prev) prev.n = next;
+          if (next) next.p = prev;
+          if (that._f == entry) that._f = next;
+          if (that._l == entry) that._l = prev;
+          that[SIZE]--;
+        } return !!entry;
+      },
+      // 23.2.3.6 Set.prototype.forEach(callbackfn, thisArg = undefined)
+      // 23.1.3.5 Map.prototype.forEach(callbackfn, thisArg = undefined)
+      forEach: function forEach(callbackfn /* , that = undefined */) {
+        validate(this, NAME);
+        var f = ctx(callbackfn, arguments.length > 1 ? arguments[1] : undefined, 3);
+        var entry;
+        while (entry = entry ? entry.n : this._f) {
+          f(entry.v, entry.k, this);
+          // revert to the last existing entry
+          while (entry && entry.r) entry = entry.p;
+        }
+      },
+      // 23.1.3.7 Map.prototype.has(key)
+      // 23.2.3.7 Set.prototype.has(value)
+      has: function has(key) {
+        return !!getEntry(validate(this, NAME), key);
+      }
+    });
+    if (DESCRIPTORS) dP(C.prototype, 'size', {
+      get: function () {
+        return validate(this, NAME)[SIZE];
+      }
+    });
+    return C;
+  },
+  def: function (that, key, value) {
+    var entry = getEntry(that, key);
+    var prev, index;
+    // change existing entry
+    if (entry) {
+      entry.v = value;
+    // create new entry
+    } else {
+      that._l = entry = {
+        i: index = fastKey(key, true), // <- index
+        k: key,                        // <- key
+        v: value,                      // <- value
+        p: prev = that._l,             // <- previous entry
+        n: undefined,                  // <- next entry
+        r: false                       // <- removed
+      };
+      if (!that._f) that._f = entry;
+      if (prev) prev.n = entry;
+      that[SIZE]++;
+      // add to index
+      if (index !== 'F') that._i[index] = entry;
+    } return that;
+  },
+  getEntry: getEntry,
+  setStrong: function (C, NAME, IS_MAP) {
+    // add .keys, .values, .entries, [@@iterator]
+    // 23.1.3.4, 23.1.3.8, 23.1.3.11, 23.1.3.12, 23.2.3.5, 23.2.3.8, 23.2.3.10, 23.2.3.11
+    $iterDefine(C, NAME, function (iterated, kind) {
+      this._t = validate(iterated, NAME); // target
+      this._k = kind;                     // kind
+      this._l = undefined;                // previous
+    }, function () {
+      var that = this;
+      var kind = that._k;
+      var entry = that._l;
+      // revert to the last existing entry
+      while (entry && entry.r) entry = entry.p;
+      // get next entry
+      if (!that._t || !(that._l = entry = entry ? entry.n : that._t._f)) {
+        // or finish the iteration
+        that._t = undefined;
+        return step(1);
+      }
+      // return step by kind
+      if (kind == 'keys') return step(0, entry.k);
+      if (kind == 'values') return step(0, entry.v);
+      return step(0, [entry.k, entry.v]);
+    }, IS_MAP ? 'entries' : 'values', !IS_MAP, true);
+
+    // add [@@species], 23.1.2.2, 23.2.2.2
+    setSpecies(NAME);
+  }
+};
+
+
+/***/ }),
+/* 136 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://github.com/DavidBruant/Map-Set.prototype.toJSON
+var classof = __webpack_require__(57);
+var from = __webpack_require__(132);
+module.exports = function (NAME) {
+  return function toJSON() {
+    if (classof(this) != NAME) throw TypeError(NAME + "#toJSON isn't generic");
+    return from(this);
+  };
+};
+
+
+/***/ }),
+/* 137 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var redefineAll = __webpack_require__(44);
+var getWeak = __webpack_require__(36).getWeak;
+var anObject = __webpack_require__(1);
+var isObject = __webpack_require__(4);
+var anInstance = __webpack_require__(38);
+var forOf = __webpack_require__(39);
+var createArrayMethod = __webpack_require__(25);
+var $has = __webpack_require__(17);
+var validate = __webpack_require__(54);
+var arrayFind = createArrayMethod(5);
+var arrayFindIndex = createArrayMethod(6);
+var id = 0;
+
+// fallback for uncaught frozen keys
+var uncaughtFrozenStore = function (that) {
+  return that._l || (that._l = new UncaughtFrozenStore());
+};
+var UncaughtFrozenStore = function () {
+  this.a = [];
+};
+var findUncaughtFrozen = function (store, key) {
+  return arrayFind(store.a, function (it) {
+    return it[0] === key;
+  });
+};
+UncaughtFrozenStore.prototype = {
+  get: function (key) {
+    var entry = findUncaughtFrozen(this, key);
+    if (entry) return entry[1];
+  },
+  has: function (key) {
+    return !!findUncaughtFrozen(this, key);
+  },
+  set: function (key, value) {
+    var entry = findUncaughtFrozen(this, key);
+    if (entry) entry[1] = value;
+    else this.a.push([key, value]);
+  },
+  'delete': function (key) {
+    var index = arrayFindIndex(this.a, function (it) {
+      return it[0] === key;
+    });
+    if (~index) this.a.splice(index, 1);
+    return !!~index;
+  }
+};
+
+module.exports = {
+  getConstructor: function (wrapper, NAME, IS_MAP, ADDER) {
+    var C = wrapper(function (that, iterable) {
+      anInstance(that, C, NAME, '_i');
+      that._t = NAME;      // collection type
+      that._i = id++;      // collection id
+      that._l = undefined; // leak store for uncaught frozen objects
+      if (iterable != undefined) forOf(iterable, IS_MAP, that[ADDER], that);
+    });
+    redefineAll(C.prototype, {
+      // 23.3.3.2 WeakMap.prototype.delete(key)
+      // 23.4.3.3 WeakSet.prototype.delete(value)
+      'delete': function (key) {
+        if (!isObject(key)) return false;
+        var data = getWeak(key);
+        if (data === true) return uncaughtFrozenStore(validate(this, NAME))['delete'](key);
+        return data && $has(data, this._i) && delete data[this._i];
+      },
+      // 23.3.3.4 WeakMap.prototype.has(key)
+      // 23.4.3.4 WeakSet.prototype.has(value)
+      has: function has(key) {
+        if (!isObject(key)) return false;
+        var data = getWeak(key);
+        if (data === true) return uncaughtFrozenStore(validate(this, NAME)).has(key);
+        return data && $has(data, this._i);
+      }
+    });
+    return C;
+  },
+  def: function (that, key, value) {
+    var data = getWeak(anObject(key), true);
+    if (data === true) uncaughtFrozenStore(that).set(key, value);
+    else data[that._i] = value;
+    return that;
+  },
+  ufstore: uncaughtFrozenStore
+};
+
+
+/***/ }),
+/* 138 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+// https://tc39.github.io/proposal-flatMap/#sec-FlattenIntoArray
+var isArray = __webpack_require__(73);
+var isObject = __webpack_require__(4);
+var toLength = __webpack_require__(9);
+var ctx = __webpack_require__(23);
+var IS_CONCAT_SPREADABLE = __webpack_require__(5)('isConcatSpreadable');
+
+function flattenIntoArray(target, original, source, sourceLen, start, depth, mapper, thisArg) {
+  var targetIndex = start;
+  var sourceIndex = 0;
+  var mapFn = mapper ? ctx(mapper, thisArg, 3) : false;
+  var element, spreadable;
+
+  while (sourceIndex < sourceLen) {
+    if (sourceIndex in source) {
+      element = mapFn ? mapFn(source[sourceIndex], sourceIndex, original) : source[sourceIndex];
+
+      spreadable = false;
+      if (isObject(element)) {
+        spreadable = element[IS_CONCAT_SPREADABLE];
+        spreadable = spreadable !== undefined ? !!spreadable : isArray(element);
+      }
+
+      if (spreadable && depth > 0) {
+        targetIndex = flattenIntoArray(target, original, element, toLength(element.length), targetIndex, depth - 1) - 1;
+      } else {
+        if (targetIndex >= 0x1fffffffffffff) throw TypeError();
+        target[targetIndex] = element;
+      }
+
+      targetIndex++;
+    }
+    sourceIndex++;
+  }
+  return targetIndex;
+}
+
+module.exports = flattenIntoArray;
+
+
+/***/ }),
+/* 139 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = !__webpack_require__(7) && !__webpack_require__(3)(function () {
+  return Object.defineProperty(__webpack_require__(98)('div'), 'a', { get: function () { return 7; } }).a != 7;
+});
+
+
+/***/ }),
+/* 140 */
+/***/ (function(module, exports) {
+
+// fast apply, http://jsperf.lnkit.com/fast-apply/5
+module.exports = function (fn, args, that) {
+  var un = that === undefined;
+  switch (args.length) {
+    case 0: return un ? fn()
+                      : fn.call(that);
+    case 1: return un ? fn(args[0])
+                      : fn.call(that, args[0]);
+    case 2: return un ? fn(args[0], args[1])
+                      : fn.call(that, args[0], args[1]);
+    case 3: return un ? fn(args[0], args[1], args[2])
+                      : fn.call(that, args[0], args[1], args[2]);
+    case 4: return un ? fn(args[0], args[1], args[2], args[3])
+                      : fn.call(that, args[0], args[1], args[2], args[3]);
+  } return fn.apply(that, args);
+};
+
+
+/***/ }),
+/* 141 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 20.1.2.3 Number.isInteger(number)
+var isObject = __webpack_require__(4);
+var floor = Math.floor;
+module.exports = function isInteger(it) {
+  return !isObject(it) && isFinite(it) && floor(it) === it;
+};
+
+
+/***/ }),
+/* 142 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// call something on iterator step with safe closing on error
+var anObject = __webpack_require__(1);
+module.exports = function (iterator, fn, value, entries) {
+  try {
+    return entries ? fn(anObject(value)[0], value[1]) : fn(value);
+  // 7.4.6 IteratorClose(iterator, completion)
+  } catch (e) {
+    var ret = iterator['return'];
+    if (ret !== undefined) anObject(ret.call(iterator));
+    throw e;
+  }
+};
+
+
+/***/ }),
+/* 143 */
+/***/ (function(module, exports) {
+
+module.exports = function (done, value) {
+  return { value: value, done: !!done };
+};
+
+
+/***/ }),
+/* 144 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 20.2.2.16 Math.fround(x)
+var sign = __webpack_require__(107);
+var pow = Math.pow;
+var EPSILON = pow(2, -52);
+var EPSILON32 = pow(2, -23);
+var MAX32 = pow(2, 127) * (2 - EPSILON32);
+var MIN32 = pow(2, -126);
+
+var roundTiesToEven = function (n) {
+  return n + 1 / EPSILON - 1 / EPSILON;
+};
+
+module.exports = Math.fround || function fround(x) {
+  var $abs = Math.abs(x);
+  var $sign = sign(x);
+  var a, result;
+  if ($abs < MIN32) return $sign * roundTiesToEven($abs / MIN32 / EPSILON32) * MIN32 * EPSILON32;
+  a = (1 + EPSILON32 / EPSILON) * $abs;
+  result = a - (a - $abs);
+  // eslint-disable-next-line no-self-compare
+  if (result > MAX32 || result != result) return $sign * Infinity;
+  return $sign * result;
+};
+
+
+/***/ }),
+/* 145 */
+/***/ (function(module, exports) {
+
+// 20.2.2.20 Math.log1p(x)
+module.exports = Math.log1p || function log1p(x) {
+  return (x = +x) > -1e-8 && x < 1e-8 ? x - x * x / 2 : Math.log(1 + x);
+};
+
+
+/***/ }),
+/* 146 */
+/***/ (function(module, exports) {
+
+// https://rwaldron.github.io/proposal-math-extensions/
+module.exports = Math.scale || function scale(x, inLow, inHigh, outLow, outHigh) {
+  if (
+    arguments.length === 0
+      // eslint-disable-next-line no-self-compare
+      || x != x
+      // eslint-disable-next-line no-self-compare
+      || inLow != inLow
+      // eslint-disable-next-line no-self-compare
+      || inHigh != inHigh
+      // eslint-disable-next-line no-self-compare
+      || outLow != outLow
+      // eslint-disable-next-line no-self-compare
+      || outHigh != outHigh
+  ) return NaN;
+  if (x === Infinity || x === -Infinity) return x;
+  return (x - inLow) * (outHigh - outLow) / (inHigh - inLow) + outLow;
+};
+
+
+/***/ }),
+/* 147 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+// 19.1.2.1 Object.assign(target, source, ...)
+var getKeys = __webpack_require__(42);
+var gOPS = __webpack_require__(77);
+var pIE = __webpack_require__(59);
+var toObject = __webpack_require__(10);
+var IObject = __webpack_require__(58);
+var $assign = Object.assign;
+
+// should work with symbols and should have deterministic property order (V8 bug)
+module.exports = !$assign || __webpack_require__(3)(function () {
+  var A = {};
+  var B = {};
+  // eslint-disable-next-line no-undef
+  var S = Symbol();
+  var K = 'abcdefghijklmnopqrst';
+  A[S] = 7;
+  K.split('').forEach(function (k) { B[k] = k; });
+  return $assign({}, A)[S] != 7 || Object.keys($assign({}, B)).join('') != K;
+}) ? function assign(target, source) { // eslint-disable-line no-unused-vars
+  var T = toObject(target);
+  var aLen = arguments.length;
+  var index = 1;
+  var getSymbols = gOPS.f;
+  var isEnum = pIE.f;
+  while (aLen > index) {
+    var S = IObject(arguments[index++]);
+    var keys = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S);
+    var length = keys.length;
+    var j = 0;
+    var key;
+    while (length > j) if (isEnum.call(S, key = keys[j++])) T[key] = S[key];
+  } return T;
+} : $assign;
+
+
+/***/ }),
+/* 148 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var dP = __webpack_require__(8);
+var anObject = __webpack_require__(1);
+var getKeys = __webpack_require__(42);
+
+module.exports = __webpack_require__(7) ? Object.defineProperties : function defineProperties(O, Properties) {
+  anObject(O);
+  var keys = getKeys(Properties);
+  var length = keys.length;
+  var i = 0;
+  var P;
+  while (length > i) dP.f(O, P = keys[i++], Properties[P]);
+  return O;
+};
+
+
+/***/ }),
+/* 149 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
+var toIObject = __webpack_require__(20);
+var gOPN = __webpack_require__(41).f;
+var toString = {}.toString;
+
+var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
+  ? Object.getOwnPropertyNames(window) : [];
+
+var getWindowNames = function (it) {
+  try {
+    return gOPN(it);
+  } catch (e) {
+    return windowNames.slice();
+  }
+};
+
+module.exports.f = function getOwnPropertyNames(it) {
+  return windowNames && toString.call(it) == '[object Window]' ? getWindowNames(it) : gOPN(toIObject(it));
+};
+
+
+/***/ }),
+/* 150 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var has = __webpack_require__(17);
+var toIObject = __webpack_require__(20);
+var arrayIndexOf = __webpack_require__(69)(false);
+var IE_PROTO = __webpack_require__(111)('IE_PROTO');
+
+module.exports = function (object, names) {
+  var O = toIObject(object);
+  var i = 0;
+  var result = [];
+  var key;
+  for (key in O) if (key != IE_PROTO) has(O, key) && result.push(key);
+  // Don't enum bug & hidden keys
+  while (names.length > i) if (has(O, key = names[i++])) {
+    ~arrayIndexOf(result, key) || result.push(key);
+  }
+  return result;
+};
+
+
+/***/ }),
+/* 151 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var getKeys = __webpack_require__(42);
+var toIObject = __webpack_require__(20);
+var isEnum = __webpack_require__(59).f;
+module.exports = function (isEntries) {
+  return function (it) {
+    var O = toIObject(it);
+    var keys = getKeys(O);
+    var length = keys.length;
+    var i = 0;
+    var result = [];
+    var key;
+    while (length > i) if (isEnum.call(O, key = keys[i++])) {
+      result.push(isEntries ? [key, O[key]] : O[key]);
+    } return result;
+  };
+};
+
+
+/***/ }),
+/* 152 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// all object keys, includes non-enumerable and symbols
+var gOPN = __webpack_require__(41);
+var gOPS = __webpack_require__(77);
+var anObject = __webpack_require__(1);
+var Reflect = __webpack_require__(2).Reflect;
+module.exports = Reflect && Reflect.ownKeys || function ownKeys(it) {
+  var keys = gOPN.f(anObject(it));
+  var getSymbols = gOPS.f;
+  return getSymbols ? keys.concat(getSymbols(it)) : keys;
+};
+
+
+/***/ }),
+/* 153 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $parseFloat = __webpack_require__(2).parseFloat;
+var $trim = __webpack_require__(53).trim;
+
+module.exports = 1 / $parseFloat(__webpack_require__(115) + '-0') !== -Infinity ? function parseFloat(str) {
+  var string = $trim(String(str), 3);
+  var result = $parseFloat(string);
+  return result === 0 && string.charAt(0) == '-' ? -0 : result;
+} : $parseFloat;
+
+
+/***/ }),
+/* 154 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $parseInt = __webpack_require__(2).parseInt;
+var $trim = __webpack_require__(53).trim;
+var ws = __webpack_require__(115);
+var hex = /^[-+]?0[xX]/;
+
+module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? function parseInt(str, radix) {
+  var string = $trim(String(str), 3);
+  return $parseInt(string, (radix >>> 0) || (hex.test(string) ? 16 : 10));
+} : $parseInt;
+
+
+/***/ }),
+/* 155 */
+/***/ (function(module, exports) {
+
+module.exports = function (exec) {
+  try {
+    return { e: false, v: exec() };
+  } catch (e) {
+    return { e: true, v: e };
+  }
+};
+
+
+/***/ }),
+/* 156 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var anObject = __webpack_require__(1);
+var isObject = __webpack_require__(4);
+var newPromiseCapability = __webpack_require__(109);
+
+module.exports = function (C, x) {
+  anObject(C);
+  if (isObject(x) && x.constructor === C) return x;
+  var promiseCapability = newPromiseCapability.f(C);
+  var resolve = promiseCapability.resolve;
+  resolve(x);
+  return promiseCapability.promise;
+};
+
+
+/***/ }),
+/* 157 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://github.com/tc39/proposal-string-pad-start-end
+var toLength = __webpack_require__(9);
+var repeat = __webpack_require__(114);
+var defined = __webpack_require__(27);
+
+module.exports = function (that, maxLength, fillString, left) {
+  var S = String(defined(that));
+  var stringLength = S.length;
+  var fillStr = fillString === undefined ? ' ' : String(fillString);
+  var intMaxLength = toLength(maxLength);
+  if (intMaxLength <= stringLength || fillStr == '') return S;
+  var fillLen = intMaxLength - stringLength;
+  var stringFiller = repeat.call(fillStr, Math.ceil(fillLen / fillStr.length));
+  if (stringFiller.length > fillLen) stringFiller = stringFiller.slice(0, fillLen);
+  return left ? stringFiller + S : S + stringFiller;
+};
+
+
+/***/ }),
+/* 158 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://tc39.github.io/ecma262/#sec-toindex
+var toInteger = __webpack_require__(29);
+var toLength = __webpack_require__(9);
+module.exports = function (it) {
+  if (it === undefined) return 0;
+  var number = toInteger(it);
+  var length = toLength(number);
+  if (number !== length) throw RangeError('Wrong length!');
+  return length;
+};
+
+
+/***/ }),
+/* 159 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports.f = __webpack_require__(5);
+
+
+/***/ }),
+/* 160 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var strong = __webpack_require__(135);
+var validate = __webpack_require__(54);
+var MAP = 'Map';
+
+// 23.1 Map Objects
+module.exports = __webpack_require__(70)(MAP, function (get) {
+  return function Map() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
+}, {
+  // 23.1.3.6 Map.prototype.get(key)
+  get: function get(key) {
+    var entry = strong.getEntry(validate(this, MAP), key);
+    return entry && entry.v;
+  },
+  // 23.1.3.9 Map.prototype.set(key, value)
+  set: function set(key, value) {
+    return strong.def(validate(this, MAP), key === 0 ? 0 : key, value);
+  }
+}, strong, true);
+
+
+/***/ }),
+/* 161 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 21.2.5.3 get RegExp.prototype.flags()
+if (__webpack_require__(7) && /./g.flags != 'g') __webpack_require__(8).f(RegExp.prototype, 'flags', {
+  configurable: true,
+  get: __webpack_require__(72)
+});
+
+
+/***/ }),
+/* 162 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var strong = __webpack_require__(135);
+var validate = __webpack_require__(54);
+var SET = 'Set';
+
+// 23.2 Set Objects
+module.exports = __webpack_require__(70)(SET, function (get) {
+  return function Set() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
+}, {
+  // 23.2.3.1 Set.prototype.add(value)
+  add: function add(value) {
+    return strong.def(validate(this, SET), value = value === 0 ? 0 : value, value);
+  }
+}, strong);
+
+
+/***/ }),
+/* 163 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var each = __webpack_require__(25)(0);
+var redefine = __webpack_require__(15);
+var meta = __webpack_require__(36);
+var assign = __webpack_require__(147);
+var weak = __webpack_require__(137);
+var isObject = __webpack_require__(4);
+var fails = __webpack_require__(3);
+var validate = __webpack_require__(54);
+var WEAK_MAP = 'WeakMap';
+var getWeak = meta.getWeak;
+var isExtensible = Object.isExtensible;
+var uncaughtFrozenStore = weak.ufstore;
+var tmp = {};
+var InternalMap;
+
+var wrapper = function (get) {
+  return function WeakMap() {
+    return get(this, arguments.length > 0 ? arguments[0] : undefined);
+  };
+};
+
+var methods = {
+  // 23.3.3.3 WeakMap.prototype.get(key)
+  get: function get(key) {
+    if (isObject(key)) {
+      var data = getWeak(key);
+      if (data === true) return uncaughtFrozenStore(validate(this, WEAK_MAP)).get(key);
+      return data ? data[this._i] : undefined;
+    }
+  },
+  // 23.3.3.5 WeakMap.prototype.set(key, value)
+  set: function set(key, value) {
+    return weak.def(validate(this, WEAK_MAP), key, value);
+  }
+};
+
+// 23.3 WeakMap Objects
+var $WeakMap = module.exports = __webpack_require__(70)(WEAK_MAP, wrapper, methods, weak, true, true);
+
+// IE11 WeakMap frozen keys fix
+if (fails(function () { return new $WeakMap().set((Object.freeze || Object)(tmp), 7).get(tmp) != 7; })) {
+  InternalMap = weak.getConstructor(wrapper, WEAK_MAP);
+  assign(InternalMap.prototype, methods);
+  meta.NEED = true;
+  each(['delete', 'has', 'get', 'set'], function (key) {
+    var proto = $WeakMap.prototype;
+    var method = proto[key];
+    redefine(proto, key, function (a, b) {
+      // store frozen objects on internal weakmap shim
+      if (isObject(a) && !isExtensible(a)) {
+        if (!this._f) this._f = new InternalMap();
+        var result = this._f[key](a, b);
+        return key == 'set' ? this : result;
+      // store all the rest on native weakmap
+      } return method.call(this, a, b);
+    });
+  });
+}
+
+
+/***/ }),
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -16859,3310 +20163,6 @@ module.exports = WatchableDoc;
 //# sourceMappingURL=automerge.js.map
 
 /***/ }),
-/* 122 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__(21));
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-var Highlight =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(Highlight, _Component);
-
-  function Highlight() {
-    _classCallCheck(this, Highlight);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Highlight).apply(this, arguments));
-  }
-
-  _createClass(Highlight, [{
-    key: "render",
-    value: function render() {
-      var text = this.props.text;
-      var start = text.substr(0, this.props.start);
-      var highlight = text.substring(this.props.start, this.props.end);
-      var end = text.substr(this.props.end);
-      var style = {
-        background: this.props.color
-      };
-      start = _react.default.createElement("span", {
-        className: "highlight-text"
-      }, start);
-      end = _react.default.createElement("span", {
-        className: "highlight-text"
-      }, end);
-      highlight = _react.default.createElement("span", {
-        className: "highlight",
-        style: style
-      }, _react.default.createElement("span", {
-        className: "highlight-text"
-      }, highlight));
-      return _react.default.createElement("div", {
-        className: "highlighter"
-      }, start, highlight, end);
-    }
-  }]);
-
-  return Highlight;
-}(_react.Component);
-
-var _default = Highlight;
-exports.default = _default;
-
-/***/ }),
-/* 123 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var stream = __webpack_require__(66)
-var inherits = __webpack_require__(11)
-var varint = __webpack_require__(181)
-var sodium = __webpack_require__(199)
-var indexOf = __webpack_require__(525)
-var feed = __webpack_require__(464)
-var messages = __webpack_require__(180)
-var bufferAlloc = __webpack_require__(48)
-var bufferFrom = __webpack_require__(60)
-
-module.exports = Protocol
-
-function Protocol (opts) {
-  if (!(this instanceof Protocol)) return new Protocol(opts)
-  if (!opts) opts = {}
-
-  stream.Duplex.call(this)
-  var self = this
-
-  this.id = opts.id || randomBytes(32)
-  this.live = !!opts.live
-  this.ack = !!opts.ack
-  this.userData = opts.userData || null
-  this.remoteId = null
-  this.remoteLive = false
-  this.remoteUserData = null
-
-  this.destroyed = false
-  this.encrypted = opts.encrypt !== false
-  this.key = null
-  this.discoveryKey = null
-  this.remoteDiscoveryKey = null
-  this.feeds = []
-  this.expectedFeeds = opts.expectedFeeds || 0
-  this.extensions = opts.extensions || []
-  this.remoteExtensions = null
-
-  this._localFeeds = []
-  this._remoteFeeds = []
-  this._feeds = {}
-
-  this._nonce = null
-  this._remoteNonce = null
-  this._xor = null
-  this._remoteXor = null
-  this._needsKey = false
-  this._length = bufferAlloc(varint.encodingLength(8388608))
-  this._missing = 0
-  this._buf = null
-  this._pointer = 0
-  this._data = null
-  this._start = 0
-  this._cb = null
-  this._interval = null
-  this._keepAlive = 0
-  this._remoteKeepAlive = 0
-  this._maybeFinalize = maybeFinalize
-
-  if (opts.timeout !== 0 && opts.timeout !== false) this.setTimeout(opts.timeout || 5000, this._ontimeout)
-  this.on('finish', this.finalize)
-
-  function maybeFinalize (err) {
-    if (err) return self.destroy(err)
-    if (!self.expectedFeeds) self.finalize()
-  }
-}
-
-inherits(Protocol, stream.Duplex)
-
-Protocol.prototype._prefinalize = function () {
-  if (!this.emit('prefinalize', this._maybeFinalize)) this.finalize()
-}
-
-Protocol.prototype.setTimeout = function (ms, ontimeout) {
-  if (this.destroyed) return
-  if (ontimeout) this.once('timeout', ontimeout)
-
-  var self = this
-
-  this._keepAlive = 0
-  this._remoteKeepAlive = 0
-
-  clearInterval(this._interval)
-  if (!ms) return
-
-  this._interval = setInterval(kick, (ms / 4) | 0)
-  if (this._interval.unref) this._interval.unref()
-
-  function kick () {
-    self._kick()
-  }
-}
-
-Protocol.prototype.feed = function (key, opts) {
-  if (this.destroyed) return null
-  if (!opts) opts = {}
-
-  var dk = opts.discoveryKey || discoveryKey(key)
-  var ch = this._feed(dk)
-
-  if (ch.id > -1) {
-    if (opts.peer) ch.peer = opts.peer
-    return ch
-  }
-
-  if (this._localFeeds.length >= 128) {
-    this._tooManyFeeds()
-    return null
-  }
-
-  ch.id = this._localFeeds.push(ch) - 1
-  ch.header = ch.id << 4
-  ch.headerLength = varint.encodingLength(ch.header)
-  ch.key = key
-  ch.discoveryKey = dk
-  if (opts.peer) ch.peer = opts.peer
-
-  this.feeds.push(ch)
-
-  var first = !this.key
-  var feed = {
-    discoveryKey: dk,
-    nonce: null
-  }
-
-  if (first) {
-    this.key = key
-    this.discoveryKey = dk
-
-    if (!this._sameKey()) return null
-
-    if (this.encrypted) {
-      feed.nonce = this._nonce = randomBytes(24)
-      this._xor = sodium.crypto_stream_xor_instance(this._nonce, this.key)
-      if (this._remoteNonce) {
-        this._remoteXor = sodium.crypto_stream_xor_instance(this._remoteNonce, this.key)
-      }
-    }
-
-    if (this._needsKey) {
-      this._needsKey = false
-      this._resume()
-    }
-  }
-
-  var box = encodeFeed(feed, ch.id)
-  if (!feed.nonce && this.encrypted) this._xor.update(box, box)
-  this._keepAlive = 0
-  this.push(box)
-
-  if (this.destroyed) return null
-
-  if (first) {
-    ch.handshake({
-      id: this.id,
-      live: this.live,
-      userData: this.userData,
-      extensions: this.extensions,
-      ack: this.ack
-    })
-  }
-
-  if (ch._buffer.length) ch._resume()
-  else ch._buffer = null
-
-  return ch
-}
-
-Protocol.prototype._resume = function () {
-  var self = this
-  process.nextTick(resume)
-
-  function resume () {
-    if (!self._data) return
-
-    var data = self._data
-    var start = self._start
-    var cb = self._cb
-
-    self._data = null
-    self._start = 0
-    self._cb = null
-    self._parse(data, start, cb)
-  }
-}
-
-Protocol.prototype._kick = function () {
-  if (this._remoteKeepAlive > 4) {
-    clearInterval(this._interval)
-    this.emit('timeout')
-    return
-  }
-
-  for (var i = 0; i < this.feeds.length; i++) {
-    var ch = this.feeds[i]
-    if (ch.peer) ch.peer.ontick()
-    else ch.emit('tick')
-  }
-
-  this._remoteKeepAlive++
-
-  if (this._keepAlive > 2) {
-    this.ping()
-    this._keepAlive = 0
-  } else {
-    this._keepAlive++
-  }
-}
-
-Protocol.prototype.ping = function () {
-  if (!this.key) return true
-  var ping = bufferFrom([0])
-  if (this._xor) this._xor.update(ping, ping)
-  return this.push(ping)
-}
-
-Protocol.prototype.destroy = function (err) {
-  if (this.destroyed) return
-  this.destroyed = true
-  if (err) this.emit('error', err)
-  this._close()
-  this.emit('close')
-}
-
-Protocol.prototype.finalize = function () {
-  if (this.destroyed) return
-  this.destroyed = true
-  this._close()
-  this.push(null)
-}
-
-Protocol.prototype._close = function () {
-  clearInterval(this._interval)
-
-  var feeds = this.feeds
-  this.feeds = []
-  for (var i = 0; i < feeds.length; i++) feeds[i]._onclose()
-
-  if (this._xor) {
-    this._xor.final()
-    this._xor = null
-  }
-}
-
-Protocol.prototype._read = function () {
-  // do nothing, user back-pressures
-}
-
-Protocol.prototype._push = function (data) {
-  if (this.destroyed) return
-  this._keepAlive = 0
-  if (this._xor) this._xor.update(data, data)
-  return this.push(data)
-}
-
-Protocol.prototype._write = function (data, enc, cb) {
-  this._remoteKeepAlive = 0
-  this._parse(data, 0, cb)
-}
-
-Protocol.prototype._feed = function (dk) {
-  var hex = dk.toString('hex')
-  var ch = this._feeds[hex]
-  if (ch) return ch
-  ch = this._feeds[hex] = feed(this)
-  return ch
-}
-
-Protocol.prototype.remoteSupports = function (name) {
-  var i = this.extensions.indexOf(name)
-  return i > -1 && !!this.remoteExtensions && this.remoteExtensions.indexOf(i) > -1
-}
-
-Protocol.prototype._onhandshake = function (handshake) {
-  if (this.remoteId) return
-
-  this.remoteId = handshake.id || randomBytes(32)
-  this.remoteLive = handshake.live
-  this.remoteUserData = handshake.userData
-  this.remoteExtensions = indexOf(this.extensions, handshake.extensions)
-  this.remoteAck = handshake.ack
-
-  this.emit('handshake')
-}
-
-Protocol.prototype._onopen = function (id, data, start, end) {
-  var feed = decodeFeed(data, start, end)
-
-  if (!feed) return this._badFeed()
-
-  if (!this.remoteDiscoveryKey) {
-    this.remoteDiscoveryKey = feed.discoveryKey
-    if (!this._sameKey()) return
-
-    if (this.encrypted && !this._remoteNonce) {
-      if (!feed.nonce) {
-        this.destroy(new Error('Remote did not include a nonce'))
-        return
-      }
-      this._remoteNonce = feed.nonce
-    }
-
-    if (this.encrypted && this.key && !this._remoteXor) {
-      this._remoteXor = sodium.crypto_stream_xor_instance(this._remoteNonce, this.key)
-    }
-  }
-
-  this._remoteFeeds[id] = this._feed(feed.discoveryKey)
-  feed.remoteId = id
-
-  this.emit('feed', feed.discoveryKey)
-}
-
-Protocol.prototype._onmessage = function (data, start, end) {
-  if (end - start < 2) return
-
-  var header = decodeHeader(data, start)
-  if (header === -1) return this.destroy(new Error('Remote sent invalid header'))
-
-  start += varint.decode.bytes
-
-  var id = header >> 4
-  var type = header & 15
-
-  if (id >= 128) return this._tooManyFeeds()
-  while (this._remoteFeeds.length < id) this._remoteFeeds.push(null)
-
-  var ch = this._remoteFeeds[id]
-
-  if (type === 0) {
-    if (ch) ch._onclose()
-    return this._onopen(id, data, start, end)
-  }
-
-  if (!ch) return this._badFeed()
-  if (type === 15) return ch._onextension(data, start, end)
-  ch._onmessage(type, data, start, end)
-}
-
-Protocol.prototype._parse = function (data, start, cb) {
-  var decrypted = !!this._remoteXor
-
-  if (start) {
-    data = data.slice(start)
-    start = 0
-  }
-
-  if (this._remoteXor) this._remoteXor.update(data, data)
-
-  while (start < data.length && !this.destroyed) {
-    if (this._missing) start = this._parseMessage(data, start)
-    else start = this._parseLength(data, start)
-
-    if (this._needsKey) {
-      this._data = data
-      this._start = start
-      this._cb = cb
-      return
-    }
-
-    if (!decrypted && this._remoteXor) {
-      return this._parse(data, start, cb)
-    }
-  }
-
-  cb()
-}
-
-Protocol.prototype._parseMessage = function (data, start) {
-  var end = start + this._missing
-
-  if (end <= data.length) {
-    var ret = end
-
-    if (this._buf) {
-      data.copy(this._buf, this._pointer, start)
-      data = this._buf
-      start = 0
-      end = data.length
-      this._buf = null
-    }
-
-    this._missing = 0
-    this._pointer = 0
-    if (this.encrypted && !this.key) this._needsKey = true
-    this._onmessage(data, start, end)
-
-    return ret
-  }
-
-  if (!this._buf) {
-    this._buf = bufferAlloc(this._missing)
-    this._pointer = 0
-  }
-
-  var rem = data.length - start
-
-  data.copy(this._buf, this._pointer, start)
-  this._pointer += rem
-  this._missing -= rem
-
-  return data.length
-}
-
-Protocol.prototype._parseLength = function (data, start) {
-  while (!this._missing && start < data.length) {
-    var byte = this._length[this._pointer++] = data[start++]
-
-    if (!(byte & 0x80)) {
-      this._missing = varint.decode(this._length)
-      this._pointer = 0
-      if (this._missing > 8388608) return this._tooBig(data.length)
-      return start
-    }
-
-    if (this._pointer >= this._length.length) return this._tooBig(data.length)
-  }
-
-  return start
-}
-
-Protocol.prototype._sameKey = function () {
-  if (!this.discoveryKey || !this.remoteDiscoveryKey) return true
-  if (this.remoteDiscoveryKey.toString('hex') === this.discoveryKey.toString('hex')) return true
-  this.destroy(new Error('First shared hypercore must be the same'))
-  return false
-}
-
-Protocol.prototype._tooManyFeeds = function () {
-  this.destroy(new Error('Only 128 feeds currently supported. Open a Github issue if you need more'))
-}
-
-Protocol.prototype._tooBig = function (len) {
-  this.destroy(new Error('Remote message is larger than 8MB (max allowed)'))
-  return len
-}
-
-Protocol.prototype._badFeed = function () {
-  this.destroy(new Error('Remote sent invalid feed message'))
-}
-
-Protocol.prototype._ontimeout = function () {
-  this.destroy(new Error('Remote timed out'))
-}
-
-function decodeHeader (data, start) {
-  try {
-    return varint.decode(data, start)
-  } catch (err) {
-    return -1
-  }
-}
-
-function decodeFeed (data, start, end) {
-  var feed = null
-
-  try {
-    feed = messages.Feed.decode(data, start, end)
-  } catch (err) {
-    return null
-  }
-
-  if (feed.discoveryKey.length !== 32) return null
-  if (feed.nonce && feed.nonce.length !== 24) return null
-
-  return feed
-}
-
-function encodeFeed (feed, id) {
-  var header = id << 4
-  var len = varint.encodingLength(header) + messages.Feed.encodingLength(feed)
-  var box = bufferAlloc(varint.encodingLength(len) + len)
-  var offset = 0
-
-  varint.encode(len, box, offset)
-  offset += varint.encode.bytes
-
-  varint.encode(header, box, offset)
-  offset += varint.encode.bytes
-
-  messages.Feed.encode(feed, box, offset)
-  return box
-}
-
-function discoveryKey (key) {
-  var buf = bufferAlloc(32)
-  sodium.crypto_generichash(buf, bufferFrom('hypercore'), key)
-  return buf
-}
-
-function randomBytes (n) {
-  var buf = bufferAlloc(n)
-  sodium.randombytes_buf(buf)
-  return buf
-}
-
-
-/***/ }),
-/* 124 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var equals = __webpack_require__(49)
-var low = __webpack_require__(486)
-var remove = __webpack_require__(532)
-var set = __webpack_require__(203)
-var merkle = __webpack_require__(491)
-var flat = __webpack_require__(63)
-var bulk = __webpack_require__(429)
-var from = __webpack_require__(460)
-var codecs = __webpack_require__(431)
-var thunky = __webpack_require__(67)
-var batcher = __webpack_require__(409)
-var inherits = __webpack_require__(11)
-var events = __webpack_require__(6)
-var raf = __webpack_require__(500)
-var bitfield = __webpack_require__(468)
-var sparseBitfield = __webpack_require__(90)
-var treeIndex = __webpack_require__(471)
-var storage = __webpack_require__(470)
-var crypto = __webpack_require__(179)
-var nextTick = __webpack_require__(188)
-var bufferFrom = __webpack_require__(60)
-var bufferAlloc = __webpack_require__(48)
-var inspect = __webpack_require__(476)
-var pretty = __webpack_require__(187)
-var replicate = null
-
-module.exports = Feed
-
-function Feed (createStorage, key, opts) {
-  if (!(this instanceof Feed)) return new Feed(createStorage, key, opts)
-  events.EventEmitter.call(this)
-
-  if (typeof createStorage === 'string') createStorage = defaultStorage(createStorage)
-  if (typeof createStorage !== 'function') throw new Error('Storage should be a function or string')
-
-  if (typeof key === 'string') key = bufferFrom(key, 'hex')
-
-  if (!Buffer.isBuffer(key) && !opts) {
-    opts = key
-    key = null
-  }
-
-  if (!opts) opts = {}
-
-  var self = this
-
-  var secretKey = opts.secretKey || null
-  if (typeof secretKey === 'string') secretKey = bufferFrom(secretKey, 'hex')
-
-  this.id = opts.id || crypto.randomBytes(32)
-  this.live = opts.live !== false
-  this.sparse = !!opts.sparse
-  this.length = 0
-  this.byteLength = 0
-  this.maxRequests = opts.maxRequests || 16
-  this.key = key || null
-  this.discoveryKey = this.key && crypto.discoveryKey(this.key)
-  this.secretKey = secretKey
-  this.bitfield = null
-  this.tree = null
-  this.writable = !!opts.writable
-  this.readable = true
-  this.opened = false
-  this.closed = false
-  this.allowPush = !!opts.allowPush
-  this.peers = []
-
-  // hooks
-  this._onwrite = opts.onwrite || null
-
-  this._ready = thunky(open) // TODO: if open fails, do not reopen next time
-  this._indexing = !!opts.indexing
-  this._createIfMissing = opts.createIfMissing !== false
-  this._overwrite = !!opts.overwrite
-  this._storeSecretKey = opts.storeSecretKey !== false
-  this._merkle = null
-  this._storage = storage(createStorage, opts.storageCacheSize)
-  this._batch = batcher(this._onwrite ? workHook : work)
-
-  this._waiting = []
-  this._selections = []
-  this._reserved = sparseBitfield()
-  this._synced = null
-
-  this._codec = toCodec(opts.valueEncoding)
-  this._sync = low(sync)
-  if (!this.sparse) this.download({start: 0, end: -1})
-
-  // open it right away. TODO: do not reopen (i.e, set a flag not to retry)
-  this._ready(onerror)
-
-  function onerror (err) {
-    if (err) self.emit('error', err)
-  }
-
-  function workHook (values, cb) {
-    self._appendHook(values, cb)
-  }
-
-  function work (values, cb) {
-    self._append(values, cb)
-  }
-
-  function sync (_, cb) {
-    self._syncBitfield(cb)
-  }
-
-  function open (cb) {
-    self._open(cb)
-  }
-}
-
-inherits(Feed, events.EventEmitter)
-
-Feed.discoveryKey = crypto.discoveryKey
-
-Feed.prototype[inspect] = function () {
-  return 'Hypercore(\n' +
-    '  key: ' + (this.key && pretty(this.key)) + '\n' +
-    '  discoveryKey: ' + (this.discoveryKey && pretty(this.discoveryKey)) + '\n' +
-    '  opened: ' + this.opened + '\n' +
-    '  writable: ' + this.writable + '\n' +
-    '  length: ' + this.length + '\n' +
-    '  byteLength: ' + this.byteLength + '\n' +
-    '  peers: ' + this.peers.length + '\n' +
-    ')'
-}
-
-// TODO: instead of using a getter, update on remote-update/add/remove
-Object.defineProperty(Feed.prototype, 'remoteLength', {
-  enumerable: true,
-  get: function () {
-    var len = 0
-    for (var i = 0; i < this.peers.length; i++) {
-      var remoteLength = this.peers[i].remoteLength
-      if (remoteLength > len) len = remoteLength
-    }
-    return len
-  }
-})
-
-Feed.prototype.replicate = function (opts) {
-  // Lazy load replication deps
-  if (!replicate) replicate = __webpack_require__(469)
-
-  if ((!this._selections.length || this._selections[0].end !== -1) && !this.sparse && !(opts && opts.live)) {
-    // hack!! proper fix is to refactor ./replicate to *not* clear our non-sparse selection
-    this.download({start: 0, end: -1})
-  }
-
-  return replicate(this, opts || {})
-}
-
-Feed.prototype.ready = function (onready) {
-  this._ready(function (err) {
-    if (!err) onready()
-  })
-}
-
-Feed.prototype.update = function (len, cb) {
-  if (typeof len === 'function') return this.update(-1, len)
-  if (typeof len !== 'number') len = -1
-  if (!cb) cb = noop
-
-  var self = this
-
-  this.ready(function (err) {
-    if (err) return cb(err)
-    if (len === -1) len = self.length + 1
-    if (self.length >= len) return cb(null)
-
-    if (self.writable) cb = self._writeStateReloader(cb)
-
-    self._waiting.push({
-      hash: true,
-      bytes: 0,
-      index: len - 1,
-      update: true,
-      callback: cb
-    })
-
-    self._updatePeers()
-  })
-}
-
-// will reload the writable state. used by .update on a writable peer
-Feed.prototype._writeStateReloader = function (cb) {
-  var self = this
-  return function (err) {
-    if (err) return cb(err)
-
-    self._roots(self.length, function (err, roots) {
-      if (err) return cb(err)
-      self._merkle = merkle(crypto, roots)
-      cb(null)
-    })
-  }
-}
-
-Feed.prototype._open = function (cb) {
-  var self = this
-  var generatedKey = false
-
-  // TODO: clean up the duplicate code below ...
-
-  this._storage.openKey(function (_, key) {
-    if (key && !self._overwrite && !self.key) self.key = key
-
-    if (!self.key && self.live) {
-      var keyPair = crypto.keyPair()
-      self.secretKey = keyPair.secretKey
-      self.key = keyPair.publicKey
-      generatedKey = true
-    }
-
-    self.discoveryKey = self.key && crypto.discoveryKey(self.key)
-    self._storage.open({key: self.key, discoveryKey: self.discoveryKey}, onopen)
-  })
-
-  function onopen (err, state) {
-    if (err) return cb(err)
-
-    // if no key but we have data do a bitfield reset since we cannot verify the data.
-    if (!state.key && state.bitfield.length) {
-      self._overwrite = true
-    }
-
-    if (self._overwrite) {
-      state.bitfield.fill(0)
-      state.key = state.secretKey = null
-    }
-
-    self.bitfield = bitfield(state.bitfield)
-    self.tree = treeIndex(self.bitfield.tree)
-    self.length = self.tree.blocks()
-
-    if (state.key && self.key && !equals(state.key, self.key)) {
-      return cb(new Error('Another hypercore is stored here'))
-    }
-
-    if (state.key) self.key = state.key
-    if (state.secretKey) self.secretKey = state.secretKey
-
-    // verify key and secretKey go together
-    if (self.key && self.secretKey) {
-      var challenge = bufferAlloc(0)
-      if (!crypto.verify(challenge, crypto.sign(challenge, self.secretKey), self.key)) {
-        return cb(new Error('Key and secret do not match'))
-      }
-    }
-
-    if (!self.length) return onsignature(null, null)
-    self._storage.getSignature(self.length - 1, onsignature)
-
-    function onsignature (_, sig) {
-      if (self.length) self.live = !!sig
-
-      if ((generatedKey || !self.key) && !self._createIfMissing) {
-        return cb(new Error('No hypercore is stored here'))
-      }
-
-      if (!self.key && self.live) {
-        var keyPair = crypto.keyPair()
-        self.secretKey = keyPair.secretKey
-        self.key = keyPair.publicKey
-      }
-
-      var writable = !!self.secretKey || self.key === null
-
-      if (!writable && self.writable) return cb(new Error('Feed is not writable'))
-      self.writable = writable
-      self.discoveryKey = self.key && crypto.discoveryKey(self.key)
-
-      if (self._storeSecretKey && !self.secretKey) {
-        self._storeSecretKey = false
-      }
-
-      var shouldWriteKey = generatedKey || !safeBufferEquals(self.key, state.key)
-      var shouldWriteSecretKey = self._storeSecretKey && (generatedKey || !safeBufferEquals(self.secretKey, state.secretKey))
-
-      var missing = 1 +
-        (shouldWriteKey ? 1 : 0) +
-        (shouldWriteSecretKey ? 1 : 0) +
-        (self._overwrite ? 1 : 0)
-      var error = null
-
-      if (shouldWriteKey) self._storage.key.write(0, self.key, done)
-      if (shouldWriteSecretKey) self._storage.secretKey.write(0, self.secretKey, done)
-
-      if (self._overwrite) { // TODO: support storage.resize for this instead
-        self._storage.putBitfield(0, state.bitfield, done)
-      }
-
-      done(null)
-
-      function done (err) {
-        if (err) error = err
-        if (--missing) return
-        if (error) return cb(error)
-        self._roots(self.length, onroots)
-      }
-
-      function onroots (err, roots) {
-        if (err) return cb(err)
-
-        self._merkle = merkle(crypto, roots)
-        self.byteLength = roots.reduce(addSize, 0)
-        self.opened = true
-        self.emit('ready')
-
-        cb(null)
-      }
-    }
-  }
-}
-
-Feed.prototype.download = function (range, cb) {
-  if (typeof range === 'function') return this.download(null, range)
-  if (typeof range === 'number') range = {start: range, end: range + 1}
-  if (!range) range = {}
-
-  // TODO: if no peers, check if range is already satisfied and nextTick(cb) if so
-  // this._updatePeers does this for us when there is a peer though, so not critical
-
-  var sel = {
-    _index: this._selections.length,
-    hash: !!range.hash,
-    iterator: null,
-    start: range.start || 0,
-    end: range.end || -1,
-    linear: !!range.linear,
-    callback: cb || noop
-  }
-
-  this._selections.push(sel)
-  this._updatePeers()
-
-  return sel
-}
-
-Feed.prototype.undownload = function (range) {
-  if (typeof range === 'number') range = {start: range, end: range + 1}
-  if (!range) range = {}
-
-  if (range.callback && range._index > -1) {
-    set.remove(this._selections, range)
-    nextTick(range.callback, new Error('Download was cancelled'))
-    return
-  }
-
-  var start = range.start || 0
-  var end = range.end || -1
-  var hash = !!range.hash
-  var linear = !!range.linear
-
-  for (var i = 0; i < this._selections.length; i++) {
-    var s = this._selections[i]
-
-    if (s.start === start && s.end === end && s.hash === hash && s.linear === linear) {
-      set.remove(this._selections, s)
-      nextTick(s.callback, new Error('Download was cancelled'))
-      return
-    }
-  }
-}
-
-Feed.prototype.digest = function (index) {
-  return this.tree.digest(2 * index)
-}
-
-Feed.prototype.proof = function (index, opts, cb) {
-  if (typeof opts === 'function') return this.proof(index, null, opts)
-  if (!this.opened) return this._readyAndProof(index, opts, cb)
-  if (!opts) opts = {}
-
-  var proof = this.tree.proof(2 * index, opts)
-  if (!proof) return cb(new Error('No proof available for this index'))
-
-  var needsSig = this.live && !!proof.verifiedBy
-  var pending = proof.nodes.length + (needsSig ? 1 : 0)
-  var error = null
-  var signature = null
-  var nodes = new Array(proof.nodes.length)
-
-  if (!pending) return cb(null, {nodes: nodes, signature: null})
-
-  for (var i = 0; i < proof.nodes.length; i++) {
-    this._storage.getNode(proof.nodes[i], onnode)
-  }
-  if (needsSig) {
-    this._storage.getSignature(proof.verifiedBy / 2 - 1, onsignature)
-  }
-
-  function onsignature (err, sig) {
-    if (sig) signature = sig
-    onnode(err, null)
-  }
-
-  function onnode (err, node) {
-    if (err) error = err
-
-    if (node) {
-      nodes[proof.nodes.indexOf(node.index)] = node
-    }
-
-    if (--pending) return
-    if (error) return cb(error)
-    cb(null, {nodes: nodes, signature: signature})
-  }
-}
-
-Feed.prototype._readyAndProof = function (index, opts, cb) {
-  var self = this
-  this._ready(function (err) {
-    if (err) return cb(err)
-    self.proof(index, opts, cb)
-  })
-}
-
-Feed.prototype.put = function (index, data, proof, cb) {
-  if (!this.opened) return this._readyAndPut(index, data, proof, cb)
-  this._putBuffer(index, this._codec.encode(data), proof, null, cb)
-}
-
-Feed.prototype.cancel = function (start, end) {  // TODO: use same argument scheme as download
-  if (!end) end = start + 1
-
-  // cancel these right away as .download does not wait for ready
-  for (var i = this._selections.length - 1; i >= 0; i--) {
-    var sel = this._selections[i]
-    if (start <= sel.start && sel.end <= end) {
-      this.undownload(sel)
-    }
-  }
-
-  // defer the last part until after ready as .get does that as well
-  if (this.opened) this._cancel(start, end)
-  else this._readyAndCancel(start, end)
-}
-
-Feed.prototype._cancel = function (start, end) {
-  var i = 0
-
-  for (i = start; i < end; i++) {
-    this._reserved.set(i, false) // TODO: send cancel message if set returns true
-  }
-
-  for (i = this._waiting.length - 1; i >= 0; i--) {
-    var w = this._waiting[i]
-    if ((start <= w.start && w.end <= end) || (start <= w.index && w.index < end)) {
-      remove(this._waiting, i)
-      if (w.callback) nextTick(w.callback, new Error('Request cancelled'))
-    }
-  }
-}
-
-Feed.prototype.clear = function (start, end, opts, cb) { // TODO: use same argument scheme as download
-  if (typeof end === 'function') return this.clear(start, start + 1, null, end)
-  if (typeof opts === 'function') return this.clear(start, end, null, opts)
-  if (!opts) opts = {}
-  if (!end) end = start + 1
-  if (!cb) cb = noop
-
-  // TODO: this needs some work. fx we can only calc byte offset for blocks we know about
-  // so internally we should make sure to only do that. We should use the merkle tree for this
-
-  var self = this
-  var byteOffset = start === 0 ? 0 : (typeof opts.byteOffset === 'number' ? opts.byteOffset : -1)
-  var byteLength = typeof opts.byteLength === 'number' ? opts.byteLength : -1
-
-  this._ready(function (err) {
-    if (err) return cb(err)
-
-    var modified = false
-
-    // TODO: use a buffer.fill thing here to speed this up!
-
-    for (var i = start; i < end; i++) {
-      if (self.bitfield.set(i, false)) modified = true
-    }
-
-    if (!modified) return nextTick(cb)
-
-    // TODO: write to a tmp/update file that we want to del this incase it crashes will del'ing
-
-    self._unannounce({start: start, length: end - start})
-    if (opts.delete === false || self._indexing) return sync()
-    if (byteOffset > -1) return onstartbytes(null, byteOffset)
-    self._storage.dataOffset(start, [], onstartbytes)
-
-    function sync () {
-      self.emit('clear', start, end)
-      self._sync(null, cb)
-    }
-
-    function onstartbytes (err, offset) {
-      if (err) return cb(err)
-      byteOffset = offset
-      if (byteLength > -1) return onendbytes(null, byteLength + byteOffset)
-      if (end === self.length) return onendbytes(null, self.byteLength)
-      self._storage.dataOffset(end, [], onendbytes)
-    }
-
-    function onendbytes (err, end) {
-      if (err) return cb(err)
-      if (!self._storage.data.del) return sync() // Not all data storage impls del
-      self._storage.data.del(byteOffset, end - byteOffset, sync)
-    }
-  })
-}
-
-Feed.prototype.signature = function (index, cb) {
-  if (typeof index === 'function') return this.signature(this.length - 1, index)
-
-  if (index < 0 || index >= this.length) return cb(new Error('No signature available for this index'))
-
-  this._storage.nextSignature(index, cb)
-}
-
-Feed.prototype.verify = function (index, signature, cb) {
-  var self = this
-
-  this.rootHashes(index, function (err, roots) {
-    if (err) return cb(err)
-
-    var checksum = crypto.tree(roots)
-
-    if (!crypto.verify(checksum, signature, self.key)) {
-      cb(new Error('Signature verification failed'))
-    } else {
-      cb(null, true)
-    }
-  })
-}
-
-Feed.prototype.rootHashes = function (index, cb) {
-  this._getRootsToVerify(index * 2 + 2, {}, [], cb)
-}
-
-Feed.prototype.seek = function (bytes, opts, cb) {
-  if (typeof opts === 'function') return this.seek(bytes, null, opts)
-  if (!opts) opts = {}
-  if (!this.opened) return this._readyAndSeek(bytes, opts, cb)
-
-  var self = this
-
-  this._seek(bytes, function (err, index, offset) {
-    if (!err && isBlock(index)) return done(index / 2, offset)
-    if (opts.wait === false) return cb(err || new Error('Unable to seek to this offset'))
-
-    var start = opts.start || 0
-    var end = opts.end || -1
-
-    if (!err) {
-      var left = flat.leftSpan(index) / 2
-      var right = flat.rightSpan(index) / 2 + 1
-
-      if (left > start) start = left
-      if (right < end || end === -1) end = right
-    }
-
-    if (end > -1 && end <= start) return cb(new Error('Unable to seek to this offset'))
-
-    self._waiting.push({
-      hash: opts.hash !== false,
-      bytes: bytes,
-      index: -1,
-      start: start,
-      end: end,
-      callback: cb || noop
-    })
-
-    self._updatePeers()
-  })
-
-  function done (index, offset) {
-    for (var i = 0; i < self.peers.length; i++) {
-      self.peers[i].haveBytes(bytes)
-    }
-    cb(null, index, offset)
-  }
-}
-
-Feed.prototype._seek = function (offset, cb) {
-  if (offset === 0) return cb(null, 0, 0)
-
-  var self = this
-  var roots = flat.fullRoots(this.length * 2)
-  var nearestRoot = 0
-
-  loop(null, null)
-
-  function onroot (top) {
-    if (isBlock(top)) return cb(null, top, offset)
-
-    var left = flat.leftChild(top)
-    while (!self.tree.get(left)) {
-      if (isBlock(left)) return cb(null, nearestRoot, offset)
-      left = flat.leftChild(left)
-    }
-
-    self._storage.getNode(left, onleftchild)
-  }
-
-  function onleftchild (err, node) {
-    if (err) return cb(err)
-
-    if (node.size > offset) {
-      nearestRoot = node.index
-      onroot(node.index)
-    } else {
-      offset -= node.size
-      onroot(flat.sibling(node.index))
-    }
-  }
-
-  function loop (err, node) {
-    if (err) return cb(err)
-
-    if (node) {
-      if (node.size > offset) {
-        nearestRoot = node.index
-        return onroot(node.index)
-      }
-      offset -= node.size
-    }
-
-    if (!roots.length) return cb(new Error('Out of bounds'))
-    self._storage.getNode(roots.shift(), loop)
-  }
-}
-
-Feed.prototype._readyAndSeek = function (bytes, opts, cb) {
-  var self = this
-  this._ready(function (err) {
-    if (err) return cb(err)
-    self.seek(bytes, opts, cb)
-  })
-}
-
-Feed.prototype._getBuffer = function (index, cb) {
-  this._storage.getData(index, cb)
-}
-
-Feed.prototype._putBuffer = function (index, data, proof, from, cb) {
-  // TODO: this nodes in proof are not instances of our Node prototype
-  // but just similar. Check if this has any v8 perf implications.
-
-  // TODO: if the proof contains a valid signature BUT fails, emit a critical error
-  // --> feed should be considered dead
-
-  var self = this
-  var trusted = -1
-  var missing = []
-  var next = 2 * index
-  var i = data ? 0 : 1
-
-  while (true) {
-    if (this.tree.get(next)) {
-      trusted = next
-      break
-    }
-
-    var sib = flat.sibling(next)
-    next = flat.parent(next)
-
-    if (i < proof.nodes.length && proof.nodes[i].index === sib) {
-      i++
-      continue
-    }
-
-    if (!this.tree.get(sib)) break
-    missing.push(sib)
-  }
-
-  if (trusted === -1 && this.tree.get(next)) trusted = next
-
-  var error = null
-  var trustedNode = null
-  var missingNodes = new Array(missing.length)
-  var pending = missing.length + (trusted > -1 ? 1 : 0)
-
-  for (i = 0; i < missing.length; i++) this._storage.getNode(missing[i], onmissing)
-  if (trusted > -1) this._storage.getNode(trusted, ontrusted)
-  if (!missing.length && trusted === -1) onmissingloaded(null)
-
-  function ontrusted (err, node) {
-    if (err) error = err
-    if (node) trustedNode = node
-    if (!--pending) onmissingloaded(error)
-  }
-
-  function onmissing (err, node) {
-    if (err) error = err
-    if (node) missingNodes[missing.indexOf(node.index)] = node
-    if (!--pending) onmissingloaded(error)
-  }
-
-  function onmissingloaded (err) {
-    if (err) return cb(err)
-    self._verifyAndWrite(index, data, proof, missingNodes, trustedNode, from, cb)
-  }
-}
-
-Feed.prototype._readyAndPut = function (index, data, proof, cb) {
-  var self = this
-  this._ready(function (err) {
-    if (err) return cb(err)
-    self.put(index, data, proof, cb)
-  })
-}
-
-Feed.prototype._write = function (index, data, nodes, sig, from, cb) {
-  if (!this._onwrite) return this._writeAfterHook(index, data, nodes, sig, from, cb)
-  this._onwrite(index, data, from, writeHookDone(this, index, data, nodes, sig, from, cb))
-}
-
-function writeHookDone (self, index, data, nodes, sig, from, cb) {
-  return function (err) {
-    if (err) return cb(err)
-    self._writeAfterHook(index, data, nodes, sig, from, cb)
-  }
-}
-
-Feed.prototype._writeAfterHook = function (index, data, nodes, sig, from, cb) {
-  var self = this
-  var pending = nodes.length + 1 + (sig ? 1 : 0)
-  var error = null
-
-  for (var i = 0; i < nodes.length; i++) this._storage.putNode(nodes[i].index, nodes[i], ondone)
-  if (data) this._storage.putData(index, data, nodes, ondone)
-  else ondone()
-  if (sig) this._storage.putSignature(sig.index, sig.signature, ondone)
-
-  function ondone (err) {
-    if (err) error = err
-    if (--pending) return
-    if (error) return cb(error)
-    self._writeDone(index, data, nodes, from, cb)
-  }
-}
-
-Feed.prototype._writeDone = function (index, data, nodes, from, cb) {
-  for (var i = 0; i < nodes.length; i++) this.tree.set(nodes[i].index)
-  this.tree.set(2 * index)
-
-  if (data) {
-    if (this.bitfield.set(index, true)) this.emit('download', index, data, from)
-    if (this.peers.length) this._announce({start: index}, from)
-
-    if (!this.writable) {
-      if (!this._synced) this._synced = this.bitfield.iterator(0, this.length)
-      if (this._synced.next() === -1) {
-        this._synced.range(0, this.length)
-        this._synced.seek(0)
-        if (this._synced.next() === -1) {
-          this.emit('sync')
-        }
-      }
-    }
-  }
-
-  this._sync(null, cb)
-}
-
-Feed.prototype._verifyAndWrite = function (index, data, proof, localNodes, trustedNode, from, cb) {
-  var visited = []
-  var remoteNodes = proof.nodes
-  var top = data ? new storage.Node(2 * index, crypto.data(data), data.length) : remoteNodes.shift()
-
-  // check if we already have the hash for this node
-  if (verifyNode(trustedNode, top)) {
-    this._write(index, data, visited, null, from, cb)
-    return
-  }
-
-  // keep hashing with siblings until we reach or trusted node
-  while (true) {
-    var node = null
-    var next = flat.sibling(top.index)
-
-    if (remoteNodes.length && remoteNodes[0].index === next) {
-      node = remoteNodes.shift()
-      visited.push(node)
-    } else if (localNodes.length && localNodes[0].index === next) {
-      node = localNodes.shift()
-    } else {
-      // we cannot create another parent, i.e. these nodes must be roots in the tree
-      this._verifyRootsAndWrite(index, data, top, proof, visited, from, cb)
-      return
-    }
-
-    visited.push(top)
-    top = new storage.Node(flat.parent(top.index), crypto.parent(top, node), top.size + node.size)
-
-    // the tree checks out, write the data and the visited nodes
-    if (verifyNode(trustedNode, top)) {
-      this._write(index, data, visited, null, from, cb)
-      return
-    }
-  }
-}
-
-Feed.prototype._verifyRootsAndWrite = function (index, data, top, proof, nodes, from, cb) {
-  var remoteNodes = proof.nodes
-  var lastNode = remoteNodes.length ? remoteNodes[remoteNodes.length - 1].index : top.index
-  var verifiedBy = Math.max(flat.rightSpan(top.index), flat.rightSpan(lastNode)) + 2
-  var self = this
-
-  this._getRootsToVerify(verifiedBy, top, remoteNodes, function (err, roots, extraNodes) {
-    if (err) return cb(err)
-
-    var checksum = crypto.tree(roots)
-    var signature = null
-
-    if (self.length && self.live && !proof.signature) {
-      return cb(new Error('Remote did not include a signature'))
-    }
-
-    if (proof.signature) { // check signaturex
-      if (!crypto.verify(checksum, proof.signature, self.key)) {
-        return cb(new Error('Remote signature could not be verified'))
-      }
-
-      signature = {index: verifiedBy / 2 - 1, signature: proof.signature}
-    } else { // check tree root
-      if (!equals(checksum, self.key)) {
-        return cb(new Error('Remote checksum failed'))
-      }
-    }
-
-    self.live = !!signature
-
-    var length = verifiedBy / 2
-    if (length > self.length) {
-      // TODO: only emit this after the info has been flushed to storage
-      self.length = length
-      self.byteLength = roots.reduce(addSize, 0)
-      if (self._synced) self._synced.seek(0, self.length)
-      self.emit('append')
-    }
-
-    self._write(index, data, nodes.concat(extraNodes), signature, from, cb)
-  })
-}
-
-Feed.prototype._getRootsToVerify = function (verifiedBy, top, remoteNodes, cb) {
-  var indexes = flat.fullRoots(verifiedBy)
-  var roots = new Array(indexes.length)
-  var nodes = []
-  var error = null
-  var pending = roots.length
-
-  for (var i = 0; i < indexes.length; i++) {
-    if (indexes[i] === top.index) {
-      nodes.push(top)
-      onnode(null, top)
-    } else if (remoteNodes.length && indexes[i] === remoteNodes[0].index) {
-      nodes.push(remoteNodes[0])
-      onnode(null, remoteNodes.shift())
-    } else if (this.tree.get(indexes[i])) {
-      this._storage.getNode(indexes[i], onnode)
-    } else {
-      onnode(new Error('Missing tree roots needed for verify'))
-    }
-  }
-
-  function onnode (err, node) {
-    if (err) error = err
-    if (node) roots[indexes.indexOf(node.index)] = node
-    if (!--pending) done(error)
-  }
-
-  function done (err) {
-    if (err) return cb(err)
-
-    cb(null, roots, nodes)
-  }
-}
-
-Feed.prototype._announce = function (message, from) {
-  for (var i = 0; i < this.peers.length; i++) {
-    var peer = this.peers[i]
-    if (peer !== from) peer.have(message)
-  }
-}
-
-Feed.prototype._unannounce = function (message) {
-  for (var i = 0; i < this.peers.length; i++) this.peers[i].unhave(message)
-}
-
-Feed.prototype.downloaded = function (start, end) {
-  return this.bitfield.total(start, end)
-}
-
-Feed.prototype.has = function (start, end) {
-  if (end === undefined) return this.bitfield.get(start)
-  var total = end - start
-  return total === this.bitfield.total(start, end)
-}
-
-Feed.prototype.head = function (opts, cb) {
-  if (typeof opts === 'function') return this.head({}, opts)
-  var self = this
-  this._ready(function (err) {
-    if (err) return cb(err)
-    if (self.length === 0) cb(new Error('feed is empty'))
-    else self.get(self.length - 1, cb)
-  })
-}
-
-Feed.prototype.get = function (index, opts, cb) {
-  if (typeof opts === 'function') return this.get(index, null, opts)
-  if (!this.opened) return this._readyAndGet(index, opts, cb)
-
-  if (opts && opts.timeout) cb = timeoutCallback(cb, opts.timeout)
-
-  if (!this.bitfield.get(index)) {
-    if (opts && opts.wait === false) return cb(new Error('Block not downloaded'))
-
-    this._waiting.push({bytes: 0, hash: false, index: index, options: opts, callback: cb})
-    this._updatePeers()
-    return
-  }
-
-  if (opts && opts.valueEncoding) cb = wrapCodec(toCodec(opts.valueEncoding), cb)
-  else if (this._codec !== codecs.binary) cb = wrapCodec(this._codec, cb)
-
-  this._getBuffer(index, cb)
-}
-
-Feed.prototype._readyAndGet = function (index, opts, cb) {
-  var self = this
-  this._ready(function (err) {
-    if (err) return cb(err)
-    self.get(index, opts, cb)
-  })
-}
-
-Feed.prototype.getBatch = function (start, end, opts, cb) {
-  if (typeof opts === 'function') return this.getBatch(start, end, null, opts)
-  if (!this.opened) return this._readyAndGetBatch(start, end, opts, cb)
-
-  var self = this
-  var wait = !opts || opts.wait !== false
-
-  if (this.has(start, end)) return this._getBatch(start, end, opts, cb)
-  if (!wait) return cb(new Error('Block not downloaded'))
-
-  if (opts && opts.timeout) cb = timeoutCallback(cb, opts.timeout)
-
-  this.download({start: start, end: end}, function (err) {
-    if (err) return cb(err)
-    self._getBatch(start, end, opts, cb)
-  })
-}
-
-Feed.prototype._getBatch = function (start, end, opts, cb) {
-  var enc = opts && opts.valueEncoding
-  var codec = enc ? toCodec(enc) : this._codec
-
-  this._storage.getDataBatch(start, end - start, onbatch)
-
-  function onbatch (err, buffers) {
-    if (err) return cb(err)
-
-    var batch = new Array(buffers.length)
-
-    for (var i = 0; i < buffers.length; i++) {
-      try {
-        batch[i] = codec ? codec.decode(buffers[i]) : buffers[i]
-      } catch (err) {
-        return cb(err)
-      }
-    }
-
-    cb(null, batch)
-  }
-}
-
-Feed.prototype._readyAndGetBatch = function (start, end, opts, cb) {
-  var self = this
-  this._ready(function (err) {
-    if (err) return cb(err)
-    self.getBatch(start, end, opts, cb)
-  })
-}
-
-Feed.prototype._updatePeers = function () {
-  for (var i = 0; i < this.peers.length; i++) this.peers[i].update()
-}
-
-Feed.prototype.createWriteStream = function () {
-  var self = this
-  return bulk.obj(write)
-
-  function write (batch, cb) {
-    self._batch(batch, cb)
-  }
-}
-
-Feed.prototype.createReadStream = function (opts) {
-  if (!opts) opts = {}
-
-  var self = this
-  var start = opts.start || 0
-  var end = typeof opts.end === 'number' ? opts.end : -1
-  var live = !!opts.live
-  var snapshot = opts.snapshot !== false
-  var first = true
-  var range = this.download({start: start, end: end, linear: true})
-
-  return from.obj(read).on('end', cleanup).on('close', cleanup)
-
-  function read (size, cb) {
-    if (!self.opened) return open(size, cb)
-
-    if (first) {
-      if (end === -1) {
-        if (live) end = Infinity
-        else if (snapshot) end = self.length
-        if (start > end) return cb(null, null)
-      }
-      if (opts.tail) start = self.length
-      first = false
-    }
-
-    if (start === end || (end === -1 && start === self.length)) return cb(null, null)
-    self.get(start++, opts, cb)
-  }
-
-  function cleanup () {
-    if (!range) return
-    self.undownload(range)
-    range = null
-  }
-
-  function open (size, cb) {
-    self._ready(function (err) {
-      if (err) return cb(err)
-      read(size, cb)
-    })
-  }
-}
-
-// TODO: when calling finalize on a live feed write an END_OF_FEED block (length === 0?)
-Feed.prototype.finalize = function (cb) {
-  if (!this.key) {
-    this.key = crypto.tree(this._merkle.roots)
-    this.discoveryKey = crypto.discoveryKey(this.key)
-  }
-  this._storage.key.write(0, this.key, cb)
-}
-
-Feed.prototype.append = function (batch, cb) {
-  this._batch(Array.isArray(batch) ? batch : [batch], cb || noop)
-}
-
-Feed.prototype.flush = function (cb) {
-  this._batch([], cb)
-}
-
-Feed.prototype.close = function (cb) {
-  var self = this
-
-  this._ready(function () {
-    self.writable = false
-    self.readable = false
-    self._storage.close(function (err) {
-      if (!self.closed && !err) {
-        self.closed = true
-        self.emit('close')
-      }
-      if (cb) cb(err)
-    })
-  })
-}
-
-Feed.prototype._appendHook = function (batch, cb) {
-  var self = this
-  var missing = batch.length
-  var error = null
-
-  if (!missing) return this._append(batch, cb)
-  for (var i = 0; i < batch.length; i++) {
-    this._onwrite(i + this.length, batch[i], null, done)
-  }
-
-  function done (err) {
-    if (err) error = err
-    if (--missing) return
-    if (error) return cb(error)
-    self._append(batch, cb)
-  }
-}
-
-Feed.prototype._append = function (batch, cb) {
-  if (!this.opened) return this._readyAndAppend(batch, cb)
-  if (!this.writable) return cb(new Error('This feed is not writable. Did you create it?'))
-
-  var self = this
-  var pending = this.live && batch.length ? 1 + batch.length : batch.length
-  var offset = 0
-  var error = null
-
-  if (!pending) return cb()
-
-  for (var i = 0; i < batch.length; i++) {
-    var data = this._codec.encode(batch[i])
-    var nodes = this._merkle.next(data)
-
-    if (this._indexing) done(null)
-    else this._storage.data.write(this.byteLength + offset, data, done)
-
-    if (this.live && i === batch.length - 1) {
-      var sig = crypto.sign(crypto.tree(this._merkle.roots), this.secretKey)
-      this._storage.putSignature(this.length + i, sig, done)
-    }
-
-    pending += nodes.length
-    offset += data.length
-
-    for (var j = 0; j < nodes.length; j++) {
-      var node = nodes[j]
-      this._storage.putNode(node.index, node, done)
-    }
-  }
-
-  function done (err) {
-    if (err) error = err
-    if (--pending) return
-    if (error) return cb(error)
-
-    var start = self.length
-
-    // TODO: only emit append and update length / byteLength after the info has been flushed to storage
-    self.byteLength += offset
-    for (var i = 0; i < batch.length; i++) {
-      self.bitfield.set(self.length, true)
-      self.tree.set(2 * self.length++)
-    }
-    self.emit('append')
-
-    var message = self.length - start > 1 ? {start: start, length: self.length - start} : {start: start}
-    if (self.peers.length) self._announce(message)
-
-    self._sync(null, cb)
-  }
-}
-
-Feed.prototype._readyAndAppend = function (batch, cb) {
-  var self = this
-  this._ready(function (err) {
-    if (err) return cb(err)
-    self._append(batch, cb)
-  })
-}
-
-Feed.prototype._readyAndCancel = function (start, end) {
-  var self = this
-  this.ready(function () {
-    self._cancel(start, end)
-  })
-}
-
-Feed.prototype._pollWaiting = function () {
-  var len = this._waiting.length
-  for (var i = 0; i < len; i++) {
-    var next = this._waiting[i]
-    if (!next.bytes && !this.bitfield.get(next.index)) continue
-
-    remove(this._waiting, i--)
-    len--
-
-    if (next.bytes) this.seek(next.bytes, next, next.callback)
-    else if (next.update) this.update(next.index + 1, next.callback)
-    else this.get(next.index, next.options, next.callback)
-  }
-}
-
-Feed.prototype._syncBitfield = function (cb) {
-  var missing = this.bitfield.pages.updates.length
-  var next = null
-  var error = null
-
-  // All data / nodes have been written now. We still need to update the bitfields though
-
-  // TODO 1: if the program fails during this write the bitfield might not have been fully written
-  // HOWEVER, we can easily recover from this by traversing the tree and checking if the nodes exists
-  // on disk. So if a get fails, it should try and recover once.
-
-  // TODO 2: if .writable append bitfield updates into a single buffer for extra perf
-  // Added benefit is that if the program exits while flushing the bitfield the feed will only get
-  // truncated and not have missing chunks which is what you expect.
-
-  if (!missing) {
-    this._pollWaiting()
-    return cb(null)
-  }
-
-  while ((next = this.bitfield.pages.lastUpdate()) !== null) {
-    this._storage.putBitfield(next.offset, next.buffer, ondone)
-  }
-
-  this._pollWaiting()
-
-  function ondone (err) {
-    if (err) error = err
-    if (--missing) return
-    cb(error)
-  }
-}
-
-Feed.prototype._roots = function (index, cb) {
-  var roots = flat.fullRoots(2 * index)
-  var result = new Array(roots.length)
-  var pending = roots.length
-  var error = null
-
-  if (!pending) return cb(null, result)
-
-  for (var i = 0; i < roots.length; i++) {
-    this._storage.getNode(roots[i], onnode)
-  }
-
-  function onnode (err, node) {
-    if (err) error = err
-    if (node) result[roots.indexOf(node.index)] = node
-    if (--pending) return
-    if (error) return cb(error)
-    cb(null, result)
-  }
-}
-
-function noop () {}
-
-function verifyNode (trusted, node) {
-  return trusted && trusted.index === node.index && equals(trusted.hash, node.hash)
-}
-
-function addSize (size, node) {
-  return size + node.size
-}
-
-function isBlock (index) {
-  return (index & 1) === 0
-}
-
-function defaultStorage (dir) {
-  return function (name) {
-    return raf(name, {directory: dir})
-  }
-}
-
-function toCodec (enc) {
-  // Switch to ndjson encoding if JSON is used. That way data files parse like ndjson \o/
-  return codecs(enc === 'json' ? 'ndjson' : enc)
-}
-
-function wrapCodec (enc, cb) {
-  return function (err, buf) {
-    if (err) return cb(err)
-    try {
-      buf = enc.decode(buf)
-    } catch (err) {
-      return cb(err)
-    }
-    cb(null, buf)
-  }
-}
-
-function timeoutCallback (cb, timeout) {
-  var failed = false
-  var id = setTimeout(ontimeout, timeout)
-  return done
-
-  function ontimeout () {
-    failed = true
-    // TODO: make libs/errors for all this stuff
-    var err = new Error('ETIMEDOUT')
-    err.code = 'ETIMEDOUT'
-    cb(err)
-  }
-
-  function done (err, val) {
-    if (failed) return
-    clearTimeout(id)
-    cb(err, val)
-  }
-}
-
-// buffer-equals, but handle 'null' buffer parameters.
-function safeBufferEquals (a, b) {
-  if (!a) return !b
-  if (!b) return !a
-  return equals(a, b)
-}
-
-
-/***/ }),
-/* 125 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var printWarning = function() {};
-
-if (process.env.NODE_ENV !== 'production') {
-  var ReactPropTypesSecret = __webpack_require__(126);
-  var loggedTypeFailures = {};
-
-  printWarning = function(text) {
-    var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-}
-
-/**
- * Assert that the values match with the type specs.
- * Error messages are memorized and will only be shown once.
- *
- * @param {object} typeSpecs Map of name to a ReactPropType
- * @param {object} values Runtime values that need to be type-checked
- * @param {string} location e.g. "prop", "context", "child context"
- * @param {string} componentName Name of the component for error messages.
- * @param {?Function} getStack Returns the component stack.
- * @private
- */
-function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
-  if (process.env.NODE_ENV !== 'production') {
-    for (var typeSpecName in typeSpecs) {
-      if (typeSpecs.hasOwnProperty(typeSpecName)) {
-        var error;
-        // Prop type validation may throw. In case they do, we don't want to
-        // fail the render phase where it didn't fail before. So we log it.
-        // After these have been cleaned up, we'll let them throw.
-        try {
-          // This is intentionally an invariant that gets caught. It's the same
-          // behavior as without this statement except with a better message.
-          if (typeof typeSpecs[typeSpecName] !== 'function') {
-            var err = Error(
-              (componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' +
-              'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.'
-            );
-            err.name = 'Invariant Violation';
-            throw err;
-          }
-          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
-        } catch (ex) {
-          error = ex;
-        }
-        if (error && !(error instanceof Error)) {
-          printWarning(
-            (componentName || 'React class') + ': type specification of ' +
-            location + ' `' + typeSpecName + '` is invalid; the type checker ' +
-            'function must return `null` or an `Error` but returned a ' + typeof error + '. ' +
-            'You may have forgotten to pass an argument to the type checker ' +
-            'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' +
-            'shape all require an argument).'
-          )
-
-        }
-        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
-          // Only monitor this failure once because there tends to be a lot of the
-          // same error.
-          loggedTypeFailures[error.message] = true;
-
-          var stack = getStack ? getStack() : '';
-
-          printWarning(
-            'Failed ' + location + ' type: ' + error.message + (stack != null ? stack : '')
-          );
-        }
-      }
-    }
-  }
-}
-
-module.exports = checkPropTypes;
-
-
-/***/ }),
-/* 126 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-
-module.exports = ReactPropTypesSecret;
-
-
-/***/ }),
-/* 127 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var varint = __webpack_require__(498)
-var svarint = __webpack_require__(512)
-
-exports.make = encoder
-
-exports.name = function (enc) {
-  var keys = Object.keys(exports)
-  for (var i = 0; i < keys.length; i++) {
-    if (exports[keys[i]] === enc) return keys[i]
-  }
-  return null
-}
-
-exports.skip = function (type, buffer, offset) {
-  switch (type) {
-    case 0:
-      varint.decode(buffer, offset)
-      return offset + varint.decode.bytes
-
-    case 1:
-      return offset + 8
-
-    case 2:
-      var len = varint.decode(buffer, offset)
-      return offset + varint.decode.bytes + len
-
-    case 3:
-    case 4:
-      throw new Error('Groups are not supported')
-
-    case 5:
-      return offset + 4
-  }
-
-  throw new Error('Unknown wire type: ' + type)
-}
-
-exports.bytes = encoder(2,
-  function encode (val, buffer, offset) {
-    var oldOffset = offset
-    var len = bufferLength(val)
-
-    varint.encode(len, buffer, offset)
-    offset += varint.encode.bytes
-
-    if (Buffer.isBuffer(val)) val.copy(buffer, offset)
-    else buffer.write(val, offset, len)
-    offset += len
-
-    encode.bytes = offset - oldOffset
-    return buffer
-  },
-  function decode (buffer, offset) {
-    var oldOffset = offset
-
-    var len = varint.decode(buffer, offset)
-    offset += varint.decode.bytes
-
-    var val = buffer.slice(offset, offset + len)
-    offset += val.length
-
-    decode.bytes = offset - oldOffset
-    return val
-  },
-  function encodingLength (val) {
-    var len = bufferLength(val)
-    return varint.encodingLength(len) + len
-  }
-)
-
-exports.string = encoder(2,
-  function encode (val, buffer, offset) {
-    var oldOffset = offset
-    var len = Buffer.byteLength(val)
-
-    varint.encode(len, buffer, offset, 'utf-8')
-    offset += varint.encode.bytes
-
-    buffer.write(val, offset, len)
-    offset += len
-
-    encode.bytes = offset - oldOffset
-    return buffer
-  },
-  function decode (buffer, offset) {
-    var oldOffset = offset
-
-    var len = varint.decode(buffer, offset)
-    offset += varint.decode.bytes
-
-    var val = buffer.toString('utf-8', offset, offset + len)
-    offset += len
-
-    decode.bytes = offset - oldOffset
-    return val
-  },
-  function encodingLength (val) {
-    var len = Buffer.byteLength(val)
-    return varint.encodingLength(len) + len
-  }
-)
-
-exports.bool = encoder(0,
-  function encode (val, buffer, offset) {
-    buffer[offset] = val ? 1 : 0
-    encode.bytes = 1
-    return buffer
-  },
-  function decode (buffer, offset) {
-    var bool = buffer[offset] > 0
-    decode.bytes = 1
-    return bool
-  },
-  function encodingLength () {
-    return 1
-  }
-)
-
-exports.int32 = encoder(0,
-  function encode (val, buffer, offset) {
-    varint.encode(val < 0 ? val + 4294967296 : val, buffer, offset)
-    encode.bytes = varint.encode.bytes
-    return buffer
-  },
-  function decode (buffer, offset) {
-    var val = varint.decode(buffer, offset)
-    decode.bytes = varint.decode.bytes
-    return val > 2147483647 ? val - 4294967296 : val
-  },
-  function encodingLength (val) {
-    return varint.encodingLength(val < 0 ? val + 4294967296 : val)
-  }
-)
-
-exports.int64 = encoder(0,
-  function encode (val, buffer, offset) {
-    if (val < 0) {
-      var last = offset + 9
-      varint.encode(val * -1, buffer, offset)
-      offset += varint.encode.bytes - 1
-      buffer[offset] = buffer[offset] | 0x80
-      while (offset < last - 1) {
-        offset++
-        buffer[offset] = 0xff
-      }
-      buffer[last] = 0x01
-      encode.bytes = 10
-    } else {
-      varint.encode(val, buffer, offset)
-      encode.bytes = varint.encode.bytes
-    }
-    return buffer
-  },
-  function decode (buffer, offset) {
-    var val = varint.decode(buffer, offset)
-    if (val >= Math.pow(2, 63)) {
-      var limit = 9
-      while (buffer[offset + limit - 1] === 0xff) limit--
-      limit = limit || 9
-      var subset = Buffer.allocUnsafe(limit)
-      buffer.copy(subset, 0, offset, offset + limit)
-      subset[limit - 1] = subset[limit - 1] & 0x7f
-      val = -1 * varint.decode(subset, 0)
-      decode.bytes = 10
-    } else {
-      decode.bytes = varint.decode.bytes
-    }
-    return val
-  },
-  function encodingLength (val) {
-    return val < 0 ? 10 : varint.encodingLength(val)
-  }
-)
-
-exports.sint32 =
-exports.sint64 = encoder(0,
-  svarint.encode,
-  svarint.decode,
-  svarint.encodingLength
-)
-
-exports.uint32 =
-exports.uint64 =
-exports.enum =
-exports.varint = encoder(0,
-  varint.encode,
-  varint.decode,
-  varint.encodingLength
-)
-
-// we cannot represent these in javascript so we just use buffers
-exports.fixed64 =
-exports.sfixed64 = encoder(1,
-  function encode (val, buffer, offset) {
-    val.copy(buffer, offset)
-    encode.bytes = 8
-    return buffer
-  },
-  function decode (buffer, offset) {
-    var val = buffer.slice(offset, offset + 8)
-    decode.bytes = 8
-    return val
-  },
-  function encodingLength () {
-    return 8
-  }
-)
-
-exports.double = encoder(1,
-  function encode (val, buffer, offset) {
-    buffer.writeDoubleLE(val, offset)
-    encode.bytes = 8
-    return buffer
-  },
-  function decode (buffer, offset) {
-    var val = buffer.readDoubleLE(offset)
-    decode.bytes = 8
-    return val
-  },
-  function encodingLength () {
-    return 8
-  }
-)
-
-exports.fixed32 = encoder(5,
-  function encode (val, buffer, offset) {
-    buffer.writeUInt32LE(val, offset)
-    encode.bytes = 4
-    return buffer
-  },
-  function decode (buffer, offset) {
-    var val = buffer.readUInt32LE(offset)
-    decode.bytes = 4
-    return val
-  },
-  function encodingLength () {
-    return 4
-  }
-)
-
-exports.sfixed32 = encoder(5,
-  function encode (val, buffer, offset) {
-    buffer.writeInt32LE(val, offset)
-    encode.bytes = 4
-    return buffer
-  },
-  function decode (buffer, offset) {
-    var val = buffer.readInt32LE(offset)
-    decode.bytes = 4
-    return val
-  },
-  function encodingLength () {
-    return 4
-  }
-)
-
-exports.float = encoder(5,
-  function encode (val, buffer, offset) {
-    buffer.writeFloatLE(val, offset)
-    encode.bytes = 4
-    return buffer
-  },
-  function decode (buffer, offset) {
-    var val = buffer.readFloatLE(offset)
-    decode.bytes = 4
-    return val
-  },
-  function encodingLength () {
-    return 4
-  }
-)
-
-function encoder (type, encode, decode, encodingLength) {
-  encode.bytes = decode.bytes = 0
-
-  return {
-    type: type,
-    encode: encode,
-    decode: decode,
-    encodingLength: encodingLength
-  }
-}
-
-function bufferLength (val) {
-  return Buffer.isBuffer(val) ? val.length : Buffer.byteLength(val)
-}
-
-
-/***/ }),
-/* 128 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var assert = __webpack_require__(64)
-var randombytes = (function () {
-  var QUOTA = 65536 // limit for QuotaExceededException
-  var crypto = typeof global !== 'undefined' ? crypto = (global.crypto || global.msCrypto) : null
-
-  function browserBytes (out, n) {
-    for (var i = 0; i < n; i += QUOTA) {
-      crypto.getRandomValues(out.subarray(i, i + Math.min(n - i, QUOTA)))
-    }
-  }
-
-  function nodeBytes (out, n) {
-    out.set(crypto.randomBytes(n))
-  }
-
-  function noImpl () {
-    throw new Error('No secure random number generator available')
-  }
-
-  if (crypto && crypto.getRandomValues) {
-    return browserBytes
-  } else if (true) {
-    // Node.js.
-    crypto = __webpack_require__(37)
-    if (crypto && crypto.randomBytes) {
-      return nodeBytes
-    }
-  }
-
-  return noImpl
-})()
-
-Object.defineProperty(module.exports, 'randombytes', {
-  value: randombytes
-})
-
-module.exports.randombytes_buf = function (out) {
-  assert(out, 'out must be given')
-  randombytes(out, out.length)
-}
-
-
-/***/ }),
-/* 129 */
-/***/ (function(module, exports) {
-
-module.exports = extend
-
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-
-function extend() {
-    var target = {}
-
-    for (var i = 0; i < arguments.length; i++) {
-        var source = arguments[i]
-
-        for (var key in source) {
-            if (hasOwnProperty.call(source, key)) {
-                target[key] = source[key]
-            }
-        }
-    }
-
-    return target
-}
-
-
-/***/ }),
-/* 130 */
-/***/ (function(module, exports) {
-
-module.exports = require("dgram");
-
-/***/ }),
-/* 131 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var cof = __webpack_require__(22);
-module.exports = function (it, msg) {
-  if (typeof it != 'number' && cof(it) != 'Number') throw TypeError(msg);
-  return +it;
-};
-
-
-/***/ }),
-/* 132 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-// 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
-
-var toObject = __webpack_require__(10);
-var toAbsoluteIndex = __webpack_require__(46);
-var toLength = __webpack_require__(9);
-
-module.exports = [].copyWithin || function copyWithin(target /* = 0 */, start /* = 0, end = @length */) {
-  var O = toObject(this);
-  var len = toLength(O.length);
-  var to = toAbsoluteIndex(target, len);
-  var from = toAbsoluteIndex(start, len);
-  var end = arguments.length > 2 ? arguments[2] : undefined;
-  var count = Math.min((end === undefined ? len : toAbsoluteIndex(end, len)) - from, len - to);
-  var inc = 1;
-  if (from < to && to < from + count) {
-    inc = -1;
-    from += count - 1;
-    to += count - 1;
-  }
-  while (count-- > 0) {
-    if (from in O) O[to] = O[from];
-    else delete O[to];
-    to += inc;
-    from += inc;
-  } return O;
-};
-
-
-/***/ }),
-/* 133 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var forOf = __webpack_require__(39);
-
-module.exports = function (iter, ITERATOR) {
-  var result = [];
-  forOf(iter, false, result.push, result, ITERATOR);
-  return result;
-};
-
-
-/***/ }),
-/* 134 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var aFunction = __webpack_require__(13);
-var toObject = __webpack_require__(10);
-var IObject = __webpack_require__(58);
-var toLength = __webpack_require__(9);
-
-module.exports = function (that, callbackfn, aLen, memo, isRight) {
-  aFunction(callbackfn);
-  var O = toObject(that);
-  var self = IObject(O);
-  var length = toLength(O.length);
-  var index = isRight ? length - 1 : 0;
-  var i = isRight ? -1 : 1;
-  if (aLen < 2) for (;;) {
-    if (index in self) {
-      memo = self[index];
-      index += i;
-      break;
-    }
-    index += i;
-    if (isRight ? index < 0 : length <= index) {
-      throw TypeError('Reduce of empty array with no initial value');
-    }
-  }
-  for (;isRight ? index >= 0 : length > index; index += i) if (index in self) {
-    memo = callbackfn(memo, self[index], index, O);
-  }
-  return memo;
-};
-
-
-/***/ }),
-/* 135 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var aFunction = __webpack_require__(13);
-var isObject = __webpack_require__(4);
-var invoke = __webpack_require__(141);
-var arraySlice = [].slice;
-var factories = {};
-
-var construct = function (F, len, args) {
-  if (!(len in factories)) {
-    for (var n = [], i = 0; i < len; i++) n[i] = 'a[' + i + ']';
-    // eslint-disable-next-line no-new-func
-    factories[len] = Function('F,a', 'return new F(' + n.join(',') + ')');
-  } return factories[len](F, args);
-};
-
-module.exports = Function.bind || function bind(that /* , ...args */) {
-  var fn = aFunction(this);
-  var partArgs = arraySlice.call(arguments, 1);
-  var bound = function (/* args... */) {
-    var args = partArgs.concat(arraySlice.call(arguments));
-    return this instanceof bound ? construct(fn, args.length, args) : invoke(fn, args, that);
-  };
-  if (isObject(fn.prototype)) bound.prototype = fn.prototype;
-  return bound;
-};
-
-
-/***/ }),
-/* 136 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var dP = __webpack_require__(8).f;
-var create = __webpack_require__(40);
-var redefineAll = __webpack_require__(44);
-var ctx = __webpack_require__(23);
-var anInstance = __webpack_require__(38);
-var forOf = __webpack_require__(39);
-var $iterDefine = __webpack_require__(105);
-var step = __webpack_require__(144);
-var setSpecies = __webpack_require__(45);
-var DESCRIPTORS = __webpack_require__(7);
-var fastKey = __webpack_require__(36).fastKey;
-var validate = __webpack_require__(54);
-var SIZE = DESCRIPTORS ? '_s' : 'size';
-
-var getEntry = function (that, key) {
-  // fast case
-  var index = fastKey(key);
-  var entry;
-  if (index !== 'F') return that._i[index];
-  // frozen object case
-  for (entry = that._f; entry; entry = entry.n) {
-    if (entry.k == key) return entry;
-  }
-};
-
-module.exports = {
-  getConstructor: function (wrapper, NAME, IS_MAP, ADDER) {
-    var C = wrapper(function (that, iterable) {
-      anInstance(that, C, NAME, '_i');
-      that._t = NAME;         // collection type
-      that._i = create(null); // index
-      that._f = undefined;    // first entry
-      that._l = undefined;    // last entry
-      that[SIZE] = 0;         // size
-      if (iterable != undefined) forOf(iterable, IS_MAP, that[ADDER], that);
-    });
-    redefineAll(C.prototype, {
-      // 23.1.3.1 Map.prototype.clear()
-      // 23.2.3.2 Set.prototype.clear()
-      clear: function clear() {
-        for (var that = validate(this, NAME), data = that._i, entry = that._f; entry; entry = entry.n) {
-          entry.r = true;
-          if (entry.p) entry.p = entry.p.n = undefined;
-          delete data[entry.i];
-        }
-        that._f = that._l = undefined;
-        that[SIZE] = 0;
-      },
-      // 23.1.3.3 Map.prototype.delete(key)
-      // 23.2.3.4 Set.prototype.delete(value)
-      'delete': function (key) {
-        var that = validate(this, NAME);
-        var entry = getEntry(that, key);
-        if (entry) {
-          var next = entry.n;
-          var prev = entry.p;
-          delete that._i[entry.i];
-          entry.r = true;
-          if (prev) prev.n = next;
-          if (next) next.p = prev;
-          if (that._f == entry) that._f = next;
-          if (that._l == entry) that._l = prev;
-          that[SIZE]--;
-        } return !!entry;
-      },
-      // 23.2.3.6 Set.prototype.forEach(callbackfn, thisArg = undefined)
-      // 23.1.3.5 Map.prototype.forEach(callbackfn, thisArg = undefined)
-      forEach: function forEach(callbackfn /* , that = undefined */) {
-        validate(this, NAME);
-        var f = ctx(callbackfn, arguments.length > 1 ? arguments[1] : undefined, 3);
-        var entry;
-        while (entry = entry ? entry.n : this._f) {
-          f(entry.v, entry.k, this);
-          // revert to the last existing entry
-          while (entry && entry.r) entry = entry.p;
-        }
-      },
-      // 23.1.3.7 Map.prototype.has(key)
-      // 23.2.3.7 Set.prototype.has(value)
-      has: function has(key) {
-        return !!getEntry(validate(this, NAME), key);
-      }
-    });
-    if (DESCRIPTORS) dP(C.prototype, 'size', {
-      get: function () {
-        return validate(this, NAME)[SIZE];
-      }
-    });
-    return C;
-  },
-  def: function (that, key, value) {
-    var entry = getEntry(that, key);
-    var prev, index;
-    // change existing entry
-    if (entry) {
-      entry.v = value;
-    // create new entry
-    } else {
-      that._l = entry = {
-        i: index = fastKey(key, true), // <- index
-        k: key,                        // <- key
-        v: value,                      // <- value
-        p: prev = that._l,             // <- previous entry
-        n: undefined,                  // <- next entry
-        r: false                       // <- removed
-      };
-      if (!that._f) that._f = entry;
-      if (prev) prev.n = entry;
-      that[SIZE]++;
-      // add to index
-      if (index !== 'F') that._i[index] = entry;
-    } return that;
-  },
-  getEntry: getEntry,
-  setStrong: function (C, NAME, IS_MAP) {
-    // add .keys, .values, .entries, [@@iterator]
-    // 23.1.3.4, 23.1.3.8, 23.1.3.11, 23.1.3.12, 23.2.3.5, 23.2.3.8, 23.2.3.10, 23.2.3.11
-    $iterDefine(C, NAME, function (iterated, kind) {
-      this._t = validate(iterated, NAME); // target
-      this._k = kind;                     // kind
-      this._l = undefined;                // previous
-    }, function () {
-      var that = this;
-      var kind = that._k;
-      var entry = that._l;
-      // revert to the last existing entry
-      while (entry && entry.r) entry = entry.p;
-      // get next entry
-      if (!that._t || !(that._l = entry = entry ? entry.n : that._t._f)) {
-        // or finish the iteration
-        that._t = undefined;
-        return step(1);
-      }
-      // return step by kind
-      if (kind == 'keys') return step(0, entry.k);
-      if (kind == 'values') return step(0, entry.v);
-      return step(0, [entry.k, entry.v]);
-    }, IS_MAP ? 'entries' : 'values', !IS_MAP, true);
-
-    // add [@@species], 23.1.2.2, 23.2.2.2
-    setSpecies(NAME);
-  }
-};
-
-
-/***/ }),
-/* 137 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://github.com/DavidBruant/Map-Set.prototype.toJSON
-var classof = __webpack_require__(57);
-var from = __webpack_require__(133);
-module.exports = function (NAME) {
-  return function toJSON() {
-    if (classof(this) != NAME) throw TypeError(NAME + "#toJSON isn't generic");
-    return from(this);
-  };
-};
-
-
-/***/ }),
-/* 138 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var redefineAll = __webpack_require__(44);
-var getWeak = __webpack_require__(36).getWeak;
-var anObject = __webpack_require__(1);
-var isObject = __webpack_require__(4);
-var anInstance = __webpack_require__(38);
-var forOf = __webpack_require__(39);
-var createArrayMethod = __webpack_require__(25);
-var $has = __webpack_require__(17);
-var validate = __webpack_require__(54);
-var arrayFind = createArrayMethod(5);
-var arrayFindIndex = createArrayMethod(6);
-var id = 0;
-
-// fallback for uncaught frozen keys
-var uncaughtFrozenStore = function (that) {
-  return that._l || (that._l = new UncaughtFrozenStore());
-};
-var UncaughtFrozenStore = function () {
-  this.a = [];
-};
-var findUncaughtFrozen = function (store, key) {
-  return arrayFind(store.a, function (it) {
-    return it[0] === key;
-  });
-};
-UncaughtFrozenStore.prototype = {
-  get: function (key) {
-    var entry = findUncaughtFrozen(this, key);
-    if (entry) return entry[1];
-  },
-  has: function (key) {
-    return !!findUncaughtFrozen(this, key);
-  },
-  set: function (key, value) {
-    var entry = findUncaughtFrozen(this, key);
-    if (entry) entry[1] = value;
-    else this.a.push([key, value]);
-  },
-  'delete': function (key) {
-    var index = arrayFindIndex(this.a, function (it) {
-      return it[0] === key;
-    });
-    if (~index) this.a.splice(index, 1);
-    return !!~index;
-  }
-};
-
-module.exports = {
-  getConstructor: function (wrapper, NAME, IS_MAP, ADDER) {
-    var C = wrapper(function (that, iterable) {
-      anInstance(that, C, NAME, '_i');
-      that._t = NAME;      // collection type
-      that._i = id++;      // collection id
-      that._l = undefined; // leak store for uncaught frozen objects
-      if (iterable != undefined) forOf(iterable, IS_MAP, that[ADDER], that);
-    });
-    redefineAll(C.prototype, {
-      // 23.3.3.2 WeakMap.prototype.delete(key)
-      // 23.4.3.3 WeakSet.prototype.delete(value)
-      'delete': function (key) {
-        if (!isObject(key)) return false;
-        var data = getWeak(key);
-        if (data === true) return uncaughtFrozenStore(validate(this, NAME))['delete'](key);
-        return data && $has(data, this._i) && delete data[this._i];
-      },
-      // 23.3.3.4 WeakMap.prototype.has(key)
-      // 23.4.3.4 WeakSet.prototype.has(value)
-      has: function has(key) {
-        if (!isObject(key)) return false;
-        var data = getWeak(key);
-        if (data === true) return uncaughtFrozenStore(validate(this, NAME)).has(key);
-        return data && $has(data, this._i);
-      }
-    });
-    return C;
-  },
-  def: function (that, key, value) {
-    var data = getWeak(anObject(key), true);
-    if (data === true) uncaughtFrozenStore(that).set(key, value);
-    else data[that._i] = value;
-    return that;
-  },
-  ufstore: uncaughtFrozenStore
-};
-
-
-/***/ }),
-/* 139 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// https://tc39.github.io/proposal-flatMap/#sec-FlattenIntoArray
-var isArray = __webpack_require__(73);
-var isObject = __webpack_require__(4);
-var toLength = __webpack_require__(9);
-var ctx = __webpack_require__(23);
-var IS_CONCAT_SPREADABLE = __webpack_require__(5)('isConcatSpreadable');
-
-function flattenIntoArray(target, original, source, sourceLen, start, depth, mapper, thisArg) {
-  var targetIndex = start;
-  var sourceIndex = 0;
-  var mapFn = mapper ? ctx(mapper, thisArg, 3) : false;
-  var element, spreadable;
-
-  while (sourceIndex < sourceLen) {
-    if (sourceIndex in source) {
-      element = mapFn ? mapFn(source[sourceIndex], sourceIndex, original) : source[sourceIndex];
-
-      spreadable = false;
-      if (isObject(element)) {
-        spreadable = element[IS_CONCAT_SPREADABLE];
-        spreadable = spreadable !== undefined ? !!spreadable : isArray(element);
-      }
-
-      if (spreadable && depth > 0) {
-        targetIndex = flattenIntoArray(target, original, element, toLength(element.length), targetIndex, depth - 1) - 1;
-      } else {
-        if (targetIndex >= 0x1fffffffffffff) throw TypeError();
-        target[targetIndex] = element;
-      }
-
-      targetIndex++;
-    }
-    sourceIndex++;
-  }
-  return targetIndex;
-}
-
-module.exports = flattenIntoArray;
-
-
-/***/ }),
-/* 140 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = !__webpack_require__(7) && !__webpack_require__(3)(function () {
-  return Object.defineProperty(__webpack_require__(98)('div'), 'a', { get: function () { return 7; } }).a != 7;
-});
-
-
-/***/ }),
-/* 141 */
-/***/ (function(module, exports) {
-
-// fast apply, http://jsperf.lnkit.com/fast-apply/5
-module.exports = function (fn, args, that) {
-  var un = that === undefined;
-  switch (args.length) {
-    case 0: return un ? fn()
-                      : fn.call(that);
-    case 1: return un ? fn(args[0])
-                      : fn.call(that, args[0]);
-    case 2: return un ? fn(args[0], args[1])
-                      : fn.call(that, args[0], args[1]);
-    case 3: return un ? fn(args[0], args[1], args[2])
-                      : fn.call(that, args[0], args[1], args[2]);
-    case 4: return un ? fn(args[0], args[1], args[2], args[3])
-                      : fn.call(that, args[0], args[1], args[2], args[3]);
-  } return fn.apply(that, args);
-};
-
-
-/***/ }),
-/* 142 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 20.1.2.3 Number.isInteger(number)
-var isObject = __webpack_require__(4);
-var floor = Math.floor;
-module.exports = function isInteger(it) {
-  return !isObject(it) && isFinite(it) && floor(it) === it;
-};
-
-
-/***/ }),
-/* 143 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// call something on iterator step with safe closing on error
-var anObject = __webpack_require__(1);
-module.exports = function (iterator, fn, value, entries) {
-  try {
-    return entries ? fn(anObject(value)[0], value[1]) : fn(value);
-  // 7.4.6 IteratorClose(iterator, completion)
-  } catch (e) {
-    var ret = iterator['return'];
-    if (ret !== undefined) anObject(ret.call(iterator));
-    throw e;
-  }
-};
-
-
-/***/ }),
-/* 144 */
-/***/ (function(module, exports) {
-
-module.exports = function (done, value) {
-  return { value: value, done: !!done };
-};
-
-
-/***/ }),
-/* 145 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 20.2.2.16 Math.fround(x)
-var sign = __webpack_require__(107);
-var pow = Math.pow;
-var EPSILON = pow(2, -52);
-var EPSILON32 = pow(2, -23);
-var MAX32 = pow(2, 127) * (2 - EPSILON32);
-var MIN32 = pow(2, -126);
-
-var roundTiesToEven = function (n) {
-  return n + 1 / EPSILON - 1 / EPSILON;
-};
-
-module.exports = Math.fround || function fround(x) {
-  var $abs = Math.abs(x);
-  var $sign = sign(x);
-  var a, result;
-  if ($abs < MIN32) return $sign * roundTiesToEven($abs / MIN32 / EPSILON32) * MIN32 * EPSILON32;
-  a = (1 + EPSILON32 / EPSILON) * $abs;
-  result = a - (a - $abs);
-  // eslint-disable-next-line no-self-compare
-  if (result > MAX32 || result != result) return $sign * Infinity;
-  return $sign * result;
-};
-
-
-/***/ }),
-/* 146 */
-/***/ (function(module, exports) {
-
-// 20.2.2.20 Math.log1p(x)
-module.exports = Math.log1p || function log1p(x) {
-  return (x = +x) > -1e-8 && x < 1e-8 ? x - x * x / 2 : Math.log(1 + x);
-};
-
-
-/***/ }),
-/* 147 */
-/***/ (function(module, exports) {
-
-// https://rwaldron.github.io/proposal-math-extensions/
-module.exports = Math.scale || function scale(x, inLow, inHigh, outLow, outHigh) {
-  if (
-    arguments.length === 0
-      // eslint-disable-next-line no-self-compare
-      || x != x
-      // eslint-disable-next-line no-self-compare
-      || inLow != inLow
-      // eslint-disable-next-line no-self-compare
-      || inHigh != inHigh
-      // eslint-disable-next-line no-self-compare
-      || outLow != outLow
-      // eslint-disable-next-line no-self-compare
-      || outHigh != outHigh
-  ) return NaN;
-  if (x === Infinity || x === -Infinity) return x;
-  return (x - inLow) * (outHigh - outLow) / (inHigh - inLow) + outLow;
-};
-
-
-/***/ }),
-/* 148 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// 19.1.2.1 Object.assign(target, source, ...)
-var getKeys = __webpack_require__(42);
-var gOPS = __webpack_require__(77);
-var pIE = __webpack_require__(59);
-var toObject = __webpack_require__(10);
-var IObject = __webpack_require__(58);
-var $assign = Object.assign;
-
-// should work with symbols and should have deterministic property order (V8 bug)
-module.exports = !$assign || __webpack_require__(3)(function () {
-  var A = {};
-  var B = {};
-  // eslint-disable-next-line no-undef
-  var S = Symbol();
-  var K = 'abcdefghijklmnopqrst';
-  A[S] = 7;
-  K.split('').forEach(function (k) { B[k] = k; });
-  return $assign({}, A)[S] != 7 || Object.keys($assign({}, B)).join('') != K;
-}) ? function assign(target, source) { // eslint-disable-line no-unused-vars
-  var T = toObject(target);
-  var aLen = arguments.length;
-  var index = 1;
-  var getSymbols = gOPS.f;
-  var isEnum = pIE.f;
-  while (aLen > index) {
-    var S = IObject(arguments[index++]);
-    var keys = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S);
-    var length = keys.length;
-    var j = 0;
-    var key;
-    while (length > j) if (isEnum.call(S, key = keys[j++])) T[key] = S[key];
-  } return T;
-} : $assign;
-
-
-/***/ }),
-/* 149 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var dP = __webpack_require__(8);
-var anObject = __webpack_require__(1);
-var getKeys = __webpack_require__(42);
-
-module.exports = __webpack_require__(7) ? Object.defineProperties : function defineProperties(O, Properties) {
-  anObject(O);
-  var keys = getKeys(Properties);
-  var length = keys.length;
-  var i = 0;
-  var P;
-  while (length > i) dP.f(O, P = keys[i++], Properties[P]);
-  return O;
-};
-
-
-/***/ }),
-/* 150 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
-var toIObject = __webpack_require__(20);
-var gOPN = __webpack_require__(41).f;
-var toString = {}.toString;
-
-var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
-  ? Object.getOwnPropertyNames(window) : [];
-
-var getWindowNames = function (it) {
-  try {
-    return gOPN(it);
-  } catch (e) {
-    return windowNames.slice();
-  }
-};
-
-module.exports.f = function getOwnPropertyNames(it) {
-  return windowNames && toString.call(it) == '[object Window]' ? getWindowNames(it) : gOPN(toIObject(it));
-};
-
-
-/***/ }),
-/* 151 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var has = __webpack_require__(17);
-var toIObject = __webpack_require__(20);
-var arrayIndexOf = __webpack_require__(69)(false);
-var IE_PROTO = __webpack_require__(111)('IE_PROTO');
-
-module.exports = function (object, names) {
-  var O = toIObject(object);
-  var i = 0;
-  var result = [];
-  var key;
-  for (key in O) if (key != IE_PROTO) has(O, key) && result.push(key);
-  // Don't enum bug & hidden keys
-  while (names.length > i) if (has(O, key = names[i++])) {
-    ~arrayIndexOf(result, key) || result.push(key);
-  }
-  return result;
-};
-
-
-/***/ }),
-/* 152 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var getKeys = __webpack_require__(42);
-var toIObject = __webpack_require__(20);
-var isEnum = __webpack_require__(59).f;
-module.exports = function (isEntries) {
-  return function (it) {
-    var O = toIObject(it);
-    var keys = getKeys(O);
-    var length = keys.length;
-    var i = 0;
-    var result = [];
-    var key;
-    while (length > i) if (isEnum.call(O, key = keys[i++])) {
-      result.push(isEntries ? [key, O[key]] : O[key]);
-    } return result;
-  };
-};
-
-
-/***/ }),
-/* 153 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// all object keys, includes non-enumerable and symbols
-var gOPN = __webpack_require__(41);
-var gOPS = __webpack_require__(77);
-var anObject = __webpack_require__(1);
-var Reflect = __webpack_require__(2).Reflect;
-module.exports = Reflect && Reflect.ownKeys || function ownKeys(it) {
-  var keys = gOPN.f(anObject(it));
-  var getSymbols = gOPS.f;
-  return getSymbols ? keys.concat(getSymbols(it)) : keys;
-};
-
-
-/***/ }),
-/* 154 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var $parseFloat = __webpack_require__(2).parseFloat;
-var $trim = __webpack_require__(53).trim;
-
-module.exports = 1 / $parseFloat(__webpack_require__(115) + '-0') !== -Infinity ? function parseFloat(str) {
-  var string = $trim(String(str), 3);
-  var result = $parseFloat(string);
-  return result === 0 && string.charAt(0) == '-' ? -0 : result;
-} : $parseFloat;
-
-
-/***/ }),
-/* 155 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var $parseInt = __webpack_require__(2).parseInt;
-var $trim = __webpack_require__(53).trim;
-var ws = __webpack_require__(115);
-var hex = /^[-+]?0[xX]/;
-
-module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? function parseInt(str, radix) {
-  var string = $trim(String(str), 3);
-  return $parseInt(string, (radix >>> 0) || (hex.test(string) ? 16 : 10));
-} : $parseInt;
-
-
-/***/ }),
-/* 156 */
-/***/ (function(module, exports) {
-
-module.exports = function (exec) {
-  try {
-    return { e: false, v: exec() };
-  } catch (e) {
-    return { e: true, v: e };
-  }
-};
-
-
-/***/ }),
-/* 157 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var anObject = __webpack_require__(1);
-var isObject = __webpack_require__(4);
-var newPromiseCapability = __webpack_require__(109);
-
-module.exports = function (C, x) {
-  anObject(C);
-  if (isObject(x) && x.constructor === C) return x;
-  var promiseCapability = newPromiseCapability.f(C);
-  var resolve = promiseCapability.resolve;
-  resolve(x);
-  return promiseCapability.promise;
-};
-
-
-/***/ }),
-/* 158 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://github.com/tc39/proposal-string-pad-start-end
-var toLength = __webpack_require__(9);
-var repeat = __webpack_require__(114);
-var defined = __webpack_require__(27);
-
-module.exports = function (that, maxLength, fillString, left) {
-  var S = String(defined(that));
-  var stringLength = S.length;
-  var fillStr = fillString === undefined ? ' ' : String(fillString);
-  var intMaxLength = toLength(maxLength);
-  if (intMaxLength <= stringLength || fillStr == '') return S;
-  var fillLen = intMaxLength - stringLength;
-  var stringFiller = repeat.call(fillStr, Math.ceil(fillLen / fillStr.length));
-  if (stringFiller.length > fillLen) stringFiller = stringFiller.slice(0, fillLen);
-  return left ? stringFiller + S : S + stringFiller;
-};
-
-
-/***/ }),
-/* 159 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://tc39.github.io/ecma262/#sec-toindex
-var toInteger = __webpack_require__(29);
-var toLength = __webpack_require__(9);
-module.exports = function (it) {
-  if (it === undefined) return 0;
-  var number = toInteger(it);
-  var length = toLength(number);
-  if (number !== length) throw RangeError('Wrong length!');
-  return length;
-};
-
-
-/***/ }),
-/* 160 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports.f = __webpack_require__(5);
-
-
-/***/ }),
-/* 161 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var strong = __webpack_require__(136);
-var validate = __webpack_require__(54);
-var MAP = 'Map';
-
-// 23.1 Map Objects
-module.exports = __webpack_require__(70)(MAP, function (get) {
-  return function Map() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
-}, {
-  // 23.1.3.6 Map.prototype.get(key)
-  get: function get(key) {
-    var entry = strong.getEntry(validate(this, MAP), key);
-    return entry && entry.v;
-  },
-  // 23.1.3.9 Map.prototype.set(key, value)
-  set: function set(key, value) {
-    return strong.def(validate(this, MAP), key === 0 ? 0 : key, value);
-  }
-}, strong, true);
-
-
-/***/ }),
-/* 162 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 21.2.5.3 get RegExp.prototype.flags()
-if (__webpack_require__(7) && /./g.flags != 'g') __webpack_require__(8).f(RegExp.prototype, 'flags', {
-  configurable: true,
-  get: __webpack_require__(72)
-});
-
-
-/***/ }),
-/* 163 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var strong = __webpack_require__(136);
-var validate = __webpack_require__(54);
-var SET = 'Set';
-
-// 23.2 Set Objects
-module.exports = __webpack_require__(70)(SET, function (get) {
-  return function Set() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
-}, {
-  // 23.2.3.1 Set.prototype.add(value)
-  add: function add(value) {
-    return strong.def(validate(this, SET), value = value === 0 ? 0 : value, value);
-  }
-}, strong);
-
-
-/***/ }),
-/* 164 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var each = __webpack_require__(25)(0);
-var redefine = __webpack_require__(15);
-var meta = __webpack_require__(36);
-var assign = __webpack_require__(148);
-var weak = __webpack_require__(138);
-var isObject = __webpack_require__(4);
-var fails = __webpack_require__(3);
-var validate = __webpack_require__(54);
-var WEAK_MAP = 'WeakMap';
-var getWeak = meta.getWeak;
-var isExtensible = Object.isExtensible;
-var uncaughtFrozenStore = weak.ufstore;
-var tmp = {};
-var InternalMap;
-
-var wrapper = function (get) {
-  return function WeakMap() {
-    return get(this, arguments.length > 0 ? arguments[0] : undefined);
-  };
-};
-
-var methods = {
-  // 23.3.3.3 WeakMap.prototype.get(key)
-  get: function get(key) {
-    if (isObject(key)) {
-      var data = getWeak(key);
-      if (data === true) return uncaughtFrozenStore(validate(this, WEAK_MAP)).get(key);
-      return data ? data[this._i] : undefined;
-    }
-  },
-  // 23.3.3.5 WeakMap.prototype.set(key, value)
-  set: function set(key, value) {
-    return weak.def(validate(this, WEAK_MAP), key, value);
-  }
-};
-
-// 23.3 WeakMap Objects
-var $WeakMap = module.exports = __webpack_require__(70)(WEAK_MAP, wrapper, methods, weak, true, true);
-
-// IE11 WeakMap frozen keys fix
-if (fails(function () { return new $WeakMap().set((Object.freeze || Object)(tmp), 7).get(tmp) != 7; })) {
-  InternalMap = weak.getConstructor(wrapper, WEAK_MAP);
-  assign(InternalMap.prototype, methods);
-  meta.NEED = true;
-  each(['delete', 'has', 'get', 'set'], function (key) {
-    var proto = $WeakMap.prototype;
-    var method = proto[key];
-    redefine(proto, key, function (a, b) {
-      // store frozen objects on internal weakmap shim
-      if (isObject(a) && !isExtensible(a)) {
-        if (!this._f) this._f = new InternalMap();
-        var result = this._f[key](a, b);
-        return key == 'set' ? this : result;
-      // store all the rest on native weakmap
-      } return method.call(this, a, b);
-    });
-  });
-}
-
-
-/***/ }),
 /* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20176,7 +20176,7 @@ exports.default = void 0;
 
 var _crypto = _interopRequireDefault(__webpack_require__(37));
 
-var _automerge = _interopRequireDefault(__webpack_require__(121));
+var _automerge = _interopRequireDefault(__webpack_require__(164));
 
 var _events = _interopRequireDefault(__webpack_require__(6));
 
@@ -23883,7 +23883,7 @@ function blake2b (buffers) {
 /* eslint-disable no-redeclare */
 
 // Remember to `npm install --save protocol-buffers-encodings`
-var encodings = __webpack_require__(127)
+var encodings = __webpack_require__(126)
 var varint = encodings.varint
 var skip = encodings.skip
 
@@ -28294,7 +28294,7 @@ function simpleEnd(buf) {
 
 var Transform = __webpack_require__(510)
   , inherits  = __webpack_require__(12).inherits
-  , xtend     = __webpack_require__(129)
+  , xtend     = __webpack_require__(128)
 
 function DestroyableTransform(opts) {
   Transform.call(this, opts)
@@ -28526,20 +28526,30 @@ var _reactDom = __webpack_require__(192);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // const path = 'docs';
-var path = _randomAccessMemory.default;
-var colors = ['#1313ef', '#ef1321', '#24b554', '#851fd3', '#0eaff4', '#edc112', '#7070ff'];
+var path = _randomAccessMemory.default; // random store
+// define global colors
+
+var colors = ['#1313ef', '#ef1321', '#24b554', '#851fd3', '#0eaff4', '#edc112', '#7070ff']; // Creates a new Hypermerge instance that manages a set of documents.
+// All previously opened documents are automatically re-opened.
+
 var hm = new _hypermerge.default({
-  path: path
+  path: path // directory where the documents should be stored
+
 });
 hm.once('ready', function (hm) {
+  // window.hm = hm 
+  // Joins the network swarm for all documents managed by this Hypermerge instance
+  // 实现原理：discovery-swarm：使用发现通道查找，并连接到对等方的网络群 A network swarm that uses discovery-channel to find and connect to peers.
+  // This module implements peer connection state and builds on discovery-channel which implements peer discovery. This uses TCP sockets by default and has experimental support for UTP.
   hm.joinSwarm({
     utp: false
-  }); // getting an error with utp?
+  }); // options refenced by https://github.com/mafintosh/discovery-swarm
 
   var id = hm.swarm.id.toString('hex');
   console.log("My ID: ".concat(id)); // ugh hacky
 
-  _HyperDoc.default.hm = hm;
+  _HyperDoc.default.hm = hm; // render dom
+
   var main = document.getElementById('main');
   (0, _reactDom.render)(_react.default.createElement(_App.default, {
     hm: hm,
@@ -28658,7 +28668,7 @@ module.exports = Object.is || function is(x, y) {
 // 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 var $export = __webpack_require__(0);
 
-$export($export.P, 'Array', { copyWithin: __webpack_require__(132) });
+$export($export.P, 'Array', { copyWithin: __webpack_require__(131) });
 
 __webpack_require__(34)('copyWithin');
 
@@ -28778,7 +28788,7 @@ $export($export.P + $export.F * !STRICT, 'Array', {
 var ctx = __webpack_require__(23);
 var $export = __webpack_require__(0);
 var toObject = __webpack_require__(10);
-var call = __webpack_require__(143);
+var call = __webpack_require__(142);
 var isArrayIter = __webpack_require__(103);
 var toLength = __webpack_require__(9);
 var createProperty = __webpack_require__(97);
@@ -28943,7 +28953,7 @@ $export($export.S + $export.F * __webpack_require__(3)(function () {
 "use strict";
 
 var $export = __webpack_require__(0);
-var $reduce = __webpack_require__(134);
+var $reduce = __webpack_require__(133);
 
 $export($export.P + $export.F * !__webpack_require__(24)([].reduceRight, true), 'Array', {
   // 22.1.3.19 / 15.4.4.22 Array.prototype.reduceRight(callbackfn [, initialValue])
@@ -28960,7 +28970,7 @@ $export($export.P + $export.F * !__webpack_require__(24)([].reduceRight, true), 
 "use strict";
 
 var $export = __webpack_require__(0);
-var $reduce = __webpack_require__(134);
+var $reduce = __webpack_require__(133);
 
 $export($export.P + $export.F * !__webpack_require__(24)([].reduce, true), 'Array', {
   // 22.1.3.18 / 15.4.4.21 Array.prototype.reduce(callbackfn [, initialValue])
@@ -29141,7 +29151,7 @@ if (new Date(NaN) + '' != INVALID_DATE) {
 // 19.2.3.2 / 15.3.4.5 Function.prototype.bind(thisArg, args...)
 var $export = __webpack_require__(0);
 
-$export($export.P, 'Function', { bind: __webpack_require__(135) });
+$export($export.P, 'Function', { bind: __webpack_require__(134) });
 
 
 /***/ }),
@@ -29192,7 +29202,7 @@ NAME in FProto || __webpack_require__(7) && dP(FProto, NAME, {
 
 // 20.2.2.3 Math.acosh(x)
 var $export = __webpack_require__(0);
-var log1p = __webpack_require__(146);
+var log1p = __webpack_require__(145);
 var sqrt = Math.sqrt;
 var $acosh = Math.acosh;
 
@@ -29304,7 +29314,7 @@ $export($export.S + $export.F * ($expm1 != Math.expm1), 'Math', { expm1: $expm1 
 // 20.2.2.16 Math.fround(x)
 var $export = __webpack_require__(0);
 
-$export($export.S, 'Math', { fround: __webpack_require__(145) });
+$export($export.S, 'Math', { fround: __webpack_require__(144) });
 
 
 /***/ }),
@@ -29382,7 +29392,7 @@ $export($export.S, 'Math', {
 // 20.2.2.20 Math.log1p(x)
 var $export = __webpack_require__(0);
 
-$export($export.S, 'Math', { log1p: __webpack_require__(146) });
+$export($export.S, 'Math', { log1p: __webpack_require__(145) });
 
 
 /***/ }),
@@ -29570,7 +29580,7 @@ $export($export.S, 'Number', {
 // 20.1.2.3 Number.isInteger(number)
 var $export = __webpack_require__(0);
 
-$export($export.S, 'Number', { isInteger: __webpack_require__(142) });
+$export($export.S, 'Number', { isInteger: __webpack_require__(141) });
 
 
 /***/ }),
@@ -29594,7 +29604,7 @@ $export($export.S, 'Number', {
 
 // 20.1.2.5 Number.isSafeInteger(number)
 var $export = __webpack_require__(0);
-var isInteger = __webpack_require__(142);
+var isInteger = __webpack_require__(141);
 var abs = Math.abs;
 
 $export($export.S, 'Number', {
@@ -29629,7 +29639,7 @@ $export($export.S, 'Number', { MIN_SAFE_INTEGER: -0x1fffffffffffff });
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(0);
-var $parseFloat = __webpack_require__(154);
+var $parseFloat = __webpack_require__(153);
 // 20.1.2.12 Number.parseFloat(string)
 $export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', { parseFloat: $parseFloat });
 
@@ -29639,7 +29649,7 @@ $export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', { 
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(0);
-var $parseInt = __webpack_require__(155);
+var $parseInt = __webpack_require__(154);
 // 20.1.2.13 Number.parseInt(string, radix)
 $export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', { parseInt: $parseInt });
 
@@ -29652,7 +29662,7 @@ $export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', { pars
 
 var $export = __webpack_require__(0);
 var toInteger = __webpack_require__(29);
-var aNumberValue = __webpack_require__(131);
+var aNumberValue = __webpack_require__(130);
 var repeat = __webpack_require__(114);
 var $toFixed = 1.0.toFixed;
 var floor = Math.floor;
@@ -29773,7 +29783,7 @@ $export($export.P + $export.F * (!!$toFixed && (
 
 var $export = __webpack_require__(0);
 var $fails = __webpack_require__(3);
-var aNumberValue = __webpack_require__(131);
+var aNumberValue = __webpack_require__(130);
 var $toPrecision = 1.0.toPrecision;
 
 $export($export.P + $export.F * ($fails(function () {
@@ -29797,7 +29807,7 @@ $export($export.P + $export.F * ($fails(function () {
 // 19.1.3.1 Object.assign(target, source)
 var $export = __webpack_require__(0);
 
-$export($export.S + $export.F, 'Object', { assign: __webpack_require__(148) });
+$export($export.S + $export.F, 'Object', { assign: __webpack_require__(147) });
 
 
 /***/ }),
@@ -29815,7 +29825,7 @@ $export($export.S, 'Object', { create: __webpack_require__(40) });
 
 var $export = __webpack_require__(0);
 // 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
-$export($export.S + $export.F * !__webpack_require__(7), 'Object', { defineProperties: __webpack_require__(149) });
+$export($export.S + $export.F * !__webpack_require__(7), 'Object', { defineProperties: __webpack_require__(148) });
 
 
 /***/ }),
@@ -29863,7 +29873,7 @@ __webpack_require__(28)('getOwnPropertyDescriptor', function () {
 
 // 19.1.2.7 Object.getOwnPropertyNames(O)
 __webpack_require__(28)('getOwnPropertyNames', function () {
-  return __webpack_require__(150).f;
+  return __webpack_require__(149).f;
 });
 
 
@@ -30009,7 +30019,7 @@ if (test + '' != '[object z]') {
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(0);
-var $parseFloat = __webpack_require__(154);
+var $parseFloat = __webpack_require__(153);
 // 18.2.4 parseFloat(string)
 $export($export.G + $export.F * (parseFloat != $parseFloat), { parseFloat: $parseFloat });
 
@@ -30019,7 +30029,7 @@ $export($export.G + $export.F * (parseFloat != $parseFloat), { parseFloat: $pars
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(0);
-var $parseInt = __webpack_require__(155);
+var $parseInt = __webpack_require__(154);
 // 18.2.5 parseInt(string, radix)
 $export($export.G + $export.F * (parseInt != $parseInt), { parseInt: $parseInt });
 
@@ -30043,9 +30053,9 @@ var speciesConstructor = __webpack_require__(81);
 var task = __webpack_require__(116).set;
 var microtask = __webpack_require__(108)();
 var newPromiseCapabilityModule = __webpack_require__(109);
-var perform = __webpack_require__(156);
+var perform = __webpack_require__(155);
 var userAgent = __webpack_require__(83);
-var promiseResolve = __webpack_require__(157);
+var promiseResolve = __webpack_require__(156);
 var PROMISE = 'Promise';
 var TypeError = global.TypeError;
 var process = global.process;
@@ -30350,7 +30360,7 @@ var aFunction = __webpack_require__(13);
 var anObject = __webpack_require__(1);
 var isObject = __webpack_require__(4);
 var fails = __webpack_require__(3);
-var bind = __webpack_require__(135);
+var bind = __webpack_require__(134);
 var rConstruct = (__webpack_require__(2).Reflect || {}).construct;
 
 // MS Edge supports only 2 arguments and argumentsList argument is optional
@@ -30568,7 +30578,7 @@ $export($export.S, 'Reflect', {
 // 26.1.11 Reflect.ownKeys(target)
 var $export = __webpack_require__(0);
 
-$export($export.S, 'Reflect', { ownKeys: __webpack_require__(153) });
+$export($export.S, 'Reflect', { ownKeys: __webpack_require__(152) });
 
 
 /***/ }),
@@ -30835,7 +30845,7 @@ __webpack_require__(71)('split', 2, function (defined, SPLIT, $split) {
 
 "use strict";
 
-__webpack_require__(162);
+__webpack_require__(161);
 var anObject = __webpack_require__(1);
 var $flags = __webpack_require__(72);
 var DESCRIPTORS = __webpack_require__(7);
@@ -31251,7 +31261,7 @@ var shared = __webpack_require__(80);
 var setToStringTag = __webpack_require__(52);
 var uid = __webpack_require__(47);
 var wks = __webpack_require__(5);
-var wksExt = __webpack_require__(160);
+var wksExt = __webpack_require__(159);
 var wksDefine = __webpack_require__(118);
 var enumKeys = __webpack_require__(212);
 var isArray = __webpack_require__(73);
@@ -31261,7 +31271,7 @@ var toIObject = __webpack_require__(20);
 var toPrimitive = __webpack_require__(30);
 var createDesc = __webpack_require__(43);
 var _create = __webpack_require__(40);
-var gOPNExt = __webpack_require__(150);
+var gOPNExt = __webpack_require__(149);
 var $GOPD = __webpack_require__(18);
 var $DP = __webpack_require__(8);
 var $keys = __webpack_require__(42);
@@ -31642,7 +31652,7 @@ __webpack_require__(33)('Uint8', 1, function (init) {
 
 "use strict";
 
-var weak = __webpack_require__(138);
+var weak = __webpack_require__(137);
 var validate = __webpack_require__(54);
 var WEAK_SET = 'WeakSet';
 
@@ -31665,7 +31675,7 @@ __webpack_require__(70)(WEAK_SET, function (get) {
 
 // https://tc39.github.io/proposal-flatMap/#sec-Array.prototype.flatMap
 var $export = __webpack_require__(0);
-var flattenIntoArray = __webpack_require__(139);
+var flattenIntoArray = __webpack_require__(138);
 var toObject = __webpack_require__(10);
 var toLength = __webpack_require__(9);
 var aFunction = __webpack_require__(13);
@@ -31694,7 +31704,7 @@ __webpack_require__(34)('flatMap');
 
 // https://tc39.github.io/proposal-flatMap/#sec-Array.prototype.flatten
 var $export = __webpack_require__(0);
-var flattenIntoArray = __webpack_require__(139);
+var flattenIntoArray = __webpack_require__(138);
 var toObject = __webpack_require__(10);
 var toLength = __webpack_require__(9);
 var toInteger = __webpack_require__(29);
@@ -31799,7 +31809,7 @@ __webpack_require__(79)('Map');
 // https://github.com/DavidBruant/Map-Set.prototype.toJSON
 var $export = __webpack_require__(0);
 
-$export($export.P + $export.R, 'Map', { toJSON: __webpack_require__(137)('Map') });
+$export($export.P + $export.R, 'Map', { toJSON: __webpack_require__(136)('Map') });
 
 
 /***/ }),
@@ -31847,8 +31857,8 @@ $export($export.S, 'Math', {
 
 // https://rwaldron.github.io/proposal-math-extensions/
 var $export = __webpack_require__(0);
-var scale = __webpack_require__(147);
-var fround = __webpack_require__(145);
+var scale = __webpack_require__(146);
+var fround = __webpack_require__(144);
 
 $export($export.S, 'Math', {
   fscale: function fscale(x, inLow, inHigh, outLow, outHigh) {
@@ -31945,7 +31955,7 @@ $export($export.S, 'Math', {
 // https://rwaldron.github.io/proposal-math-extensions/
 var $export = __webpack_require__(0);
 
-$export($export.S, 'Math', { scale: __webpack_require__(147) });
+$export($export.S, 'Math', { scale: __webpack_require__(146) });
 
 
 /***/ }),
@@ -32027,7 +32037,7 @@ __webpack_require__(7) && $export($export.P + __webpack_require__(76), 'Object',
 
 // https://github.com/tc39/proposal-object-values-entries
 var $export = __webpack_require__(0);
-var $entries = __webpack_require__(152)(true);
+var $entries = __webpack_require__(151)(true);
 
 $export($export.S, 'Object', {
   entries: function entries(it) {
@@ -32042,7 +32052,7 @@ $export($export.S, 'Object', {
 
 // https://github.com/tc39/proposal-object-getownpropertydescriptors
 var $export = __webpack_require__(0);
-var ownKeys = __webpack_require__(153);
+var ownKeys = __webpack_require__(152);
 var toIObject = __webpack_require__(20);
 var gOPD = __webpack_require__(18);
 var createProperty = __webpack_require__(97);
@@ -32120,7 +32130,7 @@ __webpack_require__(7) && $export($export.P + __webpack_require__(76), 'Object',
 
 // https://github.com/tc39/proposal-object-values-entries
 var $export = __webpack_require__(0);
-var $values = __webpack_require__(152)(false);
+var $values = __webpack_require__(151)(false);
 
 $export($export.S, 'Object', {
   values: function values(it) {
@@ -32346,7 +32356,7 @@ var $export = __webpack_require__(0);
 var core = __webpack_require__(26);
 var global = __webpack_require__(2);
 var speciesConstructor = __webpack_require__(81);
-var promiseResolve = __webpack_require__(157);
+var promiseResolve = __webpack_require__(156);
 
 $export($export.P + $export.R, 'Promise', { 'finally': function (onFinally) {
   var C = speciesConstructor(this, core.Promise || global.Promise);
@@ -32371,7 +32381,7 @@ $export($export.P + $export.R, 'Promise', { 'finally': function (onFinally) {
 // https://github.com/tc39/proposal-promise-try
 var $export = __webpack_require__(0);
 var newPromiseCapability = __webpack_require__(109);
-var perform = __webpack_require__(156);
+var perform = __webpack_require__(155);
 
 $export($export.S, 'Promise', { 'try': function (callbackfn) {
   var promiseCapability = newPromiseCapability.f(this);
@@ -32420,8 +32430,8 @@ metadata.exp({ deleteMetadata: function deleteMetadata(metadataKey, target /* , 
 /* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Set = __webpack_require__(163);
-var from = __webpack_require__(133);
+var Set = __webpack_require__(162);
+var from = __webpack_require__(132);
 var metadata = __webpack_require__(32);
 var anObject = __webpack_require__(1);
 var getPrototypeOf = __webpack_require__(19);
@@ -32574,7 +32584,7 @@ __webpack_require__(79)('Set');
 // https://github.com/DavidBruant/Map-Set.prototype.toJSON
 var $export = __webpack_require__(0);
 
-$export($export.P + $export.R, 'Set', { toJSON: __webpack_require__(137)('Set') });
+$export($export.P + $export.R, 'Set', { toJSON: __webpack_require__(136)('Set') });
 
 
 /***/ }),
@@ -32639,7 +32649,7 @@ $export($export.P, 'String', {
 
 // https://github.com/tc39/proposal-string-pad-start-end
 var $export = __webpack_require__(0);
-var $pad = __webpack_require__(158);
+var $pad = __webpack_require__(157);
 var userAgent = __webpack_require__(83);
 
 // https://github.com/zloirock/core-js/issues/280
@@ -32658,7 +32668,7 @@ $export($export.P + $export.F * /Version\/10\.\d+(\.\d+)? Safari\//.test(userAge
 
 // https://github.com/tc39/proposal-string-pad-start-end
 var $export = __webpack_require__(0);
-var $pad = __webpack_require__(158);
+var $pad = __webpack_require__(157);
 var userAgent = __webpack_require__(83);
 
 // https://github.com/zloirock/core-js/issues/280
@@ -32961,15 +32971,15 @@ __webpack_require__(233);
 __webpack_require__(120);
 __webpack_require__(305);
 __webpack_require__(310);
-__webpack_require__(162);
+__webpack_require__(161);
 __webpack_require__(306);
 __webpack_require__(307);
 __webpack_require__(308);
 __webpack_require__(309);
 __webpack_require__(290);
-__webpack_require__(161);
+__webpack_require__(160);
+__webpack_require__(162);
 __webpack_require__(163);
-__webpack_require__(164);
 __webpack_require__(345);
 __webpack_require__(334);
 __webpack_require__(335);
@@ -33069,7 +33079,7 @@ module.exports = __webpack_require__(26);
 /* eslint-disable no-redeclare */
 
 // Remember to `npm install --save protocol-buffers-encodings`
-var encodings = __webpack_require__(127)
+var encodings = __webpack_require__(126)
 var varint = encodings.varint
 var skip = encodings.skip
 
@@ -33438,8 +33448,6 @@ var _InlineEditable = _interopRequireDefault(__webpack_require__(414));
 
 var _react = _interopRequireWildcard(__webpack_require__(21));
 
-var _automerge = _interopRequireDefault(__webpack_require__(121));
-
 var _reactSelect = __webpack_require__(505);
 
 __webpack_require__(527);
@@ -33714,7 +33722,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _Highlight = _interopRequireDefault(__webpack_require__(122));
+var _Highlight = _interopRequireDefault(__webpack_require__(121));
 
 var _react = _interopRequireWildcard(__webpack_require__(21));
 
@@ -33873,7 +33881,7 @@ var _Editor = _interopRequireDefault(__webpack_require__(413));
 
 var _Comments = _interopRequireDefault(__webpack_require__(411));
 
-var _Highlight = _interopRequireDefault(__webpack_require__(122));
+var _Highlight = _interopRequireDefault(__webpack_require__(121));
 
 var _react = _interopRequireWildcard(__webpack_require__(21));
 
@@ -34362,7 +34370,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _Highlight = _interopRequireDefault(__webpack_require__(122));
+var _Highlight = _interopRequireDefault(__webpack_require__(121));
 
 var _react = _interopRequireWildcard(__webpack_require__(21));
 
@@ -35955,7 +35963,7 @@ function toComment(sourceMap) {
 /* 434 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var extend = __webpack_require__(129)
+var extend = __webpack_require__(128)
 
 var DAT_DOMAIN = 'dat.local'
 var DEFAULT_DISCOVERY = [
@@ -35986,7 +35994,7 @@ module.exports = function (opts) {
 var drive = __webpack_require__(472)
 var tree = __webpack_require__(406)
 var ram = __webpack_require__(191)
-var hypercore = __webpack_require__(124)
+var hypercore = __webpack_require__(123)
 var discoverySwarm = __webpack_require__(436)
 var defaults = __webpack_require__(434)
 var duplexify = __webpack_require__(453)
@@ -36689,7 +36697,7 @@ module.exports = pump
 /* 438 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var extend = __webpack_require__(129)
+var extend = __webpack_require__(128)
 
 var DAT_DOMAIN = 'dat.local'
 var DEFAULT_DISCOVERY = [
@@ -39117,7 +39125,7 @@ exports.toType = function (name) {
 "use strict";
 
 
-const dgram = __webpack_require__(130)
+const dgram = __webpack_require__(129)
 const util = __webpack_require__(12)
 const packet = __webpack_require__(173)
 const events = __webpack_require__(6)
@@ -39946,8 +39954,8 @@ module.exports = (flag, argv) => {
 /* 462 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var hypercore = __webpack_require__(124)
-var protocol = __webpack_require__(123)
+var hypercore = __webpack_require__(123)
+var protocol = __webpack_require__(122)
 var path = __webpack_require__(94)
 var raf = __webpack_require__(463)
 var thunky = __webpack_require__(67)
@@ -41399,7 +41407,7 @@ function getIndexValue (n) {
 /* 469 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var protocol = __webpack_require__(123)
+var protocol = __webpack_require__(122)
 var bitfield = __webpack_require__(90)
 var set = __webpack_require__(203)
 var rle = __webpack_require__(166)
@@ -42392,7 +42400,7 @@ function addFullRoots (verifiedBy, nodes, root, remoteTree) {
 /* eslint-disable no-redeclare */
 
 // Remember to `npm install --save protocol-buffers-encodings`
-var encodings = __webpack_require__(127)
+var encodings = __webpack_require__(126)
 var varint = encodings.varint
 var skip = encodings.skip
 
@@ -42670,9 +42678,9 @@ function defined (val) {
 /***/ (function(module, exports, __webpack_require__) {
 
 const {EventEmitter} = __webpack_require__(6)
-const protocol = __webpack_require__(123)
+const protocol = __webpack_require__(122)
 const Archiver = __webpack_require__(462)
-const hypercore = __webpack_require__(124)
+const hypercore = __webpack_require__(123)
 const crypto = __webpack_require__(179)
 const thunky = __webpack_require__(67)
 const toBuffer = __webpack_require__(91)
@@ -42823,7 +42831,7 @@ module.exports = Multicore
 /***/ (function(module, exports, __webpack_require__) {
 
 const EventEmitter = __webpack_require__(6)
-const Automerge = __webpack_require__(121)
+const Automerge = __webpack_require__(164)
 const MultiCore = __webpack_require__(473)
 const discoverySwarm = __webpack_require__(442)
 const swarmDefaults = __webpack_require__(438)
@@ -44308,7 +44316,7 @@ KBucket.prototype._update = function (node, index, contact) {
 /* 480 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var dgram = __webpack_require__(130)
+var dgram = __webpack_require__(129)
 var bencode = __webpack_require__(483)
 var isIP = __webpack_require__(92).isIP
 var dns = __webpack_require__(541)
@@ -45795,7 +45803,7 @@ MerkleGenerator.prototype.next = function (data, nodes) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var packet = __webpack_require__(173)
-var dgram = __webpack_require__(130)
+var dgram = __webpack_require__(129)
 var thunky = __webpack_require__(67)
 var events = __webpack_require__(6)
 var os = __webpack_require__(93)
@@ -46033,7 +46041,7 @@ module.exports = ipv4
 
 
 
-var ReactPropTypesSecret = __webpack_require__(126);
+var ReactPropTypesSecret = __webpack_require__(125);
 
 function emptyFunction() {}
 
@@ -46101,8 +46109,8 @@ module.exports = function() {
 
 var assign = __webpack_require__(65);
 
-var ReactPropTypesSecret = __webpack_require__(126);
-var checkPropTypes = __webpack_require__(125);
+var ReactPropTypesSecret = __webpack_require__(125);
+var checkPropTypes = __webpack_require__(124);
 
 var printWarning = function() {};
 
@@ -47222,7 +47230,7 @@ var warning = __webpack_require__(178);
 var ExecutionEnvironment = __webpack_require__(174);
 var _assign = __webpack_require__(65);
 var emptyFunction = __webpack_require__(62);
-var checkPropTypes = __webpack_require__(125);
+var checkPropTypes = __webpack_require__(124);
 var getActiveElement = __webpack_require__(176);
 var shallowEqual = __webpack_require__(177);
 var containsNode = __webpack_require__(175);
@@ -67869,7 +67877,7 @@ var invariant = __webpack_require__(86);
 var emptyObject = __webpack_require__(85);
 var warning = __webpack_require__(178);
 var emptyFunction = __webpack_require__(62);
-var checkPropTypes = __webpack_require__(125);
+var checkPropTypes = __webpack_require__(124);
 
 // TODO: this is special because it gets imported during build.
 
@@ -70679,7 +70687,7 @@ blake2b.ready(function (err) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var assert = __webpack_require__(64)
-var randombytes_buf = __webpack_require__(128).randombytes_buf
+var randombytes_buf = __webpack_require__(127).randombytes_buf
 var blake2b = __webpack_require__(169)
 
 module.exports.crypto_kdf_PRIMITIVE = 'blake2b'
@@ -70762,7 +70770,7 @@ var gf = function(init) {
 };
 
 // also forwarded at the bottom but randombytes is non-enumerable
-var randombytes = __webpack_require__(128).randombytes
+var randombytes = __webpack_require__(127).randombytes
 
 var _0 = new Uint8Array(16);
 var _9 = new Uint8Array(32); _9[0] = 9;
@@ -72516,7 +72524,7 @@ sodium.crypto_sign_verify_detached = crypto_sign_verify_detached
 forward(__webpack_require__(521))
 forward(__webpack_require__(522))
 forward(__webpack_require__(523))
-forward(__webpack_require__(128))
+forward(__webpack_require__(127))
 forward(__webpack_require__(198))
 
 sodium.crypto_scalarmult_BYTES = crypto_scalarmult_BYTES

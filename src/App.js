@@ -1,8 +1,8 @@
 import Doc from './Document';
 import HyperDoc from './HyperDoc';
 import InlineEditable from './InlineEditable';
-import React, {Component} from 'react';
-import Automerge from 'automerge';
+import React, { Component } from 'react';
+// import Automerge from 'automerge';
 import { Creatable } from 'react-select';
 import 'react-select/dist/react-select.css';
 
@@ -36,7 +36,7 @@ class App extends Component {
 
   registerWithPeer(peer) {
     // tell new peers this peer's id
-    this.props.hm._messagePeer(peer, {type: 'hi', id: this.props.id});
+    this.props.hm._messagePeer(peer, { type: 'hi', id: this.props.id });
   }
 
   componentDidMount() {
@@ -97,7 +97,7 @@ class App extends Component {
       } else {
         doc.once('ready', this.onDocumentReady.bind(this));
       }
-    } catch(e) {
+    } catch (e) {
       console.log(e);
     }
   }
@@ -173,7 +173,7 @@ class App extends Component {
           value={this.state.name}
           onChange={this.onEditName.bind(this)} />
         <Creatable
-          style={{width: '12em'}}
+          style={{ width: '12em' }}
           placeholder='Open document'
           options={this.state.docs}
           onChange={this.selectDocument.bind(this)}
