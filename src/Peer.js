@@ -1,5 +1,5 @@
 import Highlight from './Highlight';
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 
 class Peer extends Component {
@@ -16,16 +16,16 @@ class Peer extends Component {
     let highlight = '';
     if (idx.start !== idx.end) {
       highlight = <Highlight
-                    text={this.props.text}
-                    start={idx.start}
-                    end={idx.end}
-                    color={peer.color} />;
+        text={this.props.text}
+        start={idx.start}
+        end={idx.end}
+        color={peer.color} />;
     }
 
     return (
       <div>
-        <div className='peer-label' style={{top: pos.top - pos.height, ...style}}>{peer.name}</div>
-        <div className='peer-cursor' style={{top: pos.top, ...style}}></div>
+        <div className='peer-label' style={{ top: pos.top - pos.height, ...style }}>{peer.name}</div>
+        <div className='peer-cursor' style={{ top: pos.top, ...style }}></div>
         {highlight}
       </div>);
   }

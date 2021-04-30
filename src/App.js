@@ -1,11 +1,12 @@
 import Doc from './Document';
 import HyperDoc from './HyperDoc';
+import History from './History';
 import InlineEditable from './InlineEditable';
-import React, { Component } from 'react';
+import React, { Component, version } from 'react';
 // import Automerge from 'automerge';
 import { Creatable } from 'react-select';
 import 'react-select/dist/react-select.css';
-
+import 'antd/dist/antd.css';
 
 function shrinkId(id) {
   if (id.length <= 12) return id;
@@ -74,6 +75,8 @@ class App extends Component {
   }
 
   onDocumentReady(doc) {
+    // save doc into state
+    // save id/name/color into doc
     doc.join(this.props.id, this.state.name, this.state.color);
     doc.on('updated', (doc) => this.setState({ doc }));
     this.setState({ doc });
@@ -117,6 +120,16 @@ class App extends Component {
     }
   }
 
+  saveVersion() {
+    console.log(this.state.doc)
+    let text = this.state.doc.text
+    if (text) {
+      this.state.doc.setVersion(this.props.id, text);
+    } else {
+      alert('fail: currency document text is empty')
+    }
+  }
+
   export() {
     let fname = `${this.state.doc.title}.txt`;
     let text = this.state.doc.text;
@@ -144,6 +157,9 @@ class App extends Component {
           <div className='doc-misc'>
             <button onClick={this.export.bind(this)}>Save as text</button>
           </div>
+          <div className='doc-save-history'>
+            <button onClick={this.saveVersion.bind(this)}>Save as historical version</button>
+          </div>
         </div>
       );
     } else {
@@ -151,7 +167,7 @@ class App extends Component {
       // which support browser history/clicking back
       main = (
         <div>
-          <h2>Documents</h2>
+          <h2 className='initial-title'>Documents</h2>
           <ul id='doc-list'>
             {this.state.docs.map((d) => {
               return <li key={d.value}>
@@ -165,20 +181,23 @@ class App extends Component {
 
     return <main role='main'>
       <nav>
-        <button onClick={this.createDocument.bind(this)}>Create new document</button>
-        <input
-          type='text'
-          placeholder='Name'
-          className='app-name'
-          value={this.state.name}
-          onChange={this.onEditName.bind(this)} />
-        <Creatable
-          style={{ width: '12em' }}
-          placeholder='Open document'
-          options={this.state.docs}
-          onChange={this.selectDocument.bind(this)}
-          promptTextCreator={(label) => `Open '${shrinkId(label)}'`}
-        />
+        <div id='nav-content'>
+          <button className='create-button' onClick={this.createDocument.bind(this)}>Create new document</button>
+          <input
+            type='text'
+            placeholder='Name'
+            className='app-name'
+            value={this.state.name}
+            onChange={this.onEditName.bind(this)} />
+          <Creatable
+            style={{ width: '12em' }}
+            placeholder='Open document'
+            options={this.state.docs}
+            onChange={this.selectDocument.bind(this)}
+            promptTextCreator={(label) => `Open '${shrinkId(label)}'`}
+          />
+          <History doc={this.state.doc}/>
+        </div>
       </nav>
       {main}
     </main>

@@ -21,8 +21,8 @@ nav {
   border-bottom: 1px solid #dee0e3;
 }
 
-h2 {
-  padding-left: 30px;
+.initial-title {
+  margin: 1em 0 0 30px;
 }
 
 #nav-content {
@@ -46,14 +46,18 @@ button {
   border: none;
   display: inline-block;
   cursor: pointer;
-  background: rgb(51, 112, 255);
+  background: #1890ff;
+  color: #fff;
+}
+
+.doc-save-history button, .doc-misc button, .create-button {
   color: #fff;
 }
 
 input[type=text] {
   padding: 0.4em 0.6em;
   border-radius: 0.2em;
-  border: 1px solid rgb(51, 112, 255);
+  border: 1px solid #1890ff;
 }
 
 textarea {
@@ -123,7 +127,7 @@ textarea {
 
 .peer-label {
   font-size: 0.6em;
-  background: rgb(51, 112, 255);
+  background: #1890ff;
   color: #fff;
   padding: 0.2em 0.3em;
   border-radius: 0.2em;
@@ -131,7 +135,7 @@ textarea {
 
 .peer-cursor {
   width: 1px;
-  background: rgb(51, 112, 255);
+  background: #1890ff;
   height: 1em;
 }
 
@@ -142,7 +146,7 @@ textarea {
 }
 
 .doc-id span {
-  border-bottom: 2px solid rgb(51, 112, 255);
+  border-bottom: 2px solid #1890ff;
 }
 
 .doc-title {
@@ -180,7 +184,7 @@ textarea {
 .Select-input>input {
   padding: 0.25em 0 !important;
   max-width: 10em !important;
-  border: 1px solid rgb(51, 112, 255);
+  border: 1px solid #1890ff;
   height: 100%;
   box-sizing: border-box!important;
 }
@@ -188,13 +192,13 @@ textarea {
 .Select-placeholder {
   line-height: 26px !important;
   padding: 0.2em 0.3em;
-  border: 1px solid rgb(51, 112, 255);
+  border: 1px solid #1890ff;
 }
 
 .doc-add-comment {
   position: absolute;
   font-size: 0.6em;
-  background: rgb(51, 112, 255);
+  background: #1890ff;
   background: #d8eafd;
   color: #000;
   padding: 0.3em 0.3em 0.1em 0.3em;
@@ -264,7 +268,7 @@ textarea {
 .doc-comment button {
   width: 100%;
   padding: 0.5em;
-  background: rgb(51, 112, 255);
+  background: #1890ff;
   color: #fff;
   border-radius: 0 0 0.2em 0.2em;
 }
@@ -284,4 +288,16 @@ textarea {
 .doc-misc, .doc-save-history {
   text-align: center;
   margin: 1em 0;
+}
+
+.history-list {
+  margin-left: 10px;
+}
+
+.version-list {
+  font-size: 16px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

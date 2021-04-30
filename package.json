@@ -29,11 +29,12 @@
     "webpack": "^2.6.1"
   },
   "dependencies": {
+    "antd": "^4.15.3",
     "automerge": "^0.7.11",
     "datland-swarm-defaults": "^1.0.2",
     "hypermerge": "git://github.com/frnsys/hypermerge.git#fix-hypercore-crypto",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-markdown": "^3.3.4",
     "react-select": "^1.2.1",
     "textarea-caret": "github:component/textarea-caret-position"
