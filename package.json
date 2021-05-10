@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "electron app.js",
-    "compile": "webpack --watch --progress"
+    "compile": "webpack --watch --progress",
+    "pack": "electron-packager . hyperdocs --win --out ./myClient --arch=x64 --app-version=0.0.1 --electron-version=2.0.0",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "author": "Francis Tseng",
   "license": "MIT",
@@ -19,9 +22,13 @@
     "@babel/polyfill": "^7.0.0-beta.51",
     "@babel/preset-env": "^7.0.0-beta.51",
     "@babel/preset-react": "^7.0.0-beta.51",
+    "@electron-forge/maker-deb": "^6.0.0-beta.54",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.54",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+    "@electron-forge/maker-zip": "^6.0.0-beta.54",
     "babel-loader": "^8.0.0-beta.0",
     "css-loader": "^0.28.4",
-    "electron": "^2.0.3",
+    "electron": "^2.0.18",
     "extract-text-webpack-plugin": "^2.1.2",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.18.2",
@@ -32,6 +39,7 @@
     "antd": "^4.15.3",
     "automerge": "^0.7.11",
     "datland-swarm-defaults": "^1.0.2",
+    "electron-squirrel-startup": "^1.0.0",
     "hydrogen-js-sdk": "^2.2.4",
     "hypermerge": "git://github.com/frnsys/hypermerge.git#fix-hypercore-crypto",
     "react": "^16.14.0",
@@ -39,5 +47,32 @@
     "react-markdown": "^3.3.4",
     "react-select": "^1.2.1",
     "textarea-caret": "github:component/textarea-caret-position"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "hyperdocs"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   }
 }

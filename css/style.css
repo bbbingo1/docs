@@ -286,8 +286,12 @@ textarea {
 }
 
 .doc-misc, .doc-save-history {
+  margin: 1em 1em;
+  display: inline-block;
+}
+
+.bottom-button {
   text-align: center;
-  margin: 1em 0;
 }
 
 .history-list {

@@ -7,7 +7,7 @@ import React, { Component, version } from 'react';
 import { Creatable } from 'react-select';
 import 'react-select/dist/react-select.css';
 import 'antd/dist/antd.css';
-import { Menu, Dropdown } from 'antd';
+import { message, Menu, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons'
 import img from './assets/background.png';
 
@@ -157,23 +157,26 @@ class App extends Component {
     const params = { username, password }
     if (this.state.loginType === 1) {
       Bmob.User.login(username, password).then(res => {
+        message.success('Login successfully.', 1);
         this.setState({ username: res.username });
       }).catch(err => {
+        message.error(err && err.error.toString())
         console.log(err)
       });
     } else {
       Bmob.User.register(params).then(res => {
-        this.setState({ username: res.username });
+        message.success('Registered successfully,switch to the login page');
+        this.setState({ loginType: 1 });
       }).catch(err => {
+        message.error(err && err.error.toString())
         console.log(err)
       });
     }
   }
 
   logout() {
-    console.log(123)
     Bmob.User.logout()
-    this.setState({ username: '' });
+    this.setState({ username: '', password: '' });
     current = null
   }
 
@@ -221,11 +224,13 @@ class App extends Component {
           <div>{this.state.doc.nPeers} peers</div>
           <Doc id={this.props.id} doc={this.state.doc} />
           <div className='doc-id'>Copy to share: <span>{this.state.doc.id}</span></div>
-          <div className='doc-misc'>
+          <div className="bottom-button">
+            <div className='doc-misc'>
             <button onClick={this.export.bind(this)}>Save as text</button>
           </div>
-          <div className='doc-save-history'>
-            <button onClick={this.saveVersion.bind(this)}>Save as historical version</button>
+            <div className='doc-save-history'>
+              <button onClick={this.saveVersion.bind(this)}>Save as historical version</button>
+            </div>
           </div>
         </div>
       );

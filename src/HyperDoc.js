@@ -1,6 +1,7 @@
 import crypto from 'crypto';
 import Automerge from 'automerge';
 import EventEmitter from 'events';
+import { message } from 'antd';
 
 function DUMMY(changeDoc) {
   let id = crypto.randomBytes(32).toString('hex');
@@ -176,6 +177,7 @@ class HyperDoc extends EventEmitter {
       const length = changeDoc.text.length
       changeDoc.text.deleteAt(0, length)
       changeDoc.text.insertAt(0, ...versionText);
+      message.success('Successfully rolled back version');
     });
   }
 
