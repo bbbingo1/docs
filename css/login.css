@@ -1,0 +1,149 @@
+#userLogin {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: radial-gradient(50% 50%, #eef4f8, pink);
+  text-align: center;
+}
+
+#userLogin * {
+  box-sizing: border-box;
+}
+
+#userLogin .wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+#userLogin .login {
+  border-radius: 2px 2px 5px 5px;
+  padding: 5px 20px 5px 20px;
+  width: 90%;
+  max-width: 380px;
+  background: #ffffff;
+  position: relative;
+  padding-bottom: 80px;
+  background-color: #ffcc99;
+}
+
+#userLogin .login input {
+  display: block;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  transition: border-width 0.2s ease;
+  border-radius: 2px;
+  color: #ccc;
+}
+
+#userLogin .login input+i.fa {
+  color: #fff;
+  font-size: 1em;
+  position: absolute;
+  margin-top: -47px;
+  opacity: 0;
+  left: 0;
+  transition: all 0.1s ease-in;
+}
+
+#userLogin .login input:focus {
+  outline: none;
+  color: #444;
+  border-color: #ff9999;
+  border-left-width: 35px;
+}
+
+#userLogin .login input:focus+i.fa {
+  opacity: 1;
+  left: 30px;
+  transition: all 0.25s ease-out;
+}
+
+#userLogin .login a.change {
+  user-select: none;
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#userLogin .login a.remember {
+  float: right;
+  font-size: 0.8em;
+  color: #444;
+}
+
+#userLogin .login #remember {
+  display: inline-block;
+  width: auto;
+  cursor: pointer;
+}
+
+#userLogin .login .title {
+  color: #444;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 13px;
+}
+
+#userLogin .login .button {
+  user-select: none;
+  width: 88%;
+  height: 15%;
+  padding: 7px 10px;
+  margin: 10px auto;
+  background: #ff9999;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  border: none;
+  position: absolute;
+  left: 6%;
+  bottom: 8%;
+  max-height: 60px;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 2px 2px;
+  transform: rotateZ(0deg);
+  transition: all 0.1s ease-out;
+  border-bottom-width: 7px;
+  z-index: 4;
+  cursor: pointer;
+}
+
+#userLogin .login .button:hover {
+  box-shadow: 0px 1px 3px #ff9999;
+}
+
+#userLogin .login .button:focus {
+  border-bottom-width: 4px;
+}
+
+#userLogin .login .button:active {
+  height: 14%;
+  bottom: 8.5%;
+  background: rgb(231, 72, 107);
+  border: 1px solid #f54f4f;
+  -webkit-box-shadow: 0px 1px 6px 4px rgba(121, 121, 121, 0.2) inset;
+  -moz-box-shadow: 0px 1px 6px 4px rgba(138, 136, 136, 0.2) inset;
+  box-shadow: 0px 1px 6px 4px rgba(126, 123, 123, 0.2) inset;
+}
+
+#userLogin .warp-main {
+  float: initial;
+  margin-top: 25vh;
+}
+
+#userLogin input:-webkit-autofill, #userLogin input[type=text]:focus, #userLogin input[type=password]:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  box-shadow: 0 0 0 1000px white inset;
+}

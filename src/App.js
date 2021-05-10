@@ -7,6 +7,9 @@ import React, { Component, version } from 'react';
 import { Creatable } from 'react-select';
 import 'react-select/dist/react-select.css';
 import 'antd/dist/antd.css';
+import { Menu, Dropdown } from 'antd';
+import { DownOutlined } from '@ant-design/icons'
+import img from './assets/background.png';
 
 function shrinkId(id) {
   if (id.length <= 12) return id;
@@ -15,6 +18,7 @@ function shrinkId(id) {
   return `${front}...${end}`;
 }
 
+let current = null
 
 class App extends Component {
   constructor(props) {
@@ -23,6 +27,10 @@ class App extends Component {
       doc: null,
       docs: [],
       peerIds: {},
+      username: '',
+      password: '',
+      email: '',
+      loginType: 1,
       name: props.id.substr(0, 6),
       color: props.colors[parseInt(props.id, 16) % props.colors.length]
     };
@@ -41,6 +49,10 @@ class App extends Component {
   }
 
   componentDidMount() {
+    // update username
+    if (current && !this.state.username) {
+      this.setState({ username: current.username })
+    }
     this.props.hm.on('peer:message', (actorId, peer, msg) => {
       if (msg.type === 'hi') {
         this.registerPeer(peer, msg);
@@ -79,7 +91,9 @@ class App extends Component {
     // save id/name/color into doc
     doc.join(this.props.id, this.state.name, this.state.color);
     doc.on('updated', (doc) => this.setState({ doc }));
-    this.setState({ doc });
+    let current = Bmob.User.current()
+    this.setState({ doc, name: current.username });
+    doc.setName(this.props.id, current.username);
   }
 
   createDocument() {
@@ -120,6 +134,49 @@ class App extends Component {
     }
   }
 
+  onEditUsername(ev) {
+    let username = ev.target.value;
+    if (username) {
+      this.setState({ username });
+    }
+  }
+
+  onEditPassword(ev) {
+    let password = ev.target.value;
+    if (password) {
+      this.setState({ password });
+    }
+  }
+
+  changeType() {
+    this.setState({ loginType: this.state.loginType === 1 ? 2 : 1 });
+  }
+
+  submit() {
+    const { username, password } = this.state
+    const params = { username, password }
+    if (this.state.loginType === 1) {
+      Bmob.User.login(username, password).then(res => {
+        this.setState({ username: res.username });
+      }).catch(err => {
+        console.log(err)
+      });
+    } else {
+      Bmob.User.register(params).then(res => {
+        this.setState({ username: res.username });
+      }).catch(err => {
+        console.log(err)
+      });
+    }
+  }
+
+  logout() {
+    console.log(123)
+    Bmob.User.logout()
+    this.setState({ username: '' });
+    current = null
+  }
+
   saveVersion() {
     console.log(this.state.doc)
     let text = this.state.doc.text
@@ -143,6 +200,16 @@ class App extends Component {
   }
 
   render() {
+    // login section
+    if (!current) {
+      current = Bmob.User.current()
+    }
+    const setBackground = {
+      backgroundImage: `url(${img})`,
+      backgroundRepeat: "repeat"
+    }
+
+    // main section
     let main;
     if (this.state.doc) {
       main = (
@@ -179,7 +246,16 @@ class App extends Component {
       );
     }
 
-    return <main role='main'>
+    // logout
+    const menu = (
+      <Menu>
+        <Menu.Item key="0" onClick={this.logout.bind(this)}>
+          <a>sign out</a>
+        </Menu.Item>
+      </Menu>
+    );
+
+    return current ? (<main role='main'>
       <nav>
         <div id='nav-content'>
           <button className='create-button' onClick={this.createDocument.bind(this)}>Create new document</button>
@@ -196,11 +272,41 @@ class App extends Component {
             onChange={this.selectDocument.bind(this)}
             promptTextCreator={(label) => `Open '${shrinkId(label)}'`}
           />
-          <History doc={this.state.doc}/>
+          <History doc={this.state.doc} />
         </div>
       </nav>
+      <div className="userInfo">
+        <Dropdown overlay={menu} trigger={['click']}>
+          <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+            {this.state.username} <DownOutlined />
+          </a>
+        </Dropdown>
+      </div>
       {main}
-    </main>
+
+    </main>) :
+      (<div>
+        <div id="userLogin" style={setBackground}>
+          <div className="wrap">
+            <form className="login">
+              <p className="title">{this.state.loginType === 1 ? '用户登录' : '用户注册'}</p>
+              <input value={this.state.username} type="text" placeholder="请输入账号" autoFocus
+                onChange={this.onEditUsername.bind(this)} />
+              <i className="fa fa-user"></i>
+              <input value={this.state.password} type="password" placeholder="请输入密码"
+                onChange={this.onEditPassword.bind(this)} />
+              <i className="fa fa-key"></i>
+              {/* <input value={this.state.email} type="text" placeholder="请输入邮箱"
+                onChange={this.onEditEmail.bind(this)} />
+              <i className="fa fa-key"></i> */}
+              <a className="change" onClick={this.changeType.bind(this)}>{this.state.loginType === 1 ? '没有账号？点击注册' : '已有账号？点击登录'}</a>
+              <a className="button" onClick={this.submit.bind(this)}>
+                <span className="state">{this.state.loginType === 1 ? '登录' : '注册'}</span>
+              </a>
+            </form>
+          </div>
+        </div>
+      </div >)
   }
 }
 

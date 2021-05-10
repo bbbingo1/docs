@@ -4,6 +4,10 @@ import HyperDoc from './HyperDoc';
 import Hypermerge from 'hypermerge';
 import ram from 'random-access-memory';
 import {render} from 'react-dom';
+// 引入Bmob数据库
+import Bmob from 'hydrogen-js-sdk'
+// 初始化Bmob
+Bmob.initialize("91671700a98c75e5", "123456");
 
 // const path = 'docs';
 const path = ram; // random store
@@ -42,5 +46,5 @@ hm.once('ready', (hm) => {
 
   // render dom
   const main = document.getElementById('main');
-  render(<App hm={hm} id={id} colors={colors} />, main);
+  render(<App hm={hm} Bmob={Bmob} id={id} colors={colors} />, main);
 });
