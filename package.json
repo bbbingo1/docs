@@ -10,11 +10,11 @@
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "author": "Francis Tseng",
+  "author": "Bingo",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/frnsys/hyperdocs"
+    "url": "git@github.com:bbbingo1/docs.git"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.51",

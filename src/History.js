@@ -22,11 +22,11 @@ class History extends Component {
 	render() {
 		let list;
 		if (this.props.doc && this.props.doc.history) {
-			console.log(this.props.doc.history)
+			// console.log(this.props.doc.history)
 			const versions = this.props.doc.history
 			list = (<>
 				{Object.keys(versions).map((id) => {
-					console.log(id, versions[id])
+					// console.log(id, versions[id])
 					return (<div className='version-list' key={id}>
 						<div className='version-title'>{id}</div>
 						<Popconfirm title="Overwrite current version?" placement="left" okText="Yes" cancelText="No" onConfirm={this.handleRollback.bind(this, versions[id])}>

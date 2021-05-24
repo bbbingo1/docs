@@ -126,17 +126,17 @@ textarea {
 }
 
 .peer-label {
-  font-size: 0.6em;
+  font-size: 0.8em;
   background: #1890ff;
   color: #fff;
-  padding: 0.2em 0.3em;
+  padding: 0.2em 0.4em;
   border-radius: 0.2em;
 }
 
 .peer-cursor {
   width: 1px;
   background: #1890ff;
-  height: 1em;
+  height: 1.3em;
 }
 
 .doc-id {

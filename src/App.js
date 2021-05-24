@@ -181,7 +181,7 @@ class App extends Component {
   }
 
   saveVersion() {
-    console.log(this.state.doc)
+    // console.log(this.state.doc)
     let text = this.state.doc.text
     if (text) {
       this.state.doc.setVersion(this.props.id, text);
