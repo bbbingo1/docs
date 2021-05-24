@@ -4,9 +4,9 @@
   "description": "collaborative editing app",
   "main": "index.js",
   "scripts": {
-    "start": "electron app.js",
+    "start": "electron index.js",
     "compile": "webpack --watch --progress",
-    "pack": "electron-packager . hyperdocs --win --out ./myClient --arch=x64 --app-version=0.0.1 --electron-version=2.0.0",
+    "pack": "electron-packager . hyperdocs --win --out ./Collaborative-doc --arch=x64 --app-version=0.0.1 --electron-version=2.0.0",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
